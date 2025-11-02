@@ -1,0 +1,1279 @@
+{
+    "chunks": [
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 0.0,
+            "end": 14.0,
+            "text": " Hello, how are you all?  Welcome to Chai Aur Code  Our unique YouTube channel which is moving forward very fast  And many people are liking it in India  How is the production level content?"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 14.0,
+            "end": 25.0,
+            "text": " We should show professionalism  And focus more on content  This is what you all like  Thank you so much, so we are doing this  In this video also we will take our Django series ahead"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 25.0,
+            "end": 38.0,
+            "text": " And will give you a little introduction about forms  Django's forms are very powerful  And you will enjoy watching a small connection with these forms  This video is not a complete in-depth guide of forms  We will discuss that in another video"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 38.0,
+            "end": 50.0,
+            "text": " Now you just have to give a glimpse  This video should have been the last part of the video  But then we saw that the video has become too long  So we will break it into two parts  By the way, you will get the complete documentation in the description"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 50.0,
+            "end": 61.0,
+            "text": " You can see it and all the links will be there  So let's start with this  The target of this video is not much, 250 comments  So get it completed quickly  If you haven't subscribed yet, then do it"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 61.0,
+            "end": 74.0,
+            "text": " And we move towards our forms  Forms are very interesting in Django  And forms are actually a study material in Django  Like the admin panel is a study material  But at least you will get a first introduction"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 74.0,
+            "end": 85.0,
+            "text": " Then you will understand the wiring  How the entire wiring of forms is in Django framework  Because it is a little difficult to understand  It is not that easy  Because a new element is added to the forms"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 85.0,
+            "end": 94.0,
+            "text": " Till now we have seen that models are added  Views are added  After that we added templates  This was our forms  One more element is introduced"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 94.0,
+            "end": 104.0,
+            "text": " And how that element will be introduced  Depends on how you have done the modeling of your data  Let me tell you how  Now we are here  Our VS code"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 104.0,
+            "end": 114.0,
+            "text": " Which is running on the tea theme  Tea theme looks good  This is our situation  This is our database  We have seen that we have tea varieties"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 114.0,
+            "end": 126.0,
+            "text": " We have seen admin panel injection  How inline admin panel injections are  By injection I mean  How we have added a new field  Which will be visible only in one existing model"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 126.0,
+            "end": 136.0,
+            "text": " There are certificates and stores  We have seen this too  So this was our basic  Now my goal is  That all this is visible"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 136.0,
+            "end": 147.0,
+            "text": " I want to add a new layout  And update all its URLs  It is very easy  I think you can do this  We are doing this first"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 147.0,
+            "end": 157.0,
+            "text": " Because it is not easy to make a connection  Because it can be a little complex  That's why I have kept it separate  Please follow the guide  Otherwise you will get stuck in the confusion of Django"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 157.0,
+            "end": 167.0,
+            "text": " So we open our tea  You know how to add a new template  Open the template  You can add a file in tea  Whatever you want"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 167.0,
+            "end": 177.0,
+            "text": " I think we will keep the file name as tea stores  So we are here  And then we add the extension  Layout.html  And then we add a block"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 177.0,
+            "end": 187.0,
+            "text": " Unnamed block content  We keep the name as content  And then we add the extension  Test content for forms  We will make forms here"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 187.0,
+            "end": 197.0,
+            "text": " But have the forms come yet?  Not yet  And it is not like this  So we will make it soon  We will make it soon"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 197.0,
+            "end": 207.0,
+            "text": " And then we will add the extension  It has not come yet  And it can not come like this  So what to do to bring the forms  You know this much"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 207.0,
+            "end": 217.0,
+            "text": " You have to add a view  You have to add only one view  So we keep the name of this view  Tea store view  View"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 217.0,
+            "end": 227.0,
+            "text": " Here it is  You know the basics  You will take the request here  We don't need any parameter  You can return here"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 227.0,
+            "end": 237.0,
+            "text": " We have to return render  And here I will give the request  Take it  And which template you want to return  So I will give in tea"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 237.0,
+            "end": 247.0,
+            "text": " Slash  If this string is not there then suggestions come  But ok  And we don't have to give anything else  We don't have to pass objects"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 247.0,
+            "end": 257.0,
+            "text": " Ok  What to do now  You know that this wiring will not work so easily  For this, you have to add a URL  This is basic 101"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 257.0,
+            "end": 267.0,
+            "text": " Till now everyone knows  So we duplicate it  And we say where we have to show it  We will do it on tea underscore store  We also bring the view"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 267.0,
+            "end": 277.0,
+            "text": " Our name of the view is  What is our name  Tea store view  Ok  Tea underscore store view"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 277.0,
+            "end": 287.0,
+            "text": " I will keep the name of this  Tea store  Tea store  Tea store  You can see"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 287.0,
+            "end": 297.0,
+            "text": " So I think now we have  If there is no problem  Then tea store should be there  Let's see if there is any bug  We will fix it"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 297.0,
+            "end": 307.0,
+            "text": " Now we have test content  For forms  Till now there was no big problem  We have seen these things before  In fact, we have seen that if we have to bring data"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 307.0,
+            "end": 317.0,
+            "text": " If we have to take some model  We need a unique URL  If we have to query on the basis of URL  Or we need complete data  Now we want to go to the next level"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 317.0,
+            "end": 327.0,
+            "text": " Now see what is the goal  The goal is that when I come to this form  What did I get here  I got a drop down  Where all the tea varieties are available"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 327.0,
+            "end": 337.0,
+            "text": " And as soon as I select the tea variety  On that basis, you tell me  Which store is available  So to do this  First let's go to the admin panel"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 337.0,
+            "end": 347.0,
+            "text": " So the first thing  To find the tea variety  You have to go to tea varieties  So that you can take all the fields  Now when you can take all the fields"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 347.0,
+            "end": 357.0,
+            "text": " Then here we have a drop down  Which makes sense that from here  We can take all the names  Which type you have  You can take that type"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 357.0,
+            "end": 367.0,
+            "text": " If you want, you can also take the name  This is also fine  So one thing is decided that tea variety  Is the only model that can work for me  But based on which tea is the name"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 367.0,
+            "end": 377.0,
+            "text": " If I want to know the store  Then I will have to put a query in the store  That only give the store  Who has that specific tea available  So I have to interact with two models"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 377.0,
+            "end": 387.0,
+            "text": " Okay  Now what we will do  First of all, let me tell you a little interesting thing  We will make a new file  Which will give you a little problem to understand"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 387.0,
+            "end": 397.0,
+            "text": " But eventually you will understand  There is no such problem  The name of this file is forms.py  And this is an additional layer  Because all the files we have seen"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 397.0,
+            "end": 407.0,
+            "text": " We have not seen this file called form  Where did this form come from  This form is very interesting  About this  We will know about it in the coming videos"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 407.0,
+            "end": 417.0,
+            "text": " How does it actually work  So if you look at Django forms  Then it is a  Sometimes it becomes a whole course  And you will see Django forms"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 417.0,
+            "end": 427.0,
+            "text": " On documentation  So you have a lot of forms  Which automatically link with many models  You get get post values  You can see a lot of documentation"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 427.0,
+            "end": 437.0,
+            "text": " You will go to any segment  There are widgets, views, form classes  How many forms are there in it  Care fields  You can take data on character basis"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 437.0,
+            "end": 447.0,
+            "text": " There is a lot of work  We will choose only one of them  And we will see a little flow in this video  Just that the flow is understood  After that, we will come to the inner details"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 447.0,
+            "end": 457.0,
+            "text": " So what will have to do to get forms  First of all, we come and say  Django please give forms  So I need import  Here it is"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 457.0,
+            "end": 467.0,
+            "text": " Django has given forms  Now with which forms  We will have to attach a model  Otherwise, where will the form data come from  Who will attach it on the basis of"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 467.0,
+            "end": 477.0,
+            "text": " So we need a model  So we import the tea variety  Because it makes sense  What will I do with the direct store  Now I have taken this here"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 477.0,
+            "end": 487.0,
+            "text": " Now a class is always made in forms  It is given in the documentation  We are going to do the same  You can also take it on the basis of method  But we will go a little on this format"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 487.0,
+            "end": 497.0,
+            "text": " Class name form  Whatever form you are taking  And after that your name care field  We will do all this in the same way  It may seem a little uneven at once"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 497.0,
+            "end": 507.0,
+            "text": " But eventually the same pattern repeats  So we take it  Tea variety form  Whatever you have to give the name of the form  Tea variety form"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 507.0,
+            "end": 517.0,
+            "text": " We take a dot capital form from the form above  As we were told in the documentation  That you have to come this way  And take it this way  Now"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 517.0,
+            "end": 527.0,
+            "text": " When so much work is done  We make a variable called tea variety  We call it tea underscore  Variety  Now how will tea variety come"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 527.0,
+            "end": 537.0,
+            "text": " Every form is linked on the basis of model  You can put a label in the character field  Max field  If you just  Take data from the user"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 537.0,
+            "end": 547.0,
+            "text": " And just save it  Then you have a lot of options  But if your model is made  If you want to display that model  In the existing form"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 547.0,
+            "end": 557.0,
+            "text": " Then we have many such forms  Which can be auto linked  One of these forms  Model choice field  What does it do"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 557.0,
+            "end": 567.0,
+            "text": " In your existing form  You can query in the existing model  And you can give it  Query set parameter  In the query set"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 567.0,
+            "end": 577.0,
+            "text": " You do one thing  Take everything out of the model  Objects dot all  Now this is very intelligent  It will not take out everything"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 577.0,
+            "end": 587.0,
+            "text": " Because you have said choice field  So I don't have to do much work  It will give the choice field  In the form, the choice field is drop down  So I don't need to make a drop down"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 587.0,
+            "end": 597.0,
+            "text": " It will make a drop down by itself  I have told it  It will make a box  Where I have to input characters  And if you want you can give a label on it"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 597.0,
+            "end": 607.0,
+            "text": " Label does not do much work  Just to tell the user  What is this form for  So I told it to select  Chai variety"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 607.0,
+            "end": 617.0,
+            "text": " Now we do this much on this form  We will not write much code on the form  Otherwise confusion will be created  So it is okay  Wrote a code of one line"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 617.0,
+            "end": 627.0,
+            "text": " Give me a special type of choice field  And attach it with chai variety  With objects  So far the story is right  Now we come to our views"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 627.0,
+            "end": 639.0,
+            "text": " Till now what was the view doing  It was rendering a form  It was rendering an HTML page  There is no problem in this  Now we have two cases"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 639.0,
+            "end": 649.0,
+            "text": " One case is  I just have to show you the form  One case is when you submit the form  Both cases are usually  Handled together"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 649.0,
+            "end": 659.0,
+            "text": " Usually first of all  If you are submitting the form  What we will do  First of all I make a variable  Stores"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 659.0,
+            "end": 669.0,
+            "text": " Initialize it  Why make a store  Because when you submit the form  I will pass this variable on the front end  Here we will pass a comma"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 669.0,
+            "end": 679.0,
+            "text": " Let's do it now  Here we have stores  And not like this  Here we have stores  And here we have stores"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 679.0,
+            "end": 689.0,
+            "text": " Now by passing this  Whatever I will run a query filter  Whatever comes from the name of variety  Based on that  Filter and give stores"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 689.0,
+            "end": 699.0,
+            "text": " I will put a loop on it  This is the work of stores  First of all detect  That the request you have  Is it a post request or not"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 699.0,
+            "end": 709.0,
+            "text": " For this it is very easy  I can find in request.method  Post method or get method  Based on this  I can run selective code"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 709.0,
+            "end": 719.0,
+            "text": " If you have a post  Then you must have a form  If form has come  Then from where it came  First of all import the form"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 719.0,
+            "end": 729.0,
+            "text": " Because if you are using form  Then form must have come from somewhere  So what we do  From.forms  Import and import the whole class"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 729.0,
+            "end": 739.0,
+            "text": " ChaiVarietyForm  Here  Now whatever is written in form  I can import it  And use it here"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 739.0,
+            "end": 749.0,
+            "text": " First of all make a variable  And say  The form I have imported  Bring it from here  And pass it as it is"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 749.0,
+            "end": 759.0,
+            "text": " Request.post  Now by passing  Request.post  Whatever data was traveling in post  That has come to you"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 759.0,
+            "end": 769.0,
+            "text": " In this form variable  Now our use case says  That you are taking only one value in this form  But it is possible that in the future  There are two values, three values, four values"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 769.0,
+            "end": 779.0,
+            "text": " So whatever values will be there  All of them will come to you  Now Django knows that  Directly processing this form variable  Is a little problematic"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 779.0,
+            "end": 789.0,
+            "text": " So we will process the form only when it is a valid form  Valid means  Django will see that you have taken a character field  So characters are coming in it  If you take a drop down"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 789.0,
+            "end": 799.0,
+            "text": " Then value is selected from the drop down  So Django gives you some methods  Which you can use  Like one method is underscore valid  This should have come in the suggestion"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 799.0,
+            "end": 809.0,
+            "text": " But it is not coming  Now you have  This value  Now how to check it  So further you have"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 809.0,
+            "end": 819.0,
+            "text": " You can make variables  Take this form from this form  Now another method  This is a very common method  Common knowledge"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 819.0,
+            "end": 829.0,
+            "text": " You want clean data  From which field  We will call the field  Chai underscore variety  Now you will say"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 829.0,
+            "end": 839.0,
+            "text": " This name is to be given on the front end  No no no  This name is coming from here  Let's copy it  Because you have made the form of this name"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 839.0,
+            "end": 849.0,
+            "text": " So the model choice field will be visible on the front end  So you are defining the fields here  The name of this field  Will be the same in this post  Ok variety"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 849.0,
+            "end": 859.0,
+            "text": " But whatever it is  You know the linking  Now what can I do  Chai underscore  Take this"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 859.0,
+            "end": 869.0,
+            "text": " I have put chai variety  Now what is inside chai variety  That particular value  You have the form  You have checked the validation"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 869.0,
+            "end": 879.0,
+            "text": " Now from this particular multiple fields  We need one field  Chai variety  Which we will get  Now come to views"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 879.0,
+            "end": 889.0,
+            "text": " You have got the data  Everything is done  Now end of the day  What was the problem statement  Give only the chai where chai variety is available"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 889.0,
+            "end": 899.0,
+            "text": " So what we do  First we need store  So along with chai variety  We also bring store  So we come here"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 899.0,
+            "end": 909.0,
+            "text": " And tell it  The store which we have  Let's take objects on it  And  Last time we put all"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 909.0,
+            "end": 919.0,
+            "text": " Now we put filter  You can pass the query  We will pass the query  That we have chai variety available  Let's check this chai variety in the model"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 919.0,
+            "end": 929.0,
+            "text": " So that we don't do anything wrong  Because typos happen  So we go to model  Chai variety  Is available here"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 929.0,
+            "end": 939.0,
+            "text": " Let's check this  We want to pass filter  And filter  We will take chai varieties  So for once we pass filter"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 941.0,
+            "end": 951.0,
+            "text": " Chai varieties  And we will pass this  We come back to this  What we need  We need the object"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 951.0,
+            "end": 961.0,
+            "text": " We have to put the filtration  Let's check this  Store  So this chai varieties  We copy it"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 961.0,
+            "end": 971.0,
+            "text": " Because we are putting filter on it  So this thing  We are putting filter  And what is my value  I am taking that value from chai variety"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 971.0,
+            "end": 981.0,
+            "text": " Here expected indented block  You wanted block  You wanted block  You should have been indent  Ok"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 981.0,
+            "end": 991.0,
+            "text": " I understood this  Let's store all the variables  So stores  And we have stored it  Now I have the value of stores"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 991.0,
+            "end": 1001.0,
+            "text": " Now you know why we have stored stores  One interesting thing  Which you don't know  Which we have to send together  That is form"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1001.0,
+            "end": 1011.0,
+            "text": " Validation of form is checked here  But if there is a request method  Form or anything  Or anything is happening  You have made a chai variety form"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1011.0,
+            "end": 1021.0,
+            "text": " There  You have to send this form  Whenever you are using this kind of forms  There is no exception in this  So what we will do"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1021.0,
+            "end": 1031.0,
+            "text": " We will send form  What will happen by sending this form  Now by sending this form  We have no effect on it  Because we have no changes in the template"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1031.0,
+            "end": 1041.0,
+            "text": " Ok  Local variable form  Where it is associated with the value  Ok  Here it is not getting values"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1041.0,
+            "end": 1051.0,
+            "text": " We will give values  Till now you have understood  Now we will handle this problem one by one  What is coming  Now we have"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1051.0,
+            "end": 1061.0,
+            "text": " Form is not associated with a value  Ok  I think we will check once  We have declared form  But form is inside if block"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1061.0,
+            "end": 1071.0,
+            "text": " It is very easy  You can declare it outside  We have to give one more solution  Because if you remember  I told you two three cases"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1071.0,
+            "end": 1081.0,
+            "text": " One when this form is being rendered  One when you are submitting form  If your form is being submitted  If form is not being submitted  Then also by default we have to show form"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1081.0,
+            "end": 1091.0,
+            "text": " We missed that case  That is our else case  Whenever you will deal with form  You will have these two three cases  We will build form with our chai variety form"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1091.0,
+            "end": 1101.0,
+            "text": " Take this  Multiple fields can be there in form  In our case  We have only one field  Ok"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1101.0,
+            "end": 1111.0,
+            "text": " Now hopefully it should be fine  Now I will give a summary again  There are three cases of form  First case is  You want to render"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1111.0,
+            "end": 1121.0,
+            "text": " Here we have not passed any form  Now one form is in default state  When user fill form  And send it  So first handle is"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1121.0,
+            "end": 1131.0,
+            "text": " We have filled form and sent it  This is what we handled here  One case is just to make form and send it to user  So that user can fill data in it  From drop down or fill name"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1131.0,
+            "end": 1141.0,
+            "text": " You fill form from here  Actually you make form from here  Because form is coming from form file  So we made form from chai variety form  Now we have only one field"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1141.0,
+            "end": 1151.0,
+            "text": " We can have more fields  So now I think you understood this much  This is major  Now we will go to chai variety stores  Now we will show you special magic of django"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1153.0,
+            "end": 1163.0,
+            "text": " We made a form  In which we don't need any action  Important for me is  Method  Here is method and method"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1163.0,
+            "end": 1173.0,
+            "text": " I have given post  Now you don't have to do anything  Just inject and write form  As soon as you write form  Now I go here you see values"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1173.0,
+            "end": 1183.0,
+            "text": " In drop down you have  Small ginger tea, large masala tea, medium masala tea  Everything  Now this is why you are getting in drop down  Especially in name field"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1183.0,
+            "end": 1193.0,
+            "text": " Because you have told  In forms  Take me from all objects  It is taking automatically  And we have defined it as it is"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1193.0,
+            "end": 1203.0,
+            "text": " This model choice field  All these stories  If you suppose here  I duplicate it for a minute  And I do this comment"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1203.0,
+            "end": 1213.0,
+            "text": " So if you want  You can also take care field  Remove it  And we say give me care field  Simply"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1213.0,
+            "end": 1223.0,
+            "text": " Here we did save  And now we have character field  Because here you can give character values  So depends on django  Django tries to think of many things"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1223.0,
+            "end": 1233.0,
+            "text": " And brings values there  And what value you are selecting from forms  What you want to show  Everything will depend on it  Now here you will see many things in django"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1233.0,
+            "end": 1243.0,
+            "text": " The form class, the view  Which fields you can see here  So email field  Boolean field  There are many selections"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1243.0,
+            "end": 1253.0,
+            "text": " In this exactly what value you want to take  Or what to show from database  That depends  So now what we do  Remove it"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1253.0,
+            "end": 1263.0,
+            "text": " So that django actually has a form  So we refreshed and saw  That we have all the values  Now as soon as I suppose selected  So here"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1263.0,
+            "end": 1273.0,
+            "text": " Small ginger tea  I think should be selected  Ok, it will be selected  But not yet because we have not finished the whole work on the template  See"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1273.0,
+            "end": 1283.0,
+            "text": " Now what is in django  It needs a submit button  So let's make a button here  We put this button  Search store"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1283.0,
+            "end": 1295.0,
+            "text": " And django needs a submit  And this is also our type  Which is  Submit  Submit"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1295.0,
+            "end": 1305.0,
+            "text": " Ok  So search store is ok  But ok, work is going on  So now you can't send it  Why can't you send it"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1305.0,
+            "end": 1315.0,
+            "text": " Because you have not rendered the form properly  That is a little issue of CSS  But after forms you get more options  Like after forms you put a dot here  So you have one option"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1315.0,
+            "end": 1325.0,
+            "text": " As underscore p  Yes, this is a very interesting option  Because it is rendering better and sometimes better  Ok, still a problem will come  If you search store it"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1325.0,
+            "end": 1335.0,
+            "text": " You will get an error  CSRF verification failed  By default django  Proves every form  That you could not do any injection"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1335.0,
+            "end": 1345.0,
+            "text": " And could not hit vulnerability  So whenever you use a form with django  You always have to give a CSRF token  You don't have to manually  Inject this token"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1345.0,
+            "end": 1355.0,
+            "text": " Django does it for you  Whenever you make a form  You have to give it  You don't have any special option  So now I refresh it"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1355.0,
+            "end": 1365.0,
+            "text": " Cancel  So we go to  Chai stores  Now select small ginger tea  And send it"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1365.0,
+            "end": 1375.0,
+            "text": " Oops, still issues  Our form is not submitting properly  Let's see  Now another variable  Let's worry about it"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1375.0,
+            "end": 1385.0,
+            "text": " Another variable  Stores  I know that stores is a simple array  I can loop it  If there is a store"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1385.0,
+            "end": 1395.0,
+            "text": " I will do a conditional rendering  So we go to django if  If  Paste  Ok, no suggestion"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1395.0,
+            "end": 1405.0,
+            "text": " So here  Block  If  Will I get a suggestion  No"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1405.0,
+            "end": 1415.0,
+            "text": " So let's go to classic  Ok  First block if  If we have stores  If there are stores"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1415.0,
+            "end": 1425.0,
+            "text": " Then on that basis  We will do a conditional rendering  Before I forget  End if  This is the most boring thing"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1425.0,
+            "end": 1435.0,
+            "text": " In templating engine  You have to do end if and end blocks  Now this is done  Now we take h2  What is h2"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1435.0,
+            "end": 1445.0,
+            "text": " Stores  Available  We save it  Stores available  Because you have that variable"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1445.0,
+            "end": 1455.0,
+            "text": " After coming here we do a simple loop  To define an unordered list  In all the stores  So what to do  Take an unordered list"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1455.0,
+            "end": 1467.0,
+            "text": " Go to it  For  Unnamed  Block  And in this block"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1467.0,
+            "end": 1477.0,
+            "text": " Remove it  First we  Take a loop here for  Store  In"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1477.0,
+            "end": 1487.0,
+            "text": " Stores  And here enter  Enter  And here we do it  End"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1487.0,
+            "end": 1497.0,
+            "text": " For  If we get some more suggestions then it would be good  And here we can do  Take a simple li  And here we inject values"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1497.0,
+            "end": 1507.0,
+            "text": " Whatever our value will be  Store.name  And location  Keep it  Only two things"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1507.0,
+            "end": 1517.0,
+            "text": " Store.location  So hopefully  Now as you are selecting  You should get values  Large masala tea"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1517.0,
+            "end": 1527.0,
+            "text": " And medium masala tea  So it is searching  But actually it is white  So here it is  Having some problem"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1527.0,
+            "end": 1537.0,
+            "text": " I will do one thing  It is CSS issues  We take one more here  CD, Chai or Django  And python"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1537.0,
+            "end": 1549.0,
+            "text": " Manage.py  Tailwind start  I think tailwind should  Make things better  Continue"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1549.0,
+            "end": 1563.0,
+            "text": " So we go with tailwind  Because the issues  Are coming only for visibility  Form  For this whole content"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1563.0,
+            "end": 1573.0,
+            "text": " I have to  Make color white  So let me see  How to make it black  I am not focusing on CSS"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1573.0,
+            "end": 1583.0,
+            "text": " Because it takes time  But I have kept a class on a simple form  What should I do  Make the text black  So what happened"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1583.0,
+            "end": 1593.0,
+            "text": " The text is black  But the text of select chai and search store  Is also black  So medium chai  As you submit large masala tea"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1593.0,
+            "end": 1603.0,
+            "text": " You get it on jaypur store  Ginger tea  And medium  Delhi  For peace of mind"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1603.0,
+            "end": 1613.0,
+            "text": " We will go to admin panel  And make a store  So that we get to know more values  So we make a store  And go to Mumbai"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1615.0,
+            "end": 1625.0,
+            "text": " Mumbai  And here  Mumbai store  And here we will keep only a large tea  So select large tea"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1625.0,
+            "end": 1635.0,
+            "text": " And Mumbai should come  And add it  Congratulations  Now we know  If I select large"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1635.0,
+            "end": 1645.0,
+            "text": " So let's come here  Select large masala tea  And search store  And see now we have jaypur  And Mumbai location"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1645.0,
+            "end": 1655.0,
+            "text": " So I think you got to know  How stores work  I will give you a small summary  Because our focus  Is not on UI"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1655.0,
+            "end": 1665.0,
+            "text": " When we make a project  Now we understand the flow  How it flows  To make a form  You make a form"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1665.0,
+            "end": 1675.0,
+            "text": " And these are the fields  Now we have a tea field  But there can be multiple fields  So when you get the form  You associate it directly"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1675.0,
+            "end": 1685.0,
+            "text": " With all the tea objects  You can also associate it with multiple values  But when you do it  You associate it with the value  But jango is not that intelligent"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1685.0,
+            "end": 1695.0,
+            "text": " We want to force jango  I will talk about this in detail  In the next video  Now I know  How I have a field"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1695.0,
+            "end": 1705.0,
+            "text": " Whether it is a model choice field  Or a character field  After that I have to take this form  To views  When you handle forms in views"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1705.0,
+            "end": 1715.0,
+            "text": " You have to see two cases  First case  You have a basic form  Which you took from there  And passed it"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1715.0,
+            "end": 1725.0,
+            "text": " So all the fields in the tea field  You have to pass it  And pass it on the view  Another case  When the user has submitted the form"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1725.0,
+            "end": 1735.0,
+            "text": " What to do  First you detect  Post method, get method  Which method we have to work on  We handle all that"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1735.0,
+            "end": 1745.0,
+            "text": " Once this work is done  We have to put queries  We have put a basic query  But you can fetch the data  We have passed it"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1745.0,
+            "end": 1755.0,
+            "text": " This data passing  Has nothing to do with form  This is a basic variable  We have shown the loop  So in this section"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1755.0,
+            "end": 1765.0,
+            "text": " We have not talked about form  Only this  One more thing  You can render the form in different ways  You can render it as a paragraph"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1765.0,
+            "end": 1775.0,
+            "text": " Important thing is  You have to pass CSRF token  How does CSRF token look  Let's see  When you right click"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1775.0,
+            "end": 1785.0,
+            "text": " And go to inspect  You will see  Form  Let's bring it to the side  And bring it"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1785.0,
+            "end": 1795.0,
+            "text": " To the right side  You will see all your forms  You will see an input type  Hidden  This is a middleware token"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1795.0,
+            "end": 1805.0,
+            "text": " It automatically injects middleware  And the more you see the form  The more you will see the change in the value  Every time when the form is reloaded  A unique value is generated"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1805.0,
+            "end": 1815.0,
+            "text": " Which saves us from CSRF attack  That the form we submitted  Has come from our front end  And is going to our back end  This is a small injection"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1815.0,
+            "end": 1825.0,
+            "text": " It is a good thing  We have a label, select, require field  HIRIT  This is an interesting talk  I think"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1825.0,
+            "end": 1835.0,
+            "text": " This video has given you  Some knowledge enhancement  You will get the documentation  Forms are a bit complex  In Django"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1835.0,
+            "end": 1845.0,
+            "text": " It is not that easy to handle  There are many courses for forms  But I think you have got enough knowledge  As we will do more projects  Subscribe for more videos"
+        },
+        {
+            "number": "8",
+            "title": "First look at Django forms",
+            "start": 1845.0,
+            "end": 1847.0,
+            "text": " See you in the next video"
+        }
+    ],
+    "text": " Hello, how are you all? Welcome to Chai Aur Code Our unique YouTube channel which is moving forward very fast And many people are liking it in India How is the production level content? We should show professionalism And focus more on content This is what you all like Thank you so much, so we are doing this In this video also we will take our Django series ahead And will give you a little introduction about forms Django's forms are very powerful And you will enjoy watching a small connection with these forms This video is not a complete in-depth guide of forms We will discuss that in another video Now you just have to give a glimpse This video should have been the last part of the video But then we saw that the video has become too long So we will break it into two parts By the way, you will get the complete documentation in the description You can see it and all the links will be there So let's start with this The target of this video is not much, 250 comments So get it completed quickly If you haven't subscribed yet, then do it And we move towards our forms Forms are very interesting in Django And forms are actually a study material in Django Like the admin panel is a study material But at least you will get a first introduction Then you will understand the wiring How the entire wiring of forms is in Django framework Because it is a little difficult to understand It is not that easy Because a new element is added to the forms Till now we have seen that models are added Views are added After that we added templates This was our forms One more element is introduced And how that element will be introduced Depends on how you have done the modeling of your data Let me tell you how Now we are here Our VS code Which is running on the tea theme Tea theme looks good This is our situation This is our database We have seen that we have tea varieties We have seen admin panel injection How inline admin panel injections are By injection I mean How we have added a new field Which will be visible only in one existing model There are certificates and stores We have seen this too So this was our basic Now my goal is That all this is visible I want to add a new layout And update all its URLs It is very easy I think you can do this We are doing this first Because it is not easy to make a connection Because it can be a little complex That's why I have kept it separate Please follow the guide Otherwise you will get stuck in the confusion of Django So we open our tea You know how to add a new template Open the template You can add a file in tea Whatever you want I think we will keep the file name as tea stores So we are here And then we add the extension Layout.html And then we add a block Unnamed block content We keep the name as content And then we add the extension Test content for forms We will make forms here But have the forms come yet? Not yet And it is not like this So we will make it soon We will make it soon And then we will add the extension It has not come yet And it can not come like this So what to do to bring the forms You know this much You have to add a view You have to add only one view So we keep the name of this view Tea store view View Here it is You know the basics You will take the request here We don't need any parameter You can return here We have to return render And here I will give the request Take it And which template you want to return So I will give in tea Slash If this string is not there then suggestions come But ok And we don't have to give anything else We don't have to pass objects Ok What to do now You know that this wiring will not work so easily For this, you have to add a URL This is basic 101 Till now everyone knows So we duplicate it And we say where we have to show it We will do it on tea underscore store We also bring the view Our name of the view is What is our name Tea store view Ok Tea underscore store view I will keep the name of this Tea store Tea store Tea store You can see So I think now we have If there is no problem Then tea store should be there Let's see if there is any bug We will fix it Now we have test content For forms Till now there was no big problem We have seen these things before In fact, we have seen that if we have to bring data If we have to take some model We need a unique URL If we have to query on the basis of URL Or we need complete data Now we want to go to the next level Now see what is the goal The goal is that when I come to this form What did I get here I got a drop down Where all the tea varieties are available And as soon as I select the tea variety On that basis, you tell me Which store is available So to do this First let's go to the admin panel So the first thing To find the tea variety You have to go to tea varieties So that you can take all the fields Now when you can take all the fields Then here we have a drop down Which makes sense that from here We can take all the names Which type you have You can take that type If you want, you can also take the name This is also fine So one thing is decided that tea variety Is the only model that can work for me But based on which tea is the name If I want to know the store Then I will have to put a query in the store That only give the store Who has that specific tea available So I have to interact with two models Okay Now what we will do First of all, let me tell you a little interesting thing We will make a new file Which will give you a little problem to understand But eventually you will understand There is no such problem The name of this file is forms.py And this is an additional layer Because all the files we have seen We have not seen this file called form Where did this form come from This form is very interesting About this We will know about it in the coming videos How does it actually work So if you look at Django forms Then it is a Sometimes it becomes a whole course And you will see Django forms On documentation So you have a lot of forms Which automatically link with many models You get get post values You can see a lot of documentation You will go to any segment There are widgets, views, form classes How many forms are there in it Care fields You can take data on character basis There is a lot of work We will choose only one of them And we will see a little flow in this video Just that the flow is understood After that, we will come to the inner details So what will have to do to get forms First of all, we come and say Django please give forms So I need import Here it is Django has given forms Now with which forms We will have to attach a model Otherwise, where will the form data come from Who will attach it on the basis of So we need a model So we import the tea variety Because it makes sense What will I do with the direct store Now I have taken this here Now a class is always made in forms It is given in the documentation We are going to do the same You can also take it on the basis of method But we will go a little on this format Class name form Whatever form you are taking And after that your name care field We will do all this in the same way It may seem a little uneven at once But eventually the same pattern repeats So we take it Tea variety form Whatever you have to give the name of the form Tea variety form We take a dot capital form from the form above As we were told in the documentation That you have to come this way And take it this way Now When so much work is done We make a variable called tea variety We call it tea underscore Variety Now how will tea variety come Every form is linked on the basis of model You can put a label in the character field Max field If you just Take data from the user And just save it Then you have a lot of options But if your model is made If you want to display that model In the existing form Then we have many such forms Which can be auto linked One of these forms Model choice field What does it do In your existing form You can query in the existing model And you can give it Query set parameter In the query set You do one thing Take everything out of the model Objects dot all Now this is very intelligent It will not take out everything Because you have said choice field So I don't have to do much work It will give the choice field In the form, the choice field is drop down So I don't need to make a drop down It will make a drop down by itself I have told it It will make a box Where I have to input characters And if you want you can give a label on it Label does not do much work Just to tell the user What is this form for So I told it to select Chai variety Now we do this much on this form We will not write much code on the form Otherwise confusion will be created So it is okay Wrote a code of one line Give me a special type of choice field And attach it with chai variety With objects So far the story is right Now we come to our views Till now what was the view doing It was rendering a form It was rendering an HTML page There is no problem in this Now we have two cases One case is I just have to show you the form One case is when you submit the form Both cases are usually Handled together Usually first of all If you are submitting the form What we will do First of all I make a variable Stores Initialize it Why make a store Because when you submit the form I will pass this variable on the front end Here we will pass a comma Let's do it now Here we have stores And not like this Here we have stores And here we have stores Now by passing this Whatever I will run a query filter Whatever comes from the name of variety Based on that Filter and give stores I will put a loop on it This is the work of stores First of all detect That the request you have Is it a post request or not For this it is very easy I can find in request.method Post method or get method Based on this I can run selective code If you have a post Then you must have a form If form has come Then from where it came First of all import the form Because if you are using form Then form must have come from somewhere So what we do From.forms Import and import the whole class ChaiVarietyForm Here Now whatever is written in form I can import it And use it here First of all make a variable And say The form I have imported Bring it from here And pass it as it is Request.post Now by passing Request.post Whatever data was traveling in post That has come to you In this form variable Now our use case says That you are taking only one value in this form But it is possible that in the future There are two values, three values, four values So whatever values will be there All of them will come to you Now Django knows that Directly processing this form variable Is a little problematic So we will process the form only when it is a valid form Valid means Django will see that you have taken a character field So characters are coming in it If you take a drop down Then value is selected from the drop down So Django gives you some methods Which you can use Like one method is underscore valid This should have come in the suggestion But it is not coming Now you have This value Now how to check it So further you have You can make variables Take this form from this form Now another method This is a very common method Common knowledge You want clean data From which field We will call the field Chai underscore variety Now you will say This name is to be given on the front end No no no This name is coming from here Let's copy it Because you have made the form of this name So the model choice field will be visible on the front end So you are defining the fields here The name of this field Will be the same in this post Ok variety But whatever it is You know the linking Now what can I do Chai underscore Take this I have put chai variety Now what is inside chai variety That particular value You have the form You have checked the validation Now from this particular multiple fields We need one field Chai variety Which we will get Now come to views You have got the data Everything is done Now end of the day What was the problem statement Give only the chai where chai variety is available So what we do First we need store So along with chai variety We also bring store So we come here And tell it The store which we have Let's take objects on it And Last time we put all Now we put filter You can pass the query We will pass the query That we have chai variety available Let's check this chai variety in the model So that we don't do anything wrong Because typos happen So we go to model Chai variety Is available here Let's check this We want to pass filter And filter We will take chai varieties So for once we pass filter Chai varieties And we will pass this We come back to this What we need We need the object We have to put the filtration Let's check this Store So this chai varieties We copy it Because we are putting filter on it So this thing We are putting filter And what is my value I am taking that value from chai variety Here expected indented block You wanted block You wanted block You should have been indent Ok I understood this Let's store all the variables So stores And we have stored it Now I have the value of stores Now you know why we have stored stores One interesting thing Which you don't know Which we have to send together That is form Validation of form is checked here But if there is a request method Form or anything Or anything is happening You have made a chai variety form There You have to send this form Whenever you are using this kind of forms There is no exception in this So what we will do We will send form What will happen by sending this form Now by sending this form We have no effect on it Because we have no changes in the template Ok Local variable form Where it is associated with the value Ok Here it is not getting values We will give values Till now you have understood Now we will handle this problem one by one What is coming Now we have Form is not associated with a value Ok I think we will check once We have declared form But form is inside if block It is very easy You can declare it outside We have to give one more solution Because if you remember I told you two three cases One when this form is being rendered One when you are submitting form If your form is being submitted If form is not being submitted Then also by default we have to show form We missed that case That is our else case Whenever you will deal with form You will have these two three cases We will build form with our chai variety form Take this Multiple fields can be there in form In our case We have only one field Ok Now hopefully it should be fine Now I will give a summary again There are three cases of form First case is You want to render Here we have not passed any form Now one form is in default state When user fill form And send it So first handle is We have filled form and sent it This is what we handled here One case is just to make form and send it to user So that user can fill data in it From drop down or fill name You fill form from here Actually you make form from here Because form is coming from form file So we made form from chai variety form Now we have only one field We can have more fields So now I think you understood this much This is major Now we will go to chai variety stores Now we will show you special magic of django We made a form In which we don't need any action Important for me is Method Here is method and method I have given post Now you don't have to do anything Just inject and write form As soon as you write form Now I go here you see values In drop down you have Small ginger tea, large masala tea, medium masala tea Everything Now this is why you are getting in drop down Especially in name field Because you have told In forms Take me from all objects It is taking automatically And we have defined it as it is This model choice field All these stories If you suppose here I duplicate it for a minute And I do this comment So if you want You can also take care field Remove it And we say give me care field Simply Here we did save And now we have character field Because here you can give character values So depends on django Django tries to think of many things And brings values there And what value you are selecting from forms What you want to show Everything will depend on it Now here you will see many things in django The form class, the view Which fields you can see here So email field Boolean field There are many selections In this exactly what value you want to take Or what to show from database That depends So now what we do Remove it So that django actually has a form So we refreshed and saw That we have all the values Now as soon as I suppose selected So here Small ginger tea I think should be selected Ok, it will be selected But not yet because we have not finished the whole work on the template See Now what is in django It needs a submit button So let's make a button here We put this button Search store And django needs a submit And this is also our type Which is Submit Submit Ok So search store is ok But ok, work is going on So now you can't send it Why can't you send it Because you have not rendered the form properly That is a little issue of CSS But after forms you get more options Like after forms you put a dot here So you have one option As underscore p Yes, this is a very interesting option Because it is rendering better and sometimes better Ok, still a problem will come If you search store it You will get an error CSRF verification failed By default django Proves every form That you could not do any injection And could not hit vulnerability So whenever you use a form with django You always have to give a CSRF token You don't have to manually Inject this token Django does it for you Whenever you make a form You have to give it You don't have any special option So now I refresh it Cancel So we go to Chai stores Now select small ginger tea And send it Oops, still issues Our form is not submitting properly Let's see Now another variable Let's worry about it Another variable Stores I know that stores is a simple array I can loop it If there is a store I will do a conditional rendering So we go to django if If Paste Ok, no suggestion So here Block If Will I get a suggestion No So let's go to classic Ok First block if If we have stores If there are stores Then on that basis We will do a conditional rendering Before I forget End if This is the most boring thing In templating engine You have to do end if and end blocks Now this is done Now we take h2 What is h2 Stores Available We save it Stores available Because you have that variable After coming here we do a simple loop To define an unordered list In all the stores So what to do Take an unordered list Go to it For Unnamed Block And in this block Remove it First we Take a loop here for Store In Stores And here enter Enter And here we do it End For If we get some more suggestions then it would be good And here we can do Take a simple li And here we inject values Whatever our value will be Store.name And location Keep it Only two things Store.location So hopefully Now as you are selecting You should get values Large masala tea And medium masala tea So it is searching But actually it is white So here it is Having some problem I will do one thing It is CSS issues We take one more here CD, Chai or Django And python Manage.py Tailwind start I think tailwind should Make things better Continue So we go with tailwind Because the issues Are coming only for visibility Form For this whole content I have to Make color white So let me see How to make it black I am not focusing on CSS Because it takes time But I have kept a class on a simple form What should I do Make the text black So what happened The text is black But the text of select chai and search store Is also black So medium chai As you submit large masala tea You get it on jaypur store Ginger tea And medium Delhi For peace of mind We will go to admin panel And make a store So that we get to know more values So we make a store And go to Mumbai Mumbai And here Mumbai store And here we will keep only a large tea So select large tea And Mumbai should come And add it Congratulations Now we know If I select large So let's come here Select large masala tea And search store And see now we have jaypur And Mumbai location So I think you got to know How stores work I will give you a small summary Because our focus Is not on UI When we make a project Now we understand the flow How it flows To make a form You make a form And these are the fields Now we have a tea field But there can be multiple fields So when you get the form You associate it directly With all the tea objects You can also associate it with multiple values But when you do it You associate it with the value But jango is not that intelligent We want to force jango I will talk about this in detail In the next video Now I know How I have a field Whether it is a model choice field Or a character field After that I have to take this form To views When you handle forms in views You have to see two cases First case You have a basic form Which you took from there And passed it So all the fields in the tea field You have to pass it And pass it on the view Another case When the user has submitted the form What to do First you detect Post method, get method Which method we have to work on We handle all that Once this work is done We have to put queries We have put a basic query But you can fetch the data We have passed it This data passing Has nothing to do with form This is a basic variable We have shown the loop So in this section We have not talked about form Only this One more thing You can render the form in different ways You can render it as a paragraph Important thing is You have to pass CSRF token How does CSRF token look Let's see When you right click And go to inspect You will see Form Let's bring it to the side And bring it To the right side You will see all your forms You will see an input type Hidden This is a middleware token It automatically injects middleware And the more you see the form The more you will see the change in the value Every time when the form is reloaded A unique value is generated Which saves us from CSRF attack That the form we submitted Has come from our front end And is going to our back end This is a small injection It is a good thing We have a label, select, require field HIRIT This is an interesting talk I think This video has given you Some knowledge enhancement You will get the documentation Forms are a bit complex In Django It is not that easy to handle There are many courses for forms But I think you have got enough knowledge As we will do more projects Subscribe for more videos See you in the next video"
+}

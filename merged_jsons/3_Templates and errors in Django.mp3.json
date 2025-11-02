@@ -1,0 +1,1489 @@
+{
+    "chunks": [
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 0.0,
+            "end": 18.0,
+            "text": " Hello, how are you all?  Welcome to Chai and Code, our unique YouTube channel  If you haven't subscribed to our channel yet, then please do it now  Tell your friends to subscribe to our channel so that we can bring more interesting videos  We are running a Jango series right now"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 18.0,
+            "end": 37.0,
+            "text": " The rest of the videos are on a different channel  This video is a part of the Jango series  In the last video, we saw how Jango is set up  We used UV, which is quite modern, popular and fast  We saw about the file structure, how the settings are, the URL files and many more"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 37.0,
+            "end": 63.0,
+            "text": " In this video, we will see how the flow structure of Jango is so that you don't face any problems in the application  No matter how complex the application is, the flow of Jango is exactly the same  I have made a diagram for you, we will understand it slowly  After that, we will implement the diagram in the code so that we can understand the flow and structure  It's a fun video, you will enjoy it"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 63.0,
+            "end": 83.0,
+            "text": " I am taking the target of 300 comments, hopefully you will complete it as soon as possible  Let's share the screen and discuss the diagram first  Because it is a very fun diagram  We will not see this diagram completely, we will see it one by one  I will put it aside so that you don't face any problem"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 83.0,
+            "end": 107.0,
+            "text": " Jango is a web framework  All the web frameworks use a tech stack under the hood  So that they can find out about the request, response, browser, etc.  By default, Python can't find out which request you have, which response you have  There are some event triggers that do this work behind the scenes"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 107.0,
+            "end": 122.0,
+            "text": " We have a very simple flow, Jango doesn't have a thousand things  It's just a simple flow, 3 or 4 things are involved in it  That's it, and they are always involved  That's why Jango is so reliable and fast  This is your user"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 122.0,
+            "end": 141.0,
+            "text": " They need a request response model  That means they have a website, either they want to log in to it or see a tweet or something like that  So they fired their browser and sent a request directly  Now this request goes to a website  Now behind the scenes, there is Nginx, Kadi, any server running on the website"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 141.0,
+            "end": 166.0,
+            "text": " We don't have anything to do with it  When we deploy, we will see that thing  So this request goes to Jango  Now what Jango does is, it finds out which resource you want to access from where you got the request  Like you accessed the slash login, slash register, slash tweet, slash one, whatever the tweet ID is, you accessed it"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 166.0,
+            "end": 187.0,
+            "text": " On that basis, Jango has an internal URL resolver  This URL resolver doesn't do anything, it just resolves the URL  Whether you want to log in or slash where you want to go  You never come to this URL resolver, 99% chance that you will never see it or access it  This core is inbuilt in Jango"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 187.0,
+            "end": 205.0,
+            "text": " We don't see this file, nor do we have access to it by default  We get it if we want, but we don't come to it  This URL resolver finally accesses another file, which is called URL.py  So we have this request from here  The request says, resolve the URL and see where it should go"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 205.0,
+            "end": 224.0,
+            "text": " Then we get the URL.py file  Now this URL.py file, we saw here  The way we had slash admin, we can have more resolvers of URL  But it's not necessary that you always come to this URL.py, this main file  Many times this URL file redirects you to another"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 224.0,
+            "end": 247.0,
+            "text": " Like I told you, Jango can have multiple small apps  So this URL.py can further redirect you to another URL file  Consider it as a modular code, not a big deal  So it's possible that you came here, it's possible that URL.py sent you directly here  Now this URL.py file sends you to a file called views.py"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 247.0,
+            "end": 263.0,
+            "text": " Now this views.py file is not visible anywhere  But it's not that it doesn't exist, we can make it if we want  So I have Jango, remember where I am, what is my level, see that  Here I am in my project, this is my complete directory  Project is in the directory"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 263.0,
+            "end": 281.0,
+            "text": " I opened this, I will make a new file here so that we can understand it  I made this views.py, it's name is views only  It can't be view, it can't be my view, it can't be your view, it can't be Chai view  Okay, we went to the views.py file  So what does views.py file do?"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 281.0,
+            "end": 298.0,
+            "text": " This is your main controller, main logic where it will be written  It's possible that you have to send a response directly, welcome to Jango  Or it's possible that you have to send via models.py  We don't have the models file now, it will eventually come  Through this, we can contact DB"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 298.0,
+            "end": 320.0,
+            "text": " Or your views.py file can also contact DB  It has a complete option, we have ORMs in Jango, we will discuss them too  But now the main thing is that the views.py file has the access to take something from the database  To save something in it, all our logic is written here  Once you have written the logic, then you have to send a response to the front end"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 320.0,
+            "end": 338.0,
+            "text": " And this response comes straight to Jango  And Jango sends this response, that's it  And sometimes it uses some templates, which we will do too  And via template it sends you the response  So this is a complete complex architecture that is behind the scenes in Jango"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 338.0,
+            "end": 358.0,
+            "text": " Now if I want to make a small architecture of this  How will we do this, it's very easy  You have a user, this is our user  This user sent a request, so suppose we got a request  Now where will this request go, it will go to the urls.py file"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 358.0,
+            "end": 382.0,
+            "text": " Who will the urls.py file call, it will call the views  That's it, so let's make arrows on it  The user sent a request, the request went to our url.py  And the url.py sent it to the views  What will the views do, it will send a response to the url"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 382.0,
+            "end": 399.0,
+            "text": " So it came back to the url  We will not accept the url, it will send you a response  So we will send it here and take a simple response  Here, the response is sent to you, that's it  And this is your complete Jango"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 399.0,
+            "end": 416.0,
+            "text": " That's it, in 4 lines, our Jango is complete  You get a request, the request hits the urls.py  The urls.py can call the views  Views are different ways of how it will send you a response  It may send a query from the database, it may send a direct response"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 416.0,
+            "end": 430.0,
+            "text": " It may send through templates, it may send through something else  This is your complete logical structure  So if you ever want to understand Jango, if you understand this  That's it, nothing else to do  This is all the work of Jango"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 430.0,
+            "end": 445.0,
+            "text": " And if you want to understand in more detail, then this is the complete structure  You may have made a diagram in which you are taking your notes  So this is our work  Now let's follow this diagram  First, we go to this views.py"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 445.0,
+            "end": 456.0,
+            "text": " Because here we will write our logic  So we write logic, how will we work  After that we will go to urls.py  Which view to hit on which url  And then we will see the request response"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 456.0,
+            "end": 469.0,
+            "text": " It's a very basic work  So let's go to the code one  So we have views.py on the code  Look carefully, this is the level of views.py  This level has a lot of problems"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 469.0,
+            "end": 483.0,
+            "text": " The name is views.py  If there is some other name, then the problem comes  It's a framework, the name is restricted in the framework  Okay, so you understood this  Now let's go to write some code"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 485.0,
+            "end": 493.0,
+            "text": " So let's write the code  It's a very basic python code  Hope you know python  If you don't know, then you will understand a lot  Many people learn python on the go"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 493.0,
+            "end": 507.0,
+            "text": " So maybe this is the same phase for you  So first of all, we have to take django.http  Where will it come from?  Import will come from http response  There is also a request"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 507.0,
+            "end": 523.0,
+            "text": " Now we are not on request, now we just have to give response  So we got this, now you can give response  As soon as you get http request or response  Means you are ready to take both request and response  Compared to if you are coming from any other programming language"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 523.0,
+            "end": 535.0,
+            "text": " Then you have to take request, response, etc.  In python, you don't have to do this  Now we have to make some methods or you can say function  So my first function is home  You have to add request here"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 535.0,
+            "end": 549.0,
+            "text": " So that you know that I have to return this home on a request  And after that I said return  Now what do you have to return?  I have to return http response  What kind of response do you have to return?"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 549.0,
+            "end": 567.0,
+            "text": " Let's do one thing for now  We say directly that you do a small response  Which is hello world  And let's say this  You are at chai or django homepage"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 567.0,
+            "end": 577.0,
+            "text": " Now what will I do with this line?  I will copy it here because I am going to create 2-3 more responses  Or I will copy and paste this whole thing  That will also be fine  So this is what you have"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 577.0,
+            "end": 588.0,
+            "text": " Now what will you have to do in this way?  In this way, you can make more routes if you want  We take 2 more  Let's add a gap between them  So take this"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 588.0,
+            "end": 598.0,
+            "text": " This route will be about  The name of these methods can be anything  In that case, you don't have a restriction  You call it about, you call it chai about, call it superman  Nobody is stopping you"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 598.0,
+            "end": 607.0,
+            "text": " Yes, you can also say nagraj  There is no such load in it  We go to the second and write another contact page  Now what do we do?  Let's change it a little"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 607.0,
+            "end": 620.0,
+            "text": " This is django's about page  And this is our contact page  Okay  Now one thing is done  Whatever I had to write in views"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 620.0,
+            "end": 629.0,
+            "text": " I have written it now  I don't have to do anything more than this  Further, we do not need to export anything in python  And all that is not needed  So I have done a very basic job"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 629.0,
+            "end": 636.0,
+            "text": " Now let's go next  What do you want to do next?  Next you have to handle URLs  Okay  So URLs are not such a big thing"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 636.0,
+            "end": 646.0,
+            "text": " You can handle it easily  So these are our URLs  We have also given some comments here  And we also get some examples  That you took admin from django"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 646.0,
+            "end": 652.0,
+            "text": " Admin was used here  Okay  Path has been used  As such, no path is being used now  But we still keep it"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 652.0,
+            "end": 662.0,
+            "text": " Now when you have to use views  Because the URL will come  Then I don't know which one to hit  So you have to tell in the URL  Whether you want to hit the about method"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 662.0,
+            "end": 667.0,
+            "text": " Or home method  It is very basic  So what we do here  We write a path  So here is our path"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 667.0,
+            "end": 674.0,
+            "text": " Which path will be?  Our path will be home route  You write home route like this  We don't do this in python  Or in django specially"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 674.0,
+            "end": 683.0,
+            "text": " Now we need views  But we don't have views  So let's import first  From our current directory  You import views"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 683.0,
+            "end": 689.0,
+            "text": " Here are the views  Now which one on this route  You have to add  So I have to add views  Dot"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 689.0,
+            "end": 697.0,
+            "text": " And you have access to different routes  Home  Along with this  We also pass an optional parameter  Which will help you a lot in the future"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 697.0,
+            "end": 703.0,
+            "text": " That is name  That of this entire route  Or this entire method  What name do you want to give  I want to give its name home"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 703.0,
+            "end": 708.0,
+            "text": " This last line  If you don't even write  Then you will not get any error  But its use case  We will see after a while"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 708.0,
+            "end": 714.0,
+            "text": " How it comes in use  That's it  That's all  Your URL handle is done  Now you know"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 714.0,
+            "end": 719.0,
+            "text": " If you want to handle about  How will you do  So here  This is done  Let's call it about"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 719.0,
+            "end": 725.0,
+            "text": " And further here  Let's also bring it about method  And path  Path is about  So as above"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 725.0,
+            "end": 730.0,
+            "text": " Admin is written  Here is about and slash  It is important to write slash  Leaving home route  After that"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 730.0,
+            "end": 738.0,
+            "text": " Here you have contact  Contact  And here view b  Contact  Oops"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 738.0,
+            "end": 747.0,
+            "text": " Contact  Did we write contact there?  Contact  And its name will be  Contact"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 747.0,
+            "end": 754.0,
+            "text": " So we have this  We forgot to put comma  So there is no big problem  Let's also put this  So this is done"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 754.0,
+            "end": 760.0,
+            "text": " Now we have route  So this way  You have routing  And your homepage is done  That's it"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 760.0,
+            "end": 767.0,
+            "text": " That's all  Now let's see  How we have the matter  We open our terminal here  And how to run"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 767.0,
+            "end": 775.0,
+            "text": " So if you know  Last time we saw python  And here you can do it straight  Manage.py  Now see carefully"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 775.0,
+            "end": 781.0,
+            "text": " I am hitting tab  But I am not getting manage file  Why not?  Because as soon as I do ls  I don't have that file"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 781.0,
+            "end": 789.0,
+            "text": " I have to go to that folder  This is a very common mistake  Please don't do it  See if you have access to manage.py file  Or not"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 789.0,
+            "end": 796.0,
+            "text": " So we go here  In Chai and Django  I did ls  Now I have manage.py file  Who has command access"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 796.0,
+            "end": 804.0,
+            "text": " Run server  So we come here python  And through manage.py file  We call it run server  As you say run server"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 804.0,
+            "end": 812.0,
+            "text": " You know  We will see about in migration and errors later  There are no errors  There is only warning  For now we come to this route"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 812.0,
+            "end": 819.0,
+            "text": " And access  Okay  You go to this url  So see we reached very easily  Hello world"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 819.0,
+            "end": 826.0,
+            "text": " You are at Chai and Django homepage  Can you see?  Okay  Zoom is also a little  So we will do a little"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 826.0,
+            "end": 832.0,
+            "text": " You must be seeing a little  Okay  There is a lot of 400% zoom  But at least it is visible  Now further"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 832.0,
+            "end": 839.0,
+            "text": " If I have to go on this route  So I can go on more routes like this  Suppose  We go here  Slash"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 839.0,
+            "end": 847.0,
+            "text": " About  So we went to slash about  So  Hmm  Slash about"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 851.0,
+            "end": 859.0,
+            "text": " Let's copy  Let me change the url please  Slash about  Yes  So we came to the about page"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 859.0,
+            "end": 867.0,
+            "text": " And in the same way  And in the same way  You know that you can also go to contact  So we went to contact  So all three of our pages are being rendered"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 867.0,
+            "end": 875.0,
+            "text": " Although not so good renders  But at least our work is done  So we come to this diagram  So see  Made the same views"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 875.0,
+            "end": 881.0,
+            "text": " Enter urls  And sent the response  That's it  That's all the work  So I think now you must have understood"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 881.0,
+            "end": 888.0,
+            "text": " That okay  Django was hit with us  Url was resolved  It hit urls.py  Further we did not have any url.py"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 888.0,
+            "end": 896.0,
+            "text": " So we got from there  Which view to load  View has not taken any access to model.py  Because it did not have it  It has to send the response from there"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 896.0,
+            "end": 904.0,
+            "text": " Response is always sent by views  Views sent the response  No template was used  Sent the response straight  So for now the matter is fine"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 904.0,
+            "end": 911.0,
+            "text": " There is no such bad thing  That yes  Whatever we wanted to do  That was working with us  Now what is the story of these templates"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 911.0,
+            "end": 919.0,
+            "text": " See Django's templates  Are one of the most powerful templates  Through which work is done  Which you see in next.js  That you have layout files"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 919.0,
+            "end": 926.0,
+            "text": " Or such files  So in Django  Templating system is very good  And we will discuss more on their templates  What are these templates"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 926.0,
+            "end": 934.0,
+            "text": " How are they used  Used extensively  So let's use the templates  How can we do it a little  So see for templates"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 934.0,
+            "end": 941.0,
+            "text": " First we close all these files  Okay  Now where to make templates  See where to make templates  It will depend on"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 941.0,
+            "end": 950.0,
+            "text": " How are you looking at the files  And what have you set  This setting can be changed completely  As such it is not a big deal  So first of all follow"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 950.0,
+            "end": 958.0,
+            "text": " See where I am now  See this carefully  I am on manage.py file  And  This chai and django"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 958.0,
+            "end": 967.0,
+            "text": " Internal folder is here  So first of all  I am right clicking on my root folder  And I am making a new folder  The name of the folder is templates"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 967.0,
+            "end": 976.0,
+            "text": " Apply s  You can also change it  I will tell you that too  But for now we are keeping templates here  Because we are creating files here"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 976.0,
+            "end": 984.0,
+            "text": " So we make another file or folder here  We name it  Oops  I don't want to go inside  This happens many times"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 984.0,
+            "end": 992.0,
+            "text": " I have to make a new folder on this  And I name it static  Okay  Now in static  Our CSS and JavaScript will go"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 992.0,
+            "end": 1001.0,
+            "text": " And our templates  Our html files will go there  These are completely changed  When you learn to make further sub apps  I will discuss it again"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1001.0,
+            "end": 1009.0,
+            "text": " Don't worry too much now  It is very easy  We have made a new file in templates  We named it  You can name the file as you like"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1009.0,
+            "end": 1016.0,
+            "text": " It is not necessary to keep the index  You can keep superman if you want  This is our html  So here is the basic html  We go here"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1016.0,
+            "end": 1029.0,
+            "text": " And I wrote it chai and django  And we come here further  Let's take a simple h1  And write chai and django in it  Everyone knows how to write this html"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1029.0,
+            "end": 1038.0,
+            "text": " We are not worrying about CSS now  We just need a basic one  So that chai and django will be written  That's it  Now what I have to do"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1038.0,
+            "end": 1047.0,
+            "text": " I want to load this template  And return it  Okay  So what you have to do  First come here"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1047.0,
+            "end": 1056.0,
+            "text": " And views will do this  Till now you were sending  Http response  Now what I have to do  I have to render a template"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1056.0,
+            "end": 1064.0,
+            "text": " It is a technical jargon term  Render means sending the html page  So for that we have to take  Django's help  And there are some shortcuts in Django"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1064.0,
+            "end": 1072.0,
+            "text": " These shortcuts are very powerful  You will use it in many places  We import this from where  From render  So from Django shortcuts"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1072.0,
+            "end": 1078.0,
+            "text": " We have to import one thing  Which is called render  Now render has come to you  So you can do this return  Comment"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1078.0,
+            "end": 1085.0,
+            "text": " We don't need you  You are something special  We want to return something else  So here while returning  What can you do"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1085.0,
+            "end": 1093.0,
+            "text": " Return it using render  So here what do you want to render  You will get a request  So you have to take the request  So take the request"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1093.0,
+            "end": 1103.0,
+            "text": " Plus what I want to do  I want to return a template  Which is called index.html  Now surprisingly  You should have a thought"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1103.0,
+            "end": 1112.0,
+            "text": " That how does Django know  Internally that I have kept it in templates  I have to return the index file  So some magic is happening behind the scenes  Of course it is happening"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1112.0,
+            "end": 1120.0,
+            "text": " A lot of magic is happening  But without modifying any settings  We have to modify  We have to load index.html from here  Templates"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1120.0,
+            "end": 1129.0,
+            "text": " Is this written in Django pre-default  Yes, it is written mostly  But now we face some errors  Exploratory is our learning  So we explore"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1129.0,
+            "end": 1137.0,
+            "text": " How things can be done from where  Let's see what errors come  Let's go to the homepage  How do we go here  So we have"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1137.0,
+            "end": 1143.0,
+            "text": " I think  Here it is  Contact page is being served correctly  There is no problem in it  Hopefully it should not be"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1143.0,
+            "end": 1150.0,
+            "text": " So contact page  It is running correctly  The problem we should face  Should come on this homepage  On the homepage"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1150.0,
+            "end": 1159.0,
+            "text": " Now it has zoomed a little more  Let's reduce it a little  So it said that the template does not exist  Index.html  It is true that the template does not exist"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1159.0,
+            "end": 1167.0,
+            "text": " But see how many good errors you get  Because we have written debugging true  So you know completely  From where, what is the response  What kind of"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1167.0,
+            "end": 1173.0,
+            "text": " Very good logs  Very good settings  You get everything here  Now let's go  Why this template did not load"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1173.0,
+            "end": 1181.0,
+            "text": " Because if we load directly  Then we will never face this error  If you never face this error in life  Then how will you know  Yes, these errors can also come"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1181.0,
+            "end": 1188.0,
+            "text": " The more errors you see  The better the work will be  Okay, now let's go  To resolve this error  See you wrote the template"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1188.0,
+            "end": 1193.0,
+            "text": " Wrote everything  There was no mistake in it  Everything was right  But what did you do  Everything is written correctly"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1193.0,
+            "end": 1202.0,
+            "text": " But the main project  Forgot to tell him  From where to load templates  So we will go to its settings.py file  Here you do not have to understand the entire file"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1202.0,
+            "end": 1211.0,
+            "text": " It is not necessary to understand at once  We understand slowly  Now go down a little here  You will get a section  Where it will be written templates"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1211.0,
+            "end": 1218.0,
+            "text": " And the template's error will be there  And here jango templates  Directories, app directories  All this will be written  What we will do"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1218.0,
+            "end": 1225.0,
+            "text": " Will tell  Which jango templates  Are found in which directories  Defaults are also there  But you have to mention manually"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1225.0,
+            "end": 1260.0,
+            "text": " What am I doing for now  I am writing only in single quotes  Templates  Yes "
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1260.0,
+            "end": 1410.0,
+            "text": "    "
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1410.0,
+            "end": 1416.0,
+            "text": " So take this  Take this  White color is done  And apart from this  We also take an h1"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1417.0,
+            "end": 1425.0,
+            "text": " And whenever h1 will be there  In it we will center the text align  And also make it a little bigger  Our font size  How much to take"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1425.0,
+            "end": 1432.0,
+            "text": " Take 2m  Okay, let's take 2m  I am not interested in writing more css  I know you too  No special interest"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1432.0,
+            "end": 1438.0,
+            "text": " Because eventually we will learn  How can you load tailwind  Or you can upload more styling  So as such  There is no problem"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1438.0,
+            "end": 1446.0,
+            "text": " Now our matter comes  If css has come here  How can it be loaded  So you go straight  In your template"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1446.0,
+            "end": 1451.0,
+            "text": " In the index  And tell it  You load it  Okay  We come here"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1451.0,
+            "end": 1457.0,
+            "text": " Link  Colon css  And take this  But the thing is  All this is fine"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1457.0,
+            "end": 1463.0,
+            "text": " How do I give a reference of style  Because directly  I will go up one folder  Will it work  Let's see"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1463.0,
+            "end": 1471.0,
+            "text": " That we told this file  Do one thing  Go to one directory back  Go to one directory back again  And there you will get a static file"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1471.0,
+            "end": 1477.0,
+            "text": " And you will get style.css  Hmm  Will it work  Let's see  Reload"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1477.0,
+            "end": 1483.0,
+            "text": " Hmm  It is not working here  Some errors came  Errors are also there  That static style.css"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1483.0,
+            "end": 1491.0,
+            "text": " Was tried to get  But actually  I did not get anything  So this approach is not working  This thing is 100% decided"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1491.0,
+            "end": 1496.0,
+            "text": " So here  A special syntax comes  A structure comes  Which is called  Templating engine"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1496.0,
+            "end": 1503.0,
+            "text": " And what is that templating engine  You don't have to do anything special  In Django  This html file only  Works as a template engine"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1503.0,
+            "end": 1512.0,
+            "text": " Template engine means  That you can inject anywhere  Your programmatically code  This was a very common technique  You must have seen"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1512.0,
+            "end": 1518.0,
+            "text": " Index.php file used to be there  In the early days  And you put a question mark like this  And  By doing php and all"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1518.0,
+            "end": 1529.0,
+            "text": " And you could load some part of php  The same thing happens in Django  That if you want to add code  Or inject some data from views  Then you inject the template"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1529.0,
+            "end": 1538.0,
+            "text": " Or inject the code  So what we will do  In this href  We will inject  How is it injected"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1538.0,
+            "end": 1546.0,
+            "text": " You need curly braces  And two percentage signs  It is not always constant  Some things change  But mostly you will see this"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1546.0,
+            "end": 1556.0,
+            "text": " Curly braces and percentage  After this there are some keywords  Like one keyword is static  This static keyword tells  That I am loading some static asset"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1556.0,
+            "end": 1563.0,
+            "text": " Which static asset?  The same  That I have a file  Which is called style.css  Load that"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1563.0,
+            "end": 1571.0,
+            "text": " Ok, this is also correct  That you understood  Now we come to  Actually, will this work or not  Or how will it work"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1571.0,
+            "end": 1580.0,
+            "text": " We still have two mistakes in this  But we will not see now  We will see as soon as the errors come  See, telling you directly  Then it is not fun to learn"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1580.0,
+            "end": 1587.0,
+            "text": " Because I told you a straight sequence  Always follow this  See those errors  Because of which you will become  An actual programmer"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1587.0,
+            "end": 1594.0,
+            "text": " It is fun in this series  First tell me this  That when we take such a good explanation  In full detail  Then so much fun"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1594.0,
+            "end": 1601.0,
+            "text": " Comes in the live class  But ok, hope you are having fun here too  Let's see this  We loaded  Now there is more problem"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1601.0,
+            "end": 1608.0,
+            "text": " That what is this invalid block  Static  Did you forget to register the load this tag  Or something like this  So we will see"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1609.0,
+            "end": 1617.0,
+            "text": " Yes  So actually what is this  This line  Look at it carefully  What is this?"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1617.0,
+            "end": 1626.0,
+            "text": " Do I have to load something too  Yes, absolutely  Whenever you use any static asset  Or static keyword  So the template engine has to be told first"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1626.0,
+            "end": 1633.0,
+            "text": " That you have to load static assets  So always  Before the top of the file  Even before the doc  What do you do"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1633.0,
+            "end": 1640.0,
+            "text": " Take curly braces  Take percentages  And tell it that  I will load static assets  So we will load static"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1640.0,
+            "end": 1649.0,
+            "text": " Here we loaded static  This is also a templating engine again  Ok, this is also loaded  Now let's come to reload  Now we have chai and django"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1649.0,
+            "end": 1656.0,
+            "text": " That error is over  But still my CSS file  Is not being implemented  Ok  We come here"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1658.0,
+            "end": 1664.0,
+            "text": " So if you see  What do you have  It is visible at the bottom  Get static style.css  So we come here"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1665.0,
+            "end": 1672.0,
+            "text": " Right click  And see what is in the page source  Now see in the page source  The style sheet I have  Is loading"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1672.0,
+            "end": 1678.0,
+            "text": " Where is it loading  And how is it loading  The style sheet you have  Is loading  Slash static"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1678.0,
+            "end": 1686.0,
+            "text": " Slash style.css  Hmm  In static style.css  But there is no file here  Either bring the whole path"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1686.0,
+            "end": 1692.0,
+            "text": " Or bring it from dot slash  Because the whole path  Or whatever your localhost  Whatever your directory  Or whatever your localhost name is"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1692.0,
+            "end": 1698.0,
+            "text": " Bring the whole file  How will you be able to access  In this way  Because you are not able to access  Because this path does not exist"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1698.0,
+            "end": 1707.0,
+            "text": " This whole path should be accessible  Only then we can come here  Ok  So now we go back  Ok, we have come to chai and django"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1707.0,
+            "end": 1712.0,
+            "text": " And we will read about  A final setting  And where are the settings  You know  It is always in the same file"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1712.0,
+            "end": 1718.0,
+            "text": " In settings.py  Now how can we  Do the settings here  See what is the problem  The problem is"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1718.0,
+            "end": 1723.0,
+            "text": " You have scrolled once  Not more  You have scrolled once  Go down more  Here you will get"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1723.0,
+            "end": 1730.0,
+            "text": " Static URL  That static URL  Always starts like this  But to start the static URL  You have to tell some"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1730.0,
+            "end": 1736.0,
+            "text": " Static directories  That my static asset  Is kept there  And whenever you load it  Load it from a complete path"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1736.0,
+            "end": 1742.0,
+            "text": " So what we will do  First of all  Go to the top of the file  And a by default library  You have available"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1742.0,
+            "end": 1748.0,
+            "text": " Which is OS  What will happen with this OS library  See you have  A base directory  Always"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1748.0,
+            "end": 1753.0,
+            "text": " Which tells you the path  How things will be resolved  Or what is the path  Of my entire application  If you will ever deploy"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1753.0,
+            "end": 1758.0,
+            "text": " Then also you will not have  To make much changes  Because the base directory  Resolves by itself  From the parent"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1758.0,
+            "end": 1763.0,
+            "text": " This is the best  Benefit of Django  That your development  Is very close to your production  So what we will do"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1763.0,
+            "end": 1768.0,
+            "text": " We will give a new setting  Here  Scroll and come  Where there is a static URL  Now according to"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1768.0,
+            "end": 1773.0,
+            "text": " The production practices  You should write this  Here  But many times  We have seen"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1773.0,
+            "end": 1778.0,
+            "text": " That the static URL  Is kept here  And the static URL  Is kept here  So what we will do"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1778.0,
+            "end": 1783.0,
+            "text": " We have learned  From somewhere  Or seen from somewhere  You add this  At the end of the line"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1783.0,
+            "end": 1788.0,
+            "text": " No, you should not do this  It does not give any effect  But when someone  Is looking at your code  Then he expects"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1788.0,
+            "end": 1793.0,
+            "text": " That some settings  Will be at a particular place  So it is expected  Here  Now here we have"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1793.0,
+            "end": 1798.0,
+            "text": " A new setting  Which we will add  Which is  Static files  Write this carefully"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1798.0,
+            "end": 1803.0,
+            "text": " Underscore  D-I-R-S  So this  I also have to see  Many times"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1803.0,
+            "end": 1808.0,
+            "text": " It is not that  I also remember  Many times  I remember  Many times"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1808.0,
+            "end": 1813.0,
+            "text": " In Django documentation  I go and see  That was it files or files  Was it dir or dir  After making 2-4 projects"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1813.0,
+            "end": 1818.0,
+            "text": " I remember  But many times  When you are working  In JS a lot  And you go back here"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1818.0,
+            "end": 1823.0,
+            "text": " So let's see  It is not a bad thing  Now how to load this  To load this  First of all"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1823.0,
+            "end": 1828.0,
+            "text": " Give square brackets  Like this  And after that  I will say  What you do"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1828.0,
+            "end": 1833.0,
+            "text": " Use OS  And there is a path  Which you have to join  Okay  Path.join"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1833.0,
+            "end": 1838.0,
+            "text": " What all do you have to join  One thing  You have a base directory  Which is already defined above  Along with that"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1838.0,
+            "end": 1843.0,
+            "text": " You add this static  So you are static  Now what will happen  Now your whole  Base directory"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1843.0,
+            "end": 1848.0,
+            "text": " Whole file  It knows  From where to load  Static assets  And whenever it is loaded"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1848.0,
+            "end": 1853.0,
+            "text": " We have to give the path  Of the whole file  Once I gave this access  Now let's go here  And reload"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1853.0,
+            "end": 1858.0,
+            "text": " Now our CSS  Is injected here  Now whether it is CSS  Or JavaScript  You know all the flow"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1858.0,
+            "end": 1863.0,
+            "text": " How can we inject it  So let's come here  Now in case  If you assume  Static JavaScript"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1863.0,
+            "end": 1868.0,
+            "text": " Is loaded  Or you want to make  Further folder in it  Then you know  How can I work"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1868.0,
+            "end": 1873.0,
+            "text": " And how I have to  Bring changes in the index  I have static  I have loaded it  And now load"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1873.0,
+            "end": 1878.0,
+            "text": " Style.css from here  Or load from CSS  Or load JavaScript  We can also load that  So at least"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1878.0,
+            "end": 1883.0,
+            "text": " Now you know  Everything from  The whole templating engine  And this too  You know most importantly"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1883.0,
+            "end": 1888.0,
+            "text": " That where  Which error comes  You are not  Resolving the errors  With your eyes closed"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1888.0,
+            "end": 1893.0,
+            "text": " You know  That loading  Is a very difficult thing  And you know  That you have to"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1893.0,
+            "end": 1898.0,
+            "text": " Read load static  Oh!  Maybe I forgot  To load static  You gave the solution"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1898.0,
+            "end": 1903.0,
+            "text": " Of that thing  Not by closing your eyes  And doing settings  No no  Exactly what is the problem"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1903.0,
+            "end": 1908.0,
+            "text": " What is the reason behind it  And how can I  Resolve it  When you understand this  Then you become a good programmer"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1908.0,
+            "end": 1913.0,
+            "text": " Okay  I hope  You understood Django  And how rapidly  Okay"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1913.0,
+            "end": 1918.0,
+            "text": " Take a small assignment  How will you go like this  So now we saw  That we have  Django's template"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1918.0,
+            "end": 1923.0,
+            "text": " Is loaded  Of index.html  So make this index file  A little more  And make a basic html"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1923.0,
+            "end": 1928.0,
+            "text": " You can do this much  Core.css  You can write this much  So now  A small assignment for you"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1928.0,
+            "end": 1933.0,
+            "text": " Is that  The views we have made  This about  And this contact  Till now"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1933.0,
+            "end": 1938.0,
+            "text": " We are sending HTTP response  Now it is your responsibility  That instead of sending response  You render some webpages  There"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1938.0,
+            "end": 1943.0,
+            "text": " Which webpages  Are totally on you  But yes  Do tell me  By tweeting"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1943.0,
+            "end": 1948.0,
+            "text": " Or  On insta  Or  Wherever you are  On LinkedIn"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1948.0,
+            "end": 1953.0,
+            "text": " That what kind of  Homepage have you made  What kind of  About us page have you made  What kind of"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1953.0,
+            "end": 1958.0,
+            "text": " Contact page  About page have you made  So this is your assignment  Do the assignment  When you do this assignment"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1958.0,
+            "end": 1963.0,
+            "text": " When you write comments  You show your engagement  Your dedication  That yes  I am not just watching"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1963.0,
+            "end": 1968.0,
+            "text": " The video  Sitting on the sofa  I am also working  With it  We learn from this"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1968.0,
+            "end": 1973.0,
+            "text": " Otherwise  You will get stuck  In tutorial hell  Tutorial hell does not mean  That don't watch the video"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1973.0,
+            "end": 1978.0,
+            "text": " Tutorial hell means  That watch it  And work with it  Do assignments  Okay"
+        },
+        {
+            "number": "3",
+            "title": "Templates and errors in Django",
+            "start": 1978.0,
+            "end": 1979.0,
+            "text": " See you in the next video"
+        }
+    ],
+    "text": " Hello, how are you all? Welcome to Chai and Code, our unique YouTube channel If you haven't subscribed to our channel yet, then please do it now Tell your friends to subscribe to our channel so that we can bring more interesting videos We are running a Jango series right now The rest of the videos are on a different channel This video is a part of the Jango series In the last video, we saw how Jango is set up We used UV, which is quite modern, popular and fast We saw about the file structure, how the settings are, the URL files and many more In this video, we will see how the flow structure of Jango is so that you don't face any problems in the application No matter how complex the application is, the flow of Jango is exactly the same I have made a diagram for you, we will understand it slowly After that, we will implement the diagram in the code so that we can understand the flow and structure It's a fun video, you will enjoy it I am taking the target of 300 comments, hopefully you will complete it as soon as possible Let's share the screen and discuss the diagram first Because it is a very fun diagram We will not see this diagram completely, we will see it one by one I will put it aside so that you don't face any problem Jango is a web framework All the web frameworks use a tech stack under the hood So that they can find out about the request, response, browser, etc. By default, Python can't find out which request you have, which response you have There are some event triggers that do this work behind the scenes We have a very simple flow, Jango doesn't have a thousand things It's just a simple flow, 3 or 4 things are involved in it That's it, and they are always involved That's why Jango is so reliable and fast This is your user They need a request response model That means they have a website, either they want to log in to it or see a tweet or something like that So they fired their browser and sent a request directly Now this request goes to a website Now behind the scenes, there is Nginx, Kadi, any server running on the website We don't have anything to do with it When we deploy, we will see that thing So this request goes to Jango Now what Jango does is, it finds out which resource you want to access from where you got the request Like you accessed the slash login, slash register, slash tweet, slash one, whatever the tweet ID is, you accessed it On that basis, Jango has an internal URL resolver This URL resolver doesn't do anything, it just resolves the URL Whether you want to log in or slash where you want to go You never come to this URL resolver, 99% chance that you will never see it or access it This core is inbuilt in Jango We don't see this file, nor do we have access to it by default We get it if we want, but we don't come to it This URL resolver finally accesses another file, which is called URL.py So we have this request from here The request says, resolve the URL and see where it should go Then we get the URL.py file Now this URL.py file, we saw here The way we had slash admin, we can have more resolvers of URL But it's not necessary that you always come to this URL.py, this main file Many times this URL file redirects you to another Like I told you, Jango can have multiple small apps So this URL.py can further redirect you to another URL file Consider it as a modular code, not a big deal So it's possible that you came here, it's possible that URL.py sent you directly here Now this URL.py file sends you to a file called views.py Now this views.py file is not visible anywhere But it's not that it doesn't exist, we can make it if we want So I have Jango, remember where I am, what is my level, see that Here I am in my project, this is my complete directory Project is in the directory I opened this, I will make a new file here so that we can understand it I made this views.py, it's name is views only It can't be view, it can't be my view, it can't be your view, it can't be Chai view Okay, we went to the views.py file So what does views.py file do? This is your main controller, main logic where it will be written It's possible that you have to send a response directly, welcome to Jango Or it's possible that you have to send via models.py We don't have the models file now, it will eventually come Through this, we can contact DB Or your views.py file can also contact DB It has a complete option, we have ORMs in Jango, we will discuss them too But now the main thing is that the views.py file has the access to take something from the database To save something in it, all our logic is written here Once you have written the logic, then you have to send a response to the front end And this response comes straight to Jango And Jango sends this response, that's it And sometimes it uses some templates, which we will do too And via template it sends you the response So this is a complete complex architecture that is behind the scenes in Jango Now if I want to make a small architecture of this How will we do this, it's very easy You have a user, this is our user This user sent a request, so suppose we got a request Now where will this request go, it will go to the urls.py file Who will the urls.py file call, it will call the views That's it, so let's make arrows on it The user sent a request, the request went to our url.py And the url.py sent it to the views What will the views do, it will send a response to the url So it came back to the url We will not accept the url, it will send you a response So we will send it here and take a simple response Here, the response is sent to you, that's it And this is your complete Jango That's it, in 4 lines, our Jango is complete You get a request, the request hits the urls.py The urls.py can call the views Views are different ways of how it will send you a response It may send a query from the database, it may send a direct response It may send through templates, it may send through something else This is your complete logical structure So if you ever want to understand Jango, if you understand this That's it, nothing else to do This is all the work of Jango And if you want to understand in more detail, then this is the complete structure You may have made a diagram in which you are taking your notes So this is our work Now let's follow this diagram First, we go to this views.py Because here we will write our logic So we write logic, how will we work After that we will go to urls.py Which view to hit on which url And then we will see the request response It's a very basic work So let's go to the code one So we have views.py on the code Look carefully, this is the level of views.py This level has a lot of problems The name is views.py If there is some other name, then the problem comes It's a framework, the name is restricted in the framework Okay, so you understood this Now let's go to write some code So let's write the code It's a very basic python code Hope you know python If you don't know, then you will understand a lot Many people learn python on the go So maybe this is the same phase for you So first of all, we have to take django.http Where will it come from? Import will come from http response There is also a request Now we are not on request, now we just have to give response So we got this, now you can give response As soon as you get http request or response Means you are ready to take both request and response Compared to if you are coming from any other programming language Then you have to take request, response, etc. In python, you don't have to do this Now we have to make some methods or you can say function So my first function is home You have to add request here So that you know that I have to return this home on a request And after that I said return Now what do you have to return? I have to return http response What kind of response do you have to return? Let's do one thing for now We say directly that you do a small response Which is hello world And let's say this You are at chai or django homepage Now what will I do with this line? I will copy it here because I am going to create 2-3 more responses Or I will copy and paste this whole thing That will also be fine So this is what you have Now what will you have to do in this way? In this way, you can make more routes if you want We take 2 more Let's add a gap between them So take this This route will be about The name of these methods can be anything In that case, you don't have a restriction You call it about, you call it chai about, call it superman Nobody is stopping you Yes, you can also say nagraj There is no such load in it We go to the second and write another contact page Now what do we do? Let's change it a little This is django's about page And this is our contact page Okay Now one thing is done Whatever I had to write in views I have written it now I don't have to do anything more than this Further, we do not need to export anything in python And all that is not needed So I have done a very basic job Now let's go next What do you want to do next? Next you have to handle URLs Okay So URLs are not such a big thing You can handle it easily So these are our URLs We have also given some comments here And we also get some examples That you took admin from django Admin was used here Okay Path has been used As such, no path is being used now But we still keep it Now when you have to use views Because the URL will come Then I don't know which one to hit So you have to tell in the URL Whether you want to hit the about method Or home method It is very basic So what we do here We write a path So here is our path Which path will be? Our path will be home route You write home route like this We don't do this in python Or in django specially Now we need views But we don't have views So let's import first From our current directory You import views Here are the views Now which one on this route You have to add So I have to add views Dot And you have access to different routes Home Along with this We also pass an optional parameter Which will help you a lot in the future That is name That of this entire route Or this entire method What name do you want to give I want to give its name home This last line If you don't even write Then you will not get any error But its use case We will see after a while How it comes in use That's it That's all Your URL handle is done Now you know If you want to handle about How will you do So here This is done Let's call it about And further here Let's also bring it about method And path Path is about So as above Admin is written Here is about and slash It is important to write slash Leaving home route After that Here you have contact Contact And here view b Contact Oops Contact Did we write contact there? Contact And its name will be Contact So we have this We forgot to put comma So there is no big problem Let's also put this So this is done Now we have route So this way You have routing And your homepage is done That's it That's all Now let's see How we have the matter We open our terminal here And how to run So if you know Last time we saw python And here you can do it straight Manage.py Now see carefully I am hitting tab But I am not getting manage file Why not? Because as soon as I do ls I don't have that file I have to go to that folder This is a very common mistake Please don't do it See if you have access to manage.py file Or not So we go here In Chai and Django I did ls Now I have manage.py file Who has command access Run server So we come here python And through manage.py file We call it run server As you say run server You know We will see about in migration and errors later There are no errors There is only warning For now we come to this route And access Okay You go to this url So see we reached very easily Hello world You are at Chai and Django homepage Can you see? Okay Zoom is also a little So we will do a little You must be seeing a little Okay There is a lot of 400% zoom But at least it is visible Now further If I have to go on this route So I can go on more routes like this Suppose We go here Slash About So we went to slash about So Hmm Slash about Let's copy Let me change the url please Slash about Yes So we came to the about page And in the same way And in the same way You know that you can also go to contact So we went to contact So all three of our pages are being rendered Although not so good renders But at least our work is done So we come to this diagram So see Made the same views Enter urls And sent the response That's it That's all the work So I think now you must have understood That okay Django was hit with us Url was resolved It hit urls.py Further we did not have any url.py So we got from there Which view to load View has not taken any access to model.py Because it did not have it It has to send the response from there Response is always sent by views Views sent the response No template was used Sent the response straight So for now the matter is fine There is no such bad thing That yes Whatever we wanted to do That was working with us Now what is the story of these templates See Django's templates Are one of the most powerful templates Through which work is done Which you see in next.js That you have layout files Or such files So in Django Templating system is very good And we will discuss more on their templates What are these templates How are they used Used extensively So let's use the templates How can we do it a little So see for templates First we close all these files Okay Now where to make templates See where to make templates It will depend on How are you looking at the files And what have you set This setting can be changed completely As such it is not a big deal So first of all follow See where I am now See this carefully I am on manage.py file And This chai and django Internal folder is here So first of all I am right clicking on my root folder And I am making a new folder The name of the folder is templates Apply s You can also change it I will tell you that too But for now we are keeping templates here Because we are creating files here So we make another file or folder here We name it Oops I don't want to go inside This happens many times I have to make a new folder on this And I name it static Okay Now in static Our CSS and JavaScript will go And our templates Our html files will go there These are completely changed When you learn to make further sub apps I will discuss it again Don't worry too much now It is very easy We have made a new file in templates We named it You can name the file as you like It is not necessary to keep the index You can keep superman if you want This is our html So here is the basic html We go here And I wrote it chai and django And we come here further Let's take a simple h1 And write chai and django in it Everyone knows how to write this html We are not worrying about CSS now We just need a basic one So that chai and django will be written That's it Now what I have to do I want to load this template And return it Okay So what you have to do First come here And views will do this Till now you were sending Http response Now what I have to do I have to render a template It is a technical jargon term Render means sending the html page So for that we have to take Django's help And there are some shortcuts in Django These shortcuts are very powerful You will use it in many places We import this from where From render So from Django shortcuts We have to import one thing Which is called render Now render has come to you So you can do this return Comment We don't need you You are something special We want to return something else So here while returning What can you do Return it using render So here what do you want to render You will get a request So you have to take the request So take the request Plus what I want to do I want to return a template Which is called index.html Now surprisingly You should have a thought That how does Django know Internally that I have kept it in templates I have to return the index file So some magic is happening behind the scenes Of course it is happening A lot of magic is happening But without modifying any settings We have to modify We have to load index.html from here Templates Is this written in Django pre-default Yes, it is written mostly But now we face some errors Exploratory is our learning So we explore How things can be done from where Let's see what errors come Let's go to the homepage How do we go here So we have I think Here it is Contact page is being served correctly There is no problem in it Hopefully it should not be So contact page It is running correctly The problem we should face Should come on this homepage On the homepage Now it has zoomed a little more Let's reduce it a little So it said that the template does not exist Index.html It is true that the template does not exist But see how many good errors you get Because we have written debugging true So you know completely From where, what is the response What kind of Very good logs Very good settings You get everything here Now let's go Why this template did not load Because if we load directly Then we will never face this error If you never face this error in life Then how will you know Yes, these errors can also come The more errors you see The better the work will be Okay, now let's go To resolve this error See you wrote the template Wrote everything There was no mistake in it Everything was right But what did you do Everything is written correctly But the main project Forgot to tell him From where to load templates So we will go to its settings.py file Here you do not have to understand the entire file It is not necessary to understand at once We understand slowly Now go down a little here You will get a section Where it will be written templates And the template's error will be there And here jango templates Directories, app directories All this will be written What we will do Will tell Which jango templates Are found in which directories Defaults are also there But you have to mention manually What am I doing for now I am writing only in single quotes Templates Yes So take this Take this White color is done And apart from this We also take an h1 And whenever h1 will be there In it we will center the text align And also make it a little bigger Our font size How much to take Take 2m Okay, let's take 2m I am not interested in writing more css I know you too No special interest Because eventually we will learn How can you load tailwind Or you can upload more styling So as such There is no problem Now our matter comes If css has come here How can it be loaded So you go straight In your template In the index And tell it You load it Okay We come here Link Colon css And take this But the thing is All this is fine How do I give a reference of style Because directly I will go up one folder Will it work Let's see That we told this file Do one thing Go to one directory back Go to one directory back again And there you will get a static file And you will get style.css Hmm Will it work Let's see Reload Hmm It is not working here Some errors came Errors are also there That static style.css Was tried to get But actually I did not get anything So this approach is not working This thing is 100% decided So here A special syntax comes A structure comes Which is called Templating engine And what is that templating engine You don't have to do anything special In Django This html file only Works as a template engine Template engine means That you can inject anywhere Your programmatically code This was a very common technique You must have seen Index.php file used to be there In the early days And you put a question mark like this And By doing php and all And you could load some part of php The same thing happens in Django That if you want to add code Or inject some data from views Then you inject the template Or inject the code So what we will do In this href We will inject How is it injected You need curly braces And two percentage signs It is not always constant Some things change But mostly you will see this Curly braces and percentage After this there are some keywords Like one keyword is static This static keyword tells That I am loading some static asset Which static asset? The same That I have a file Which is called style.css Load that Ok, this is also correct That you understood Now we come to Actually, will this work or not Or how will it work We still have two mistakes in this But we will not see now We will see as soon as the errors come See, telling you directly Then it is not fun to learn Because I told you a straight sequence Always follow this See those errors Because of which you will become An actual programmer It is fun in this series First tell me this That when we take such a good explanation In full detail Then so much fun Comes in the live class But ok, hope you are having fun here too Let's see this We loaded Now there is more problem That what is this invalid block Static Did you forget to register the load this tag Or something like this So we will see Yes So actually what is this This line Look at it carefully What is this? Do I have to load something too Yes, absolutely Whenever you use any static asset Or static keyword So the template engine has to be told first That you have to load static assets So always Before the top of the file Even before the doc What do you do Take curly braces Take percentages And tell it that I will load static assets So we will load static Here we loaded static This is also a templating engine again Ok, this is also loaded Now let's come to reload Now we have chai and django That error is over But still my CSS file Is not being implemented Ok We come here So if you see What do you have It is visible at the bottom Get static style.css So we come here Right click And see what is in the page source Now see in the page source The style sheet I have Is loading Where is it loading And how is it loading The style sheet you have Is loading Slash static Slash style.css Hmm In static style.css But there is no file here Either bring the whole path Or bring it from dot slash Because the whole path Or whatever your localhost Whatever your directory Or whatever your localhost name is Bring the whole file How will you be able to access In this way Because you are not able to access Because this path does not exist This whole path should be accessible Only then we can come here Ok So now we go back Ok, we have come to chai and django And we will read about A final setting And where are the settings You know It is always in the same file In settings.py Now how can we Do the settings here See what is the problem The problem is You have scrolled once Not more You have scrolled once Go down more Here you will get Static URL That static URL Always starts like this But to start the static URL You have to tell some Static directories That my static asset Is kept there And whenever you load it Load it from a complete path So what we will do First of all Go to the top of the file And a by default library You have available Which is OS What will happen with this OS library See you have A base directory Always Which tells you the path How things will be resolved Or what is the path Of my entire application If you will ever deploy Then also you will not have To make much changes Because the base directory Resolves by itself From the parent This is the best Benefit of Django That your development Is very close to your production So what we will do We will give a new setting Here Scroll and come Where there is a static URL Now according to The production practices You should write this Here But many times We have seen That the static URL Is kept here And the static URL Is kept here So what we will do We have learned From somewhere Or seen from somewhere You add this At the end of the line No, you should not do this It does not give any effect But when someone Is looking at your code Then he expects That some settings Will be at a particular place So it is expected Here Now here we have A new setting Which we will add Which is Static files Write this carefully Underscore D-I-R-S So this I also have to see Many times It is not that I also remember Many times I remember Many times In Django documentation I go and see That was it files or files Was it dir or dir After making 2-4 projects I remember But many times When you are working In JS a lot And you go back here So let's see It is not a bad thing Now how to load this To load this First of all Give square brackets Like this And after that I will say What you do Use OS And there is a path Which you have to join Okay Path.join What all do you have to join One thing You have a base directory Which is already defined above Along with that You add this static So you are static Now what will happen Now your whole Base directory Whole file It knows From where to load Static assets And whenever it is loaded We have to give the path Of the whole file Once I gave this access Now let's go here And reload Now our CSS Is injected here Now whether it is CSS Or JavaScript You know all the flow How can we inject it So let's come here Now in case If you assume Static JavaScript Is loaded Or you want to make Further folder in it Then you know How can I work And how I have to Bring changes in the index I have static I have loaded it And now load Style.css from here Or load from CSS Or load JavaScript We can also load that So at least Now you know Everything from The whole templating engine And this too You know most importantly That where Which error comes You are not Resolving the errors With your eyes closed You know That loading Is a very difficult thing And you know That you have to Read load static Oh! Maybe I forgot To load static You gave the solution Of that thing Not by closing your eyes And doing settings No no Exactly what is the problem What is the reason behind it And how can I Resolve it When you understand this Then you become a good programmer Okay I hope You understood Django And how rapidly Okay Take a small assignment How will you go like this So now we saw That we have Django's template Is loaded Of index.html So make this index file A little more And make a basic html You can do this much Core.css You can write this much So now A small assignment for you Is that The views we have made This about And this contact Till now We are sending HTTP response Now it is your responsibility That instead of sending response You render some webpages There Which webpages Are totally on you But yes Do tell me By tweeting Or On insta Or Wherever you are On LinkedIn That what kind of Homepage have you made What kind of About us page have you made What kind of Contact page About page have you made So this is your assignment Do the assignment When you do this assignment When you write comments You show your engagement Your dedication That yes I am not just watching The video Sitting on the sofa I am also working With it We learn from this Otherwise You will get stuck In tutorial hell Tutorial hell does not mean That don't watch the video Tutorial hell means That watch it And work with it Do assignments Okay See you in the next video"
+}

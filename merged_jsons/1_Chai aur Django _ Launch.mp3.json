@@ -1,0 +1,313 @@
+{
+    "chunks": [
+        {
+            "number": "1",
+            "title": "Chai aur Dja",
+            "start": 0.0,
+            "end": 20.2,
+            "text": " Hello, how are you all? Welcome to Chai Aur Code.  Before we move to the video, first of all, thank you so much to all of you.  It feels great to see how much you are sharing the channel, how many comments you are making.  And the growth of the channel is very good.  The channel is reaching almost every corner."
+        },
+        {
+            "number": "1",
+            "title": "Chai aur Dja",
+            "start": 20.2,
+            "end": 44.0,
+            "text": " It is one of the fastest growing channels.  And we have always increased the quality of production.  Whether it is audio quality, video quality, or content quality, we have always tried to raise the bar.  And you all have also supported us a lot in the comments, appreciation, personal DMs, by sharing each story and incident.  So first of all, thank you so much for all of that."
+        },
+        {
+            "number": "1",
+            "title": "Chai aur Dja",
+            "start": 44.0,
+            "end": 58.6,
+            "text": " You are doing your maximum as much as you can.  And this is the big thing that you are spreading the channel as much as you can.  You are contributing on your own. Thank you so much.  Now let's come to our big launch.  Often, there are launches in the world of EdTech."
+        },
+        {
+            "number": "1",
+            "title": "Chai aur Dja",
+            "start": 58.6,
+            "end": 70.4,
+            "text": " And it should be. This is a good thing.  So this is our mega big launch.  Whenever we launch, we launch big.  And eventually, we bring one of the best series.  So in this launch, there is another launch in front of you."
+        },
+        {
+            "number": "1",
+            "title": "Chai aur Dja",
+            "start": 70.4,
+            "end": 85.39999999999999,
+            "text": " This is web development with Python using Django.  So the series of Chai and Django is starting with this video today.  So what is Django?  What are the prerequisites for this?  What is the target audience of this playlist?"
+        },
+        {
+            "number": "1",
+            "title": "Chai aur Dja",
+            "start": 85.39999999999999,
+            "end": 97.19999999999999,
+            "text": " We will talk about all of that.  I would also like to tell you a little bit about video frequency in this video.  What all do you need?  What can we do in the end?  And how will we open a new web development paradigm?"
+        },
+        {
+            "number": "1",
+            "title": "Chai aur Dja",
+            "start": 97.19999999999999,
+            "end": 108.6,
+            "text": " There is a video on all of these.  And yes, you will get the entire playlist on YouTube.  Apart from this, you will also get blogs on ChaiCode.com.  Which will be a complete walkthrough.  Whatever we do in the course."
+        },
+        {
+            "number": "1",
+            "title": "Chai aur Dja",
+            "start": 108.8,
+            "end": 121.0,
+            "text": " Or whatever important points, code files, you will get all of that there.  So I have written a lot of articles in this series.  And I will write more in the future.  So you will get all of that on ChaiCode.com.  Everything else is on the channel."
+        },
+        {
+            "number": "1",
+            "title": "Chai aur Dja",
+            "start": 121.0,
+            "end": 133.79999999999998,
+            "text": " There is no problem.  If you have not joined the Discord yet, then join there.  There are a lot of mentors there who help you.  All of that is also included with this.  By the way, mock tests and resume reviews are also done there."
+        },
+        {
+            "number": "1",
+            "title": "Chai aur Dja",
+            "start": 133.79999999999998,
+            "end": 147.0,
+            "text": " Anyway, let's come back.  First of all, we come to our prerequisites.  To see this Chai and Django series, what all do you need to know about the prerequisites?  It's small, not much.  We will discuss a little bit on that too."
+        },
+        {
+            "number": "1",
+            "title": "Chai aur Dja",
+            "start": 147.0,
+            "end": 167.0,
+            "text": " So you only need these two things.  Which you should know before jumping on Django.  First of all, you should know Python.  All the Python that I have made Chai and Python in this channel's playlist, you should know that.  All the basic requirements like decorators, I have taken them in-depth."
+        },
+        {
+            "number": "1",
+            "title": "Chai aur Dja",
+            "start": 167.0,
+            "end": 175.39999999999998,
+            "text": " I have covered the whole breadth and width.  So you can see from there.  If you feel that I have learned from somewhere else and have that much confidence,  then also there is no problem.  You can continue that too."
+        },
+        {
+            "number": "1",
+            "title": "Chai aur Dja",
+            "start": 175.39999999999998,
+            "end": 188.39999999999998,
+            "text": " Whichever favorite instructor you have learned from, that is also a good thing.  Apart from this, we will not touch HTML and CSS much.  I believe you know HTML.  If you don't know, there is a playlist for that too.  As such, there is no need to worry about CSS."
+        },
+        {
+            "number": "1",
+            "title": "Chai aur Dja",
+            "start": 188.6,
+            "end": 199.8,
+            "text": " Changing the background color, changing the text color, moving the text from here to there,  left, right, orientation.  We will do this in small steps.  We will not go too extreme.  Mostly we depend on libraries like Shadsea and Tailwind."
+        },
+        {
+            "number": "1",
+            "title": "Chai aur Dja",
+            "start": 199.8,
+            "end": 213.4,
+            "text": " So we will not write extreme CSS anywhere.  So in case you know a little bit about how to make buttons.  Basic buttons, not too high fancy.  How to make basic buttons, how to change the background color, how to make text, how to make text large.  That's it."
+        },
+        {
+            "number": "1",
+            "title": "Chai aur Dja",
+            "start": 213.4,
+            "end": 226.6,
+            "text": " Apart from that, there are no other prerequisites.  Okay.  Now let's come to what is the series targeted audience.  This series is made according to the target of the web developer.  That you have to explore web development."
+        },
+        {
+            "number": "1",
+            "title": "Chai aur Dja",
+            "start": 226.6,
+            "end": 243.6,
+            "text": " Web development is very powerful especially in Python.  Often people come from a single paradigm.  What happens is that when you start the journey of development,  then you make a language from a fan favorite of a language.  Some people make JavaScript, some people PHP, some people Python."
+        },
+        {
+            "number": "1",
+            "title": "Chai aur Dja",
+            "start": 243.6,
+            "end": 258.8,
+            "text": " So they never want to shift from that paradigm.  I think this is a mistake that you don't want to shift from the paradigm.  You have made one thing God that React is everything.  Or Node is everything.  So you never know that there are more frameworks outside."
+        },
+        {
+            "number": "1",
+            "title": "Chai aur Dja",
+            "start": 258.8,
+            "end": 275.2,
+            "text": " Which is probably more powerful or less powerful.  How can we believe that it is more powerful?  Or we can give development in a rapid pace.  Until you explore things, you will not know about it.  Another advantage that comes from exploring a new paradigm."
+        },
+        {
+            "number": "1",
+            "title": "Chai aur Dja",
+            "start": 275.59999999999997,
+            "end": 291.4,
+            "text": " That sometimes you get more clearance of the previous paradigm.  Suppose you have been coding in JavaScript for a long time.  So when you see things here, how views are being made,  how routes are being made, requests are being made.  So you get a little clarity in the other set."
+        },
+        {
+            "number": "1",
+            "title": "Chai aur Dja",
+            "start": 291.4,
+            "end": 305.59999999999997,
+            "text": " That this is how it works in that, and this is how it works in this.  So this is also an important aspect.  Now some people say that I have to do more JavaScript.  No problem, you make your JavaScript strong.  But when you feel that I make a project,"
+        },
+        {
+            "number": "1",
+            "title": "Chai aur Dja",
+            "start": 305.59999999999997,
+            "end": 319.59999999999997,
+            "text": " then I sit in my free time and see Python.  Another important thing, many people find Python a fan favorite language.  They think that after learning Python, I can do web development,  machine learning, AI.  I can do exploration in all of these."
+        },
+        {
+            "number": "1",
+            "title": "Chai aur Dja",
+            "start": 319.59999999999997,
+            "end": 331.59999999999997,
+            "text": " And whatever models or whatever I am making,  I would like to write them directly in Python.  So in those cases too, Django FastAPI helps a lot.  Let me tell you one important thing first.  When you see this Django series,"
+        },
+        {
+            "number": "1",
+            "title": "Chai aur Dja",
+            "start": 332.0,
+            "end": 343.0,
+            "text": " you will find many people in the comment section,  in fact, you will find them in your class too.  Who will say something like  that performance does not come in Django.  This seems to be the funniest situation to me."
+        },
+        {
+            "number": "1",
+            "title": "Chai aur Dja",
+            "start": 343.0,
+            "end": 355.0,
+            "text": " They are talking about performance,  they are talking about bottlenecks,  whose own application has never seen 5,000 or 1 lakh users.  One lakh is a very big number,  not even 5,000 or 10,000 users have seen it."
+        },
+        {
+            "number": "1",
+            "title": "Chai aur Dja",
+            "start": 355.0,
+            "end": 367.4,
+            "text": " Web development through Python is one of the fastest developments.  And there are companies in lakhs,  not thousands, but lakhs of companies  that still use Django on production grade.  Django is very powerful."
+        },
+        {
+            "number": "1",
+            "title": "Chai aur Dja",
+            "start": 367.4,
+            "end": 378.4,
+            "text": " And once you see how rapid development happens,  and what batteries are included,  that is, there are some things that you do not have to do,  already cooked in it.  So once you see it, you will also feel"
+        },
+        {
+            "number": "1",
+            "title": "Chai aur Dja",
+            "start": 378.4,
+            "end": 390.79999999999995,
+            "text": " that the JavaScript ecosystem has not matured so much.  Now this does not mean that we will leave the JavaScript ecosystem.  No, we will do that too, and we will do this too.  So this is a small mindset and overview  that what will come in the Django series,"
+        },
+        {
+            "number": "1",
+            "title": "Chai aur Dja",
+            "start": 390.79999999999995,
+            "end": 400.79999999999995,
+            "text": " how.  Django is a complete framework.  We will try to understand this framework first,  because it has a lot of nuances here and there.  Once they understand,"
+        },
+        {
+            "number": "1",
+            "title": "Chai aur Dja",
+            "start": 400.79999999999995,
+            "end": 412.79999999999995,
+            "text": " then we will obviously talk about projects in the future.  Like we have made a lot of projects in Next.js of JavaScript.  So those projects can try to convert them here.  Or do fresh projects here.  So we will get a good paradigm."
+        },
+        {
+            "number": "1",
+            "title": "Chai aur Dja",
+            "start": 412.79999999999995,
+            "end": 425.2,
+            "text": " So this is the thing  that we are going to learn, how and who should not worry.  Python and Django are still a very powerful framework  and is used almost everywhere.  So it will be good."
+        },
+        {
+            "number": "1",
+            "title": "Chai aur Dja",
+            "start": 425.2,
+            "end": 436.2,
+            "text": " You are getting a free series.  You can do it here easily.  In the meantime, those who have reached here in this launch video,  the comment target of this video is 1000 comments.  So all the people who have reached here,"
+        },
+        {
+            "number": "1",
+            "title": "Chai aur Dja",
+            "start": 436.2,
+            "end": 449.59999999999997,
+            "text": " quickly complete the comment in the comment section.  Now let's talk about the video's pricing.  The pricing of this entire series of videos is only that  you keep making support and comments.  This is your fees."
+        },
+        {
+            "number": "1",
+            "title": "Chai aur Dja",
+            "start": 449.59999999999997,
+            "end": 459.59999999999997,
+            "text": " And you cannot learn without fees.  It is said that a Guru needs Guru Dakshina.  So the Guru Dakshina of this entire series is that  every video should have a comment and share.  Whatever platform it is, whether people are watching or not,"
+        },
+        {
+            "number": "1",
+            "title": "Chai aur Dja",
+            "start": 459.59999999999997,
+            "end": 472.59999999999997,
+            "text": " it doesn't matter.  LinkedIn, Twitter, wherever you are active,  share and a comment.  Now let's talk about the frequency of videos.  So I will keep the frequency of this entire series a little laid back."
+        },
+        {
+            "number": "1",
+            "title": "Chai aur Dja",
+            "start": 473.0,
+            "end": 485.0,
+            "text": " Because in the past I kept the frequency a little too high.  Many people couldn't follow it.  I will keep the series a little laid back.  So in a week, we will only bring 2 or 3 videos.  But there will be good lengthy videos,"
+        },
+        {
+            "number": "1",
+            "title": "Chai aur Dja",
+            "start": 485.0,
+            "end": 495.0,
+            "text": " there will be a discussion and we will code well.  The content will be written and in written format.  So expect only 2 to 3 videos in this series.  Now this series does not mean that  the rest of the content has ever been stopped on the channel."
+        },
+        {
+            "number": "1",
+            "title": "Chai aur Dja",
+            "start": 495.0,
+            "end": 505.4,
+            "text": " This has never happened before and it will not happen in the future.  So whoever is in the JavaScript ecosystem  or in the database ecosystem  or exploring something else,  we will keep doing it."
+        },
+        {
+            "number": "1",
+            "title": "Chai aur Dja",
+            "start": 505.4,
+            "end": 515.4,
+            "text": " But we will have a proper playlist.  And as you know, when the playlist is complete,  a long form video also comes after that.  So this is it.  You don't need much."
+        },
+        {
+            "number": "1",
+            "title": "Chai aur Dja",
+            "start": 515.4,
+            "end": 525.4,
+            "text": " And there is no requirement for tools.  Just install Python in the system.  After that, install VS Code.  Install ChaiTheme.  That's it. You don't need anything else."
+        },
+        {
+            "number": "1",
+            "title": "Chai aur Dja",
+            "start": 525.4,
+            "end": 535.8,
+            "text": " If you need anything else, I will tell you.  There is no special requirement.  So subscribe to the channel.  Because we have just started.  So this was a small discussion with you"
+        },
+        {
+            "number": "1",
+            "title": "Chai aur Dja",
+            "start": 535.8,
+            "end": 545.8,
+            "text": " about what we are going to play with Django  and what we are going to enjoy.  And we are going to do rapid development.  So it will be a lot of fun.  So spread it everywhere."
+        },
+        {
+            "number": "1",
+            "title": "Chai aur Dja",
+            "start": 545.8,
+            "end": 555.8,
+            "text": " Send it to all your friends.  Yes, we have done a lot in JavaScript.  And we will do more.  But we will not leave Python.  We will do mastery there too."
+        },
+        {
+            "number": "1",
+            "title": "Chai aur Dja",
+            "start": 555.8,
+            "end": 557.8,
+            "text": " Bring tea. Code is ready."
+        }
+    ],
+    "text": " Hello, how are you all? Welcome to Chai Aur Code. Before we move to the video, first of all, thank you so much to all of you. It feels great to see how much you are sharing the channel, how many comments you are making. And the growth of the channel is very good. The channel is reaching almost every corner. It is one of the fastest growing channels. And we have always increased the quality of production. Whether it is audio quality, video quality, or content quality, we have always tried to raise the bar. And you all have also supported us a lot in the comments, appreciation, personal DMs, by sharing each story and incident. So first of all, thank you so much for all of that. You are doing your maximum as much as you can. And this is the big thing that you are spreading the channel as much as you can. You are contributing on your own. Thank you so much. Now let's come to our big launch. Often, there are launches in the world of EdTech. And it should be. This is a good thing. So this is our mega big launch. Whenever we launch, we launch big. And eventually, we bring one of the best series. So in this launch, there is another launch in front of you. This is web development with Python using Django. So the series of Chai and Django is starting with this video today. So what is Django? What are the prerequisites for this? What is the target audience of this playlist? We will talk about all of that. I would also like to tell you a little bit about video frequency in this video. What all do you need? What can we do in the end? And how will we open a new web development paradigm? There is a video on all of these. And yes, you will get the entire playlist on YouTube. Apart from this, you will also get blogs on ChaiCode.com. Which will be a complete walkthrough. Whatever we do in the course. Or whatever important points, code files, you will get all of that there. So I have written a lot of articles in this series. And I will write more in the future. So you will get all of that on ChaiCode.com. Everything else is on the channel. There is no problem. If you have not joined the Discord yet, then join there. There are a lot of mentors there who help you. All of that is also included with this. By the way, mock tests and resume reviews are also done there. Anyway, let's come back. First of all, we come to our prerequisites. To see this Chai and Django series, what all do you need to know about the prerequisites? It's small, not much. We will discuss a little bit on that too. So you only need these two things. Which you should know before jumping on Django. First of all, you should know Python. All the Python that I have made Chai and Python in this channel's playlist, you should know that. All the basic requirements like decorators, I have taken them in-depth. I have covered the whole breadth and width. So you can see from there. If you feel that I have learned from somewhere else and have that much confidence, then also there is no problem. You can continue that too. Whichever favorite instructor you have learned from, that is also a good thing. Apart from this, we will not touch HTML and CSS much. I believe you know HTML. If you don't know, there is a playlist for that too. As such, there is no need to worry about CSS. Changing the background color, changing the text color, moving the text from here to there, left, right, orientation. We will do this in small steps. We will not go too extreme. Mostly we depend on libraries like Shadsea and Tailwind. So we will not write extreme CSS anywhere. So in case you know a little bit about how to make buttons. Basic buttons, not too high fancy. How to make basic buttons, how to change the background color, how to make text, how to make text large. That's it. Apart from that, there are no other prerequisites. Okay. Now let's come to what is the series targeted audience. This series is made according to the target of the web developer. That you have to explore web development. Web development is very powerful especially in Python. Often people come from a single paradigm. What happens is that when you start the journey of development, then you make a language from a fan favorite of a language. Some people make JavaScript, some people PHP, some people Python. So they never want to shift from that paradigm. I think this is a mistake that you don't want to shift from the paradigm. You have made one thing God that React is everything. Or Node is everything. So you never know that there are more frameworks outside. Which is probably more powerful or less powerful. How can we believe that it is more powerful? Or we can give development in a rapid pace. Until you explore things, you will not know about it. Another advantage that comes from exploring a new paradigm. That sometimes you get more clearance of the previous paradigm. Suppose you have been coding in JavaScript for a long time. So when you see things here, how views are being made, how routes are being made, requests are being made. So you get a little clarity in the other set. That this is how it works in that, and this is how it works in this. So this is also an important aspect. Now some people say that I have to do more JavaScript. No problem, you make your JavaScript strong. But when you feel that I make a project, then I sit in my free time and see Python. Another important thing, many people find Python a fan favorite language. They think that after learning Python, I can do web development, machine learning, AI. I can do exploration in all of these. And whatever models or whatever I am making, I would like to write them directly in Python. So in those cases too, Django FastAPI helps a lot. Let me tell you one important thing first. When you see this Django series, you will find many people in the comment section, in fact, you will find them in your class too. Who will say something like that performance does not come in Django. This seems to be the funniest situation to me. They are talking about performance, they are talking about bottlenecks, whose own application has never seen 5,000 or 1 lakh users. One lakh is a very big number, not even 5,000 or 10,000 users have seen it. Web development through Python is one of the fastest developments. And there are companies in lakhs, not thousands, but lakhs of companies that still use Django on production grade. Django is very powerful. And once you see how rapid development happens, and what batteries are included, that is, there are some things that you do not have to do, already cooked in it. So once you see it, you will also feel that the JavaScript ecosystem has not matured so much. Now this does not mean that we will leave the JavaScript ecosystem. No, we will do that too, and we will do this too. So this is a small mindset and overview that what will come in the Django series, how. Django is a complete framework. We will try to understand this framework first, because it has a lot of nuances here and there. Once they understand, then we will obviously talk about projects in the future. Like we have made a lot of projects in Next.js of JavaScript. So those projects can try to convert them here. Or do fresh projects here. So we will get a good paradigm. So this is the thing that we are going to learn, how and who should not worry. Python and Django are still a very powerful framework and is used almost everywhere. So it will be good. You are getting a free series. You can do it here easily. In the meantime, those who have reached here in this launch video, the comment target of this video is 1000 comments. So all the people who have reached here, quickly complete the comment in the comment section. Now let's talk about the video's pricing. The pricing of this entire series of videos is only that you keep making support and comments. This is your fees. And you cannot learn without fees. It is said that a Guru needs Guru Dakshina. So the Guru Dakshina of this entire series is that every video should have a comment and share. Whatever platform it is, whether people are watching or not, it doesn't matter. LinkedIn, Twitter, wherever you are active, share and a comment. Now let's talk about the frequency of videos. So I will keep the frequency of this entire series a little laid back. Because in the past I kept the frequency a little too high. Many people couldn't follow it. I will keep the series a little laid back. So in a week, we will only bring 2 or 3 videos. But there will be good lengthy videos, there will be a discussion and we will code well. The content will be written and in written format. So expect only 2 to 3 videos in this series. Now this series does not mean that the rest of the content has ever been stopped on the channel. This has never happened before and it will not happen in the future. So whoever is in the JavaScript ecosystem or in the database ecosystem or exploring something else, we will keep doing it. But we will have a proper playlist. And as you know, when the playlist is complete, a long form video also comes after that. So this is it. You don't need much. And there is no requirement for tools. Just install Python in the system. After that, install VS Code. Install ChaiTheme. That's it. You don't need anything else. If you need anything else, I will tell you. There is no special requirement. So subscribe to the channel. Because we have just started. So this was a small discussion with you about what we are going to play with Django and what we are going to enjoy. And we are going to do rapid development. So it will be a lot of fun. So spread it everywhere. Send it to all your friends. Yes, we have done a lot in JavaScript. And we will do more. But we will not leave Python. We will do mastery there too. Bring tea. Code is ready."
+}

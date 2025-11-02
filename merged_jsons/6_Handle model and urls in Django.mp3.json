@@ -1,0 +1,2189 @@
+{
+    "chunks": [
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 0.0,
+            "end": 10.0,
+            "text": " Hello, how are you all?  Welcome to Chai Aur Code  and our unique YouTube channel  where I am teaching you  how to develop a full stack through Django"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 10.0,
+            "end": 20.0,
+            "text": " Two important things  One, we messed up a little  in the sequence of series upload  which is now fixed, playlist is arranged well  and you are getting articles"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 20.0,
+            "end": 30.0,
+            "text": " It happens sometimes  Actually, what happened is  the name of the same video was copied twice  so I got confused  All responsibility on me"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 30.0,
+            "end": 40.0,
+            "text": " I messed it up, no team did it  but now it is fixed  Second important thing  Our platform is now available on chaicode.com  You will get all the articles, videos"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 40.0,
+            "end": 50.0,
+            "text": " and code files  and the platform is now available  so the paid codes will also be available  so it is almost ready  So, what will we see in this video"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 50.0,
+            "end": 60.0,
+            "text": " We have seen the basics of Django  like templates, routes  URLs, when to call them  One more major aspect of Django  is the models"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 60.0,
+            "end": 70.0,
+            "text": " How it interacts with database  How the database configuration is in Django  We will see all of them  from here  We will see in this way"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 70.0,
+            "end": 80.0,
+            "text": " that you will get 100% confidence  that yes, I can also write models  If you want to learn more about models  then you can learn  but I think the best way to learn Django models"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 80.0,
+            "end": 90.0,
+            "text": " is through projects  because how long you will go in documentation  it is not possible  So, as and when there is a requirement  you can go and learn"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 90.0,
+            "end": 100.0,
+            "text": " and if you make a few projects with someone  it becomes very good  In this model, we will see image upload  how Django handles images  I think one of the best way"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 100.0,
+            "end": 110.0,
+            "text": " that Django handles images  is that it keeps images in folders  and saves the URL  and not just puts the whole image in the DB  It is also possible"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 110.0,
+            "end": 120.0,
+            "text": " but it is not optimized  Let's see  Our comment target is 200 comments  Not much, just 200 comments  Do a little bit"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 120.0,
+            "end": 130.0,
+            "text": " You are free now  Push the series  Let's share the screen  and discuss it  By the way, I will publish the entire article"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 130.0,
+            "end": 140.0,
+            "text": " I have already written the article  as a reference guide  You will get it  You are liking the article a lot  Thank you so much for this"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 140.0,
+            "end": 150.0,
+            "text": " So, where are we now?  This is our VS Code  I have activated  our virtual environment  and where are we now?"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 150.0,
+            "end": 160.0,
+            "text": " Let me open it  in a browser  So, I have opened the browser  and you know  how to run the command"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 160.0,
+            "end": 170.0,
+            "text": " It is very basic  It is a simple Python manage.py run server  This is our case  where we run the server  We have not seen much"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 170.0,
+            "end": 180.0,
+            "text": " but we have the knowledge  that we can keep the templates  like this  We can keep the templates  inside the project"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 180.0,
+            "end": 190.0,
+            "text": " like the tea project  You can keep the template here  We have all tea  If you want to see the URL  We have learned how to manage the URL"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 190.0,
+            "end": 200.0,
+            "text": " We can go directly to the tea  How will we know this?  We will know it from the main project  There are the URLs  We are forwarding the"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 200.0,
+            "end": 210.0,
+            "text": " redirection or the control  of the URL after the tea  to the tea.url  We got to know about the tea  because we have mentioned"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 210.0,
+            "end": 220.0,
+            "text": " the tea in the settings.py  So, the tea keyword came here  and we said that there is a .url  So, you can take the URL file  So, we got to know it like this"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 220.0,
+            "end": 230.0,
+            "text": " Now, we come here  We have not worked on the UI  We have told you how to use  Tailwind  I will try to do something more"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 230.0,
+            "end": 240.0,
+            "text": " on Tailwind  Components are just drag and drop  We will see that later  Now, we will come back  to what else we have to do"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 240.0,
+            "end": 250.0,
+            "text": " We have not done anything  special yet  I will tell you one more thing  Now, you can go to the admin  But, what happens is"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 250.0,
+            "end": 260.0,
+            "text": " that you forget the login id  and password  Especially, if you are doing the development  then it is a very obvious case  For this, there is a Python script"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 260.0,
+            "end": 270.0,
+            "text": " You can reset it  I know that many of you  must have got this problem  So, we will go to Google  And we will call it"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 270.0,
+            "end": 280.0,
+            "text": " Reset Django admin password  So, run  manage.py  You will get an option  Python manage.py"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 280.0,
+            "end": 290.0,
+            "text": " You can change the password  of the user  or the main db user  I think the user was Hitesh  Let's try this"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 290.0,
+            "end": 300.0,
+            "text": " once  Change password  Let's run this  with the user  Let's kill it"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 300.0,
+            "end": 310.0,
+            "text": " Python manage.py  Change password  I think Hitesh  was the user's admin  Change password"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 310.0,
+            "end": 320.0,
+            "text": " Hitesh  Password is too similar  8 characters  Hitesh 123  Hitesh 123"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 320.0,
+            "end": 330.0,
+            "text": " Password is too similar  and it is not giving the option  to change it  Chai1234  Chai1234"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 330.0,
+            "end": 340.0,
+            "text": " Chai1234  Now, I am happy  that Chai1234 is the password  Let's run this again  and see if we can login"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 340.0,
+            "end": 350.0,
+            "text": " to the admin  Hitesh  Password is Chai1234  Yes  At least I am able to go to the admin"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 350.0,
+            "end": 360.0,
+            "text": " and we can see that we have only one user  Now, what we will do  We want to use this admin  but we don't have  any Chai models"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 360.0,
+            "end": 370.0,
+            "text": " So, for the first time, we will interact with the database  to see how the database  can help us  Whenever you want to interact with the database  the first step is"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 370.0,
+            "end": 380.0,
+            "text": " Whenever you want to make anything data related  you don't make it in the main project  in the production  If you don't make it in the production  then why will you make it in the tutorial"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 380.0,
+            "end": 390.0,
+            "text": " Here, you don't see the models.py file  and it doesn't exist  No one creates it  The first app we created  Remember, project and app are different"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 390.0,
+            "end": 400.0,
+            "text": " Project is the whole project  App is the small apps  You can also call it micro services architecture  It is not exactly, but you can call it  No one will shout at you"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 400.0,
+            "end": 410.0,
+            "text": " that why did you say  We go to Chai, which is the new app  Here, you have seen by default that you have  models.py and admin.py file  How are these files routed"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 410.0,
+            "end": 420.0,
+            "text": " How are they associated with each other  Let's discuss that  First of all, for the database  You can write models directly  Why are you able to write directly?"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 420.0,
+            "end": 430.0,
+            "text": " Why is it important to know?  That's why you like tutorials  Because everything has a detailed discussion  It is fun to see  Where is it coming from"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 430.0,
+            "end": 440.0,
+            "text": " We know the framework like this  We have seen it in front of our eyes  First thing you see here is db.escolite  This is an important file  Because we have the whole sequel in it"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 440.0,
+            "end": 450.0,
+            "text": " If you go to Chai and Django  If you go to settings.py  You will see many options here  How do you handle the database  The database we have is like this"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 450.0,
+            "end": 460.0,
+            "text": " Our engine is  Django.db.backends.escolite  But these engines can be changed  In fact, you have a complete  URL of how to reset the database"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 460.0,
+            "end": 470.0,
+            "text": " You can go and study it  It is the best thing that  we have been given the same  We have escolite 3  But we have access to Postgres"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 470.0,
+            "end": 480.0,
+            "text": " You have access to MySQL  And MongoDB is also there  But it takes a little extra configuration  I have seen Django with SQL databases  You get the option from here"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 480.0,
+            "end": 490.0,
+            "text": " Now we know that we are using SQLite database  But we can change the configuration here  And put it in Postgres  No need to change the code  You do not interact directly with the database"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 490.0,
+            "end": 500.0,
+            "text": " There is an ORM layer in between  We interact with the database through the layer  So in one setting you can go from SQLite to Postgres  From Postgres to MySQL  Now we reach"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 500.0,
+            "end": 510.0,
+            "text": " Our main topic  We have a lot of questions  Now we reach  Models.py  How to write models in Django"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 510.0,
+            "end": 520.0,
+            "text": " You can see that models are imported  On the first line  We will do all the work through this  It is very easy to write models  Suppose I write a simple class"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 520.0,
+            "end": 530.0,
+            "text": " My model will be  ChaiVariety  I write the name of the class  ChaiVariety  My model is ChaiVariety"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 530.0,
+            "end": 540.0,
+            "text": " I am making a table  How to make this table  You can take a dot from the top  And take a model  How to write a class"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 540.0,
+            "end": 550.0,
+            "text": " It is very easy  I can write all the fields  I can write a name field  You can write a name field  How to write"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 550.0,
+            "end": 560.0,
+            "text": " All are copy pasted  We come to models  As I have access to it  As soon as you put a dot, you will get all the fields  There is documentation"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 560.0,
+            "end": 570.0,
+            "text": " You can take big integer, average, auto  There are many  Emails, enums  I will tell you something  You will get fast learning"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 570.0,
+            "end": 580.0,
+            "text": " There are many fields  Field depends on the suggestion  Which database is active  Like in Postgres  There are some additional fields"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 580.0,
+            "end": 590.0,
+            "text": " You will not get in the suggestion  In case you use it, it will give an error  Because in configuration, in settings, there is SQLite  You are using the field of Postgres  The most common field"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 590.0,
+            "end": 600.0,
+            "text": " Char field, char field  Character field  You can pass some default options  To know the options  Or we will make some projects"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 600.0,
+            "end": 610.0,
+            "text": " Then you will know the maximum  There is documentation  Max length, I need 100 characters  In my name  After that"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 610.0,
+            "end": 620.0,
+            "text": " Image  How to handle image  For now, let's design the field  Then I will tell you how to set  For images"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 620.0,
+            "end": 630.0,
+            "text": " But images are not supported  You have to bring a third party plugin  Which is pillow  And then you have to do some additional settings  To put my images in this folder"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 630.0,
+            "end": 640.0,
+            "text": " For now, let's write  We only need image field  So we give it dot image field  And after this image field  You will also have to tell"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 640.0,
+            "end": 650.0,
+            "text": " Where to upload  Suppose I want to upload  Now as soon as you save it  You will see an error  I open it"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 650.0,
+            "end": 660.0,
+            "text": " It has said  Get pillow at  To run the command  Python-mpip install pillow  So we need pillow"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 660.0,
+            "end": 670.0,
+            "text": " Let's go for now  So images are handled  When you upload your jango images  It will put it in this folder  You have to set the folder"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 670.0,
+            "end": 680.0,
+            "text": " And save that url in the database  And save that url in the database  Not images  Apart from this, suppose I have a field  I have to take a date field"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 680.0,
+            "end": 690.0,
+            "text": " I have to add date added here  To add date, you have to take  Timezone libraries  But for that too we have jango available  In jango, a class called utils"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 690.0,
+            "end": 700.0,
+            "text": " Is available  Through which you can import a lot of things  Like here you see  A lot of things are available  Our use is simple timezone"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 700.0,
+            "end": 714.0,
+            "text": " Let's take timezone  Now what is the benefit of taking timezone  Now what is the benefit of taking timezone  Now I can add timezone in models  So models."
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 714.0,
+            "end": 724.0,
+            "text": " Now you can add date time field  Remember date field is different  Date time field is different  Date field only gives you date option  Date time field gives you date and time option"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 724.0,
+            "end": 734.0,
+            "text": " Depends on which one you want to use  We will use it according to that  So this is our date time field  Now I can add default values  You can add date time field by default"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 734.0,
+            "end": 744.0,
+            "text": " But because I have to add default  That's why I needed timezone  So here you add timezone  And write dot now  So now you will get"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 744.0,
+            "end": 754.0,
+            "text": " The exact time of now  When this model will be created one by one  Now suppose  I have to add tea types  Tea types should also be there"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 754.0,
+            "end": 764.0,
+            "text": " Masala tea, ginger tea, ice tea  Whichever tea you want  So here I want  User type to be restricted  If you are making for a restaurant"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 764.0,
+            "end": 774.0,
+            "text": " Then you will not be giving 1000 types  Like I always give example  If you are booking seat for airplane  Then aisle middle window is the only option  You will not give pilot seat"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 774.0,
+            "end": 784.0,
+            "text": " So for this common database practice  Is to keep enums  So suppose I declare a variable  Chai type choice  And I give it"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 784.0,
+            "end": 794.0,
+            "text": " An enum  Now in this  We will design a tuple  So suppose I have ml  I give it a name"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 794.0,
+            "end": 804.0,
+            "text": " Masala  We will duplicate it  By putting comma  Now next  Suppose I have"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 804.0,
+            "end": 814.0,
+            "text": " Ginger  What will we call ginger  Gr  Other than that  Is there any other"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 814.0,
+            "end": 824.0,
+            "text": " So  We will name it kl  But we will name it kl  For kiwi tea  We have to give more options"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 824.0,
+            "end": 834.0,
+            "text": " If you want plain tea  We forgot  Here is plain tea  And we will keep it simple pl  We will take one more"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 834.0,
+            "end": 844.0,
+            "text": " I don't like it much  But we will keep el  For cardamom tea  cardamom  cardamom"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 844.0,
+            "end": 854.0,
+            "text": " cardamom  Now I want to design a field  Which is highly dependent  On these choices  Where will we get suggestions"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 854.0,
+            "end": 864.0,
+            "text": " We will tell you  So I will name it type  For type  We will give a field  So we will take"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 864.0,
+            "end": 874.0,
+            "text": " Simple models  It will be our care field  But we will mention choices  We will keep max length  2 because we have kept"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 874.0,
+            "end": 884.0,
+            "text": " Abbreviation of 2  And you can give choices  Choices are defined above  You can give choices  A little here"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 884.0,
+            "end": 894.0,
+            "text": " By writing indentation type  Hmm  Let's see  There should not be much problem  So this is our work"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 894.0,
+            "end": 904.0,
+            "text": " Now you have all this available  Now we will save  This is step 1  How to design models  As we move forward"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 904.0,
+            "end": 914.0,
+            "text": " You will get to know  Data types of models  Chair field  Images  Date field"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 914.0,
+            "end": 924.0,
+            "text": " And many more  You can see in documentation  I have given detailed article  In documentation  Now we handle our pillow"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 924.0,
+            "end": 934.0,
+            "text": " To install pillow  We can use command  You can use uv  Whatever you feel  So we will type python"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 934.0,
+            "end": 944.0,
+            "text": " M  And use pillow  PIP install pillow  P capital of pillow  Remember"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 944.0,
+            "end": 954.0,
+            "text": " Now I run server  Now there is no problem  But now problem is  Now you want to keep images  To keep images"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 954.0,
+            "end": 964.0,
+            "text": " Settings.py should know  You will get images  You have to set it once  Then you can use it in any model  You can use it in any app"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 964.0,
+            "end": 974.0,
+            "text": " Let's go to settings.py  Now here you have to give  Media urls  So here we give media urls  They have to be written exactly the same"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 974.0,
+            "end": 984.0,
+            "text": " There is no special option  To give them any name  You have to give media url  Now I am going to take media  So media slash"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 984.0,
+            "end": 994.0,
+            "text": " It will be exactly the same  Now next thing  You have to give media root  So here media underscore root  These two options"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 994.0,
+            "end": 1004.0,
+            "text": " Settings  No one remembers  Everyone makes their own notes  You can see in blogs  The work done above is the same"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1004.0,
+            "end": 1014.0,
+            "text": " The work done above is static directories  Now directories not only have to give path  But settings will be same  So you can copy from here  Everyone does it the same"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1014.0,
+            "end": 1024.0,
+            "text": " No need to worry  You know what you are doing  So there is no problem in copying  So with base directory  Media will come instead of static"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1024.0,
+            "end": 1034.0,
+            "text": " That's it  There is no other work  But there is a small thing  You have done settings  But your urls should also know"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1034.0,
+            "end": 1044.0,
+            "text": " Because at the end of the day  Let's see how to serve  This setting  Your main project  It will be in urls.py"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1044.0,
+            "end": 1054.0,
+            "text": " Not in particular app  It will be in root  You can call it root python url  It is very easy  First you have to import static asset"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1054.0,
+            "end": 1064.0,
+            "text": " It is very easy  We do it here  We need from  We have to take settings  Let's take settings"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1064.0,
+            "end": 1074.0,
+            "text": " We take jango  And load jango configuration  From configuration  I need static  Import and take settings"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1074.0,
+            "end": 1084.0,
+            "text": " Now you have settings  Let's tell you the usage  We need one more  From jango.conf  And"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1084.0,
+            "end": 1094.0,
+            "text": " We need for urls  And static  And import static  We need two settings  There is no exception"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1094.0,
+            "end": 1104.0,
+            "text": " We have imported two settings  How to use them  This static method  We have to tell  From settings"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1104.0,
+            "end": 1114.0,
+            "text": " This media url  Please load it  How to write it  From url patterns  Add one more pattern"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1114.0,
+            "end": 1124.0,
+            "text": " Via static  Static is a method  This method will tell  We have to load it  We have loaded settings"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1124.0,
+            "end": 1134.0,
+            "text": " This is settings  This is settings file  We have loaded this settings  And we have to take media url  You have to write it"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1134.0,
+            "end": 1144.0,
+            "text": " Media underscore url  You know  Just now media url  We are giving it  Plus"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1144.0,
+            "end": 1154.0,
+            "text": " You have to tell document root  Here document  You will not get in suggestion  Document underscore root  Mistake happens"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1154.0,
+            "end": 1164.0,
+            "text": " I don't know why  I have not got in my editor  We will take settings  And tell  Media root"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1164.0,
+            "end": 1174.0,
+            "text": " But it is written so many times  Or it is copied  That there are no issues  We have told media root  And media url"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1174.0,
+            "end": 1184.0,
+            "text": " In case  If your model throws url  Please check it  We have worked properly  Models defined"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1184.0,
+            "end": 1194.0,
+            "text": " Changed settings  Configured url  Now how to use  The real super power  Now"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1194.0,
+            "end": 1204.0,
+            "text": " I run it  Actually  The model you have written  Your python jango  Don't know"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1204.0,
+            "end": 1214.0,
+            "text": " We have done some changes in database  Those changes  New tables  New models  For that"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1214.0,
+            "end": 1224.0,
+            "text": " We have a step  Migration  If you remember  We have done jango  In some settings"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1224.0,
+            "end": 1234.0,
+            "text": " Make migration  When we perform migration  We have seen admin  Users came  Similarly"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1234.0,
+            "end": 1244.0,
+            "text": " We have to migrate  Last time we run one command  Migrate  Because it was already configured  Now"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1244.0,
+            "end": 1254.0,
+            "text": " You have to create  Migration  Nothing much  Come to python  It does all the work"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1254.0,
+            "end": 1264.0,
+            "text": " Make migration  It works with make migration  But good practice  Migration of your app  Migration of your app"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1264.0,
+            "end": 1274.0,
+            "text": " Or  Give command  Migration of my app  I am working in tea  If your co-worker"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1274.0,
+            "end": 1284.0,
+            "text": " Working in another folder  Migration of all should not be  We said make migration  As soon as you create migration  You see a new folder"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1284.0,
+            "end": 1294.0,
+            "text": " In this new folder  Init.py and initial migration  Let's see  We have seen  It is writing sql"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1294.0,
+            "end": 1304.0,
+            "text": " It is writing sql  Same care field  Big auto integer  Primary keys  That's why"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1304.0,
+            "end": 1314.0,
+            "text": " When you use models  You never interact with sql  Same code file  If you want to go to my sql  Or postgres"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1314.0,
+            "end": 1324.0,
+            "text": " Command is same  Make migration  Django  Or sql  This is Django's superpower"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1324.0,
+            "end": 1334.0,
+            "text": " Now  We have understood  What is in migration  Let's migrate  Migrate"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1334.0,
+            "end": 1344.0,
+            "text": " Migrate  Migrate  Available  As a table  If you have sqlite viewer"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1344.0,
+            "end": 1354.0,
+            "text": " I don't have sql  But you can see  Plugin is there  But how to use  I have told you"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1354.0,
+            "end": 1364.0,
+            "text": " Now let's tell you  About Django's superpower  You will get a file  Admin.py  Here it is"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1364.0,
+            "end": 1374.0,
+            "text": " Through admin.py  You can attach any model  And see in admin  Superpower  Subscribe"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1374.0,
+            "end": 1384.0,
+            "text": " Comment  Share  Like  Comment  Share"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1384.0,
+            "end": 1394.0,
+            "text": " Like  Comment  Like  Share  Admin is there"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1394.0,
+            "end": 1404.0,
+            "text": " Let's import model  .models  .models  .models  Import"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1404.0,
+            "end": 1414.0,
+            "text": " You can import different classes  We have only  Chai variety  Now  Register this model"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1414.0,
+            "end": 1424.0,
+            "text": " To register in database  One line code  Take site from admin  And register  Register"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1424.0,
+            "end": 1434.0,
+            "text": " Chai variety  Not a single line  Now  You can see  As you go to admin"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1434.0,
+            "end": 1444.0,
+            "text": " And reload  Manage.py  Run server  And you can see  Chai varieties"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1444.0,
+            "end": 1454.0,
+            "text": " Chai varieties  Spelling mistake  It's ok  Now you can add  All fields"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1454.0,
+            "end": 1464.0,
+            "text": " You can see  You can see  All fields  In enums  Masala tea"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1464.0,
+            "end": 1474.0,
+            "text": " Name  Small  Ginger  Ginger tea  File"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1474.0,
+            "end": 1484.0,
+            "text": " File  File  Chai code  PNG  Date time"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1484.0,
+            "end": 1494.0,
+            "text": " Now  You can  Change  Save  Chai variety object"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1494.0,
+            "end": 1504.0,
+            "text": " Chai variety object  Not good  It would be better  It would be better  Let's do it"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1504.0,
+            "end": 1514.0,
+            "text": " In models.py  At the end of class  You can change  Simple code  Def"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1514.0,
+            "end": 1524.0,
+            "text": " Def  Dunder  Dunder  Dunder  Not much"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1524.0,
+            "end": 1534.0,
+            "text": " Not much  Return  Return  Self  Name"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1534.0,
+            "end": 1544.0,
+            "text": " Save  Save  Save  This is also  Configuration"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1544.0,
+            "end": 1554.0,
+            "text": " What are the options  What are the fields  You can see  Completely manageable  In short"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1554.0,
+            "end": 1564.0,
+            "text": " Let's add one more  Suppose  Large  Masala tea  Large masala tea"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1564.0,
+            "end": 1574.0,
+            "text": " Let's bring  One more image  Let's use this  This is  Masala tea"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1574.0,
+            "end": 1584.0,
+            "text": " Save  Now we have  Two chai available  It's good  We understood"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1584.0,
+            "end": 1594.0,
+            "text": " How to bring values  How to add them  How to register  Almost everything  You know"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1594.0,
+            "end": 1604.0,
+            "text": " This is done  This is how database is managed  You like big videos  So I will not stop here  Otherwise"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1604.0,
+            "end": 1614.0,
+            "text": " It's already big  Let's go ahead  I would have made more  I have made so many videos  Now"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1614.0,
+            "end": 1624.0,
+            "text": " Things are in database  But it's not only in database  We need  This template  All chai"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1624.0,
+            "end": 1634.0,
+            "text": " I want to show it  It will be better  Database is set  But I want to bring values  On front end"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1634.0,
+            "end": 1644.0,
+            "text": " How to do it  We go to views.py  We have a field  Chais  All chais"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1644.0,
+            "end": 1654.0,
+            "text": " We take a request  And forward values  How?  It's easy  Chais"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1654.0,
+            "end": 1664.0,
+            "text": " All chais  We will see later  What I do  It's simple  I want to bring chai variety"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1664.0,
+            "end": 1674.0,
+            "text": " And see it  I do  Chai variety  I want chai variety suggestions  I have"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1674.0,
+            "end": 1684.0,
+            "text": " But sometimes it's not  Why not  Forgot to import  How to import  From"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1684.0,
+            "end": 1694.0,
+            "text": " Dot models  Import  Chai variety  Now  We have"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1694.0,
+            "end": 1704.0,
+            "text": " Chai variety  Because it's ORM  You don't need to write sql  It has documentation  You have many options"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1704.0,
+            "end": 1714.0,
+            "text": " What you can do  Clean field  Primary keys  Validate  Many options"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1714.0,
+            "end": 1724.0,
+            "text": " You get many options  For interaction  You use objects  And then you give operation  Aggregation"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1724.0,
+            "end": 1734.0,
+            "text": " Accounts  Many options  I think no one knows  But not many  One option in db"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1734.0,
+            "end": 1744.0,
+            "text": " All  Now  It will query  Chai models  It will give"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1744.0,
+            "end": 1754.0,
+            "text": " All  Arrays  You should know  What data type  You are expecting"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1754.0,
+            "end": 1764.0,
+            "text": " To loop  To extract values  Or display  You have to pass  A third parameter"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1764.0,
+            "end": 1774.0,
+            "text": " Chai  Variable  Chai  This is your work  How to transfer values"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1774.0,
+            "end": 1784.0,
+            "text": " In frontend  Now  You have to handle values  In frontend  How to handle"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1784.0,
+            "end": 1794.0,
+            "text": " It's not difficult  To handle  Values  I will tell you  And"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1794.0,
+            "end": 1804.0,
+            "text": " Styling  In templates  I have all chai  We made it in last video  And"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1804.0,
+            "end": 1816.0,
+            "text": " If we  Copy it  We have  Chai  And we are loading"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1816.0,
+            "end": 1826.0,
+            "text": " All chai  In urls  We are loading all chai  All chai  All chai for you"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1826.0,
+            "end": 1836.0,
+            "text": " Now  I will introduce  One more block  This is for block  For"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1838.0,
+            "end": 1848.0,
+            "text": " Suggestion  Loop block  Block  Unnamed  How to use"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1850.0,
+            "end": 1860.0,
+            "text": " I am thinking  It's better  It's not working  Ok  We can take unnamed block"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1860.0,
+            "end": 1870.0,
+            "text": " It's gone  What to do  Enter  Now we are using  For loop"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1870.0,
+            "end": 1880.0,
+            "text": " End for  This is our end for  Mess up  With suggestion  And"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1880.0,
+            "end": 1890.0,
+            "text": " For loop  How to write  For keyword  Variable  Chais"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1890.0,
+            "end": 1900.0,
+            "text": " Chais  Array  Object.all  For chai  In chais"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1900.0,
+            "end": 1910.0,
+            "text": " Chais  Object  As it is  Now  In every chai"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1910.0,
+            "end": 1920.0,
+            "text": " You have access  We are using  Div  And in this div  You can use"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1920.0,
+            "end": 1930.0,
+            "text": " Class  We don't have  Class  Chai dash item  We will write"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1930.0,
+            "end": 1940.0,
+            "text": " Chai item class  Now  How to  Take data  Especially image data"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1940.0,
+            "end": 1950.0,
+            "text": " Chai dot  How to take image  Inject a variable  Inject  Which is your variable"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1950.0,
+            "end": 1960.0,
+            "text": " Chai  We have image  In database  Or models  We have image"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1960.0,
+            "end": 1970.0,
+            "text": " Whenever you store image  You have to write url  That's it  Save  Refresh"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1970.0,
+            "end": 1980.0,
+            "text": " We need to get  Issues  Ok  I think  We need to get"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1980.0,
+            "end": 1990.0,
+            "text": " Issues  Oops  What is the mistake  It is simple  We are loading content"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 1990.0,
+            "end": 2000.0,
+            "text": " But  We are not loading  So i tried  Nothing  I think"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2000.0,
+            "end": 2010.0,
+            "text": " My block is not rendering  If we see  Template  Layout  We are loading"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2010.0,
+            "end": 2020.0,
+            "text": " Content  No one knows  It is easy  Cut  Add"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2020.0,
+            "end": 2030.0,
+            "text": " Inject  Save  Content  Now  We start tailwind"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2030.0,
+            "end": 2040.0,
+            "text": " We have installed  Tailwind  Cd  Chai django  Python"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2040.0,
+            "end": 2050.0,
+            "text": " Tailwind  On the go  Styling  Not much  But little"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2050.0,
+            "end": 2060.0,
+            "text": " Let's start  First  Inside or outside  Div  Inside div"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2060.0,
+            "end": 2070.0,
+            "text": " We can give tailwind classes  Basic classes  Grid  Grid-col  Columns"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2070.0,
+            "end": 2080.0,
+            "text": " Gap  Gap-4  Div  Div  Div"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2080.0,
+            "end": 2090.0,
+            "text": " Grid  Grid  Margin  Margin-allside  Margin"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2090.0,
+            "end": 2100.0,
+            "text": " Now  We can apply  Styling  Not much  Little"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2100.0,
+            "end": 2110.0,
+            "text": " Rounded  Looks good  Still  And  Instead of chai item"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2110.0,
+            "end": 2120.0,
+            "text": " We can give background color  Bg-  Gray  500  And"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2120.0,
+            "end": 2130.0,
+            "text": " Little here  Margin-5  No  Sorry  Padding-5"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2130.0,
+            "end": 2140.0,
+            "text": " Margin-5  Not good  Little  Light  200"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2140.0,
+            "end": 2150.0,
+            "text": " Looks bad  Try other color  Green  Or blue  Blue-500"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2150.0,
+            "end": 2162.0,
+            "text": " Little dark  Looks good  Ok  You can do it  Little time"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2162.0,
+            "end": 2172.0,
+            "text": " But looks good  And  You can give other classes  Simple  Text-Excel"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2172.0,
+            "end": 2182.0,
+            "text": " To excel  Font-Bold  Font-Bold  Ok  Not bad"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2182.0,
+            "end": 2192.0,
+            "text": " And  Here  Rounded  Rounded  Ok"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2192.0,
+            "end": 2202.0,
+            "text": " Not bad  And  Shadows  Shadows  Shadows-LG"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2202.0,
+            "end": 2212.0,
+            "text": " Looking good  Not bad  Now  You know  How to show"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2212.0,
+            "end": 2222.0,
+            "text": " Data  Now  We will  Show button  First"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2222.0,
+            "end": 2232.0,
+            "text": " A tag  Will show  How to handle  A tag  Simple button"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2232.0,
+            "end": 2242.0,
+            "text": " Will show  Two variables  In this button  ID  Type"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2242.0,
+            "end": 2252.0,
+            "text": " And  ID  Because  Database gives you ID  Now"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2252.0,
+            "end": 2262.0,
+            "text": " Add some classes  I have many classes  Ok  First  Type equals"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2262.0,
+            "end": 2272.0,
+            "text": " Button  Class  Added all classes  Now  Button is available"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2272.0,
+            "end": 2282.0,
+            "text": " You can block  Button  Block  Block  Inline flex"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2282.0,
+            "end": 2292.0,
+            "text": " Width 100%  Width dash  100%  Ok  Not bad"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2292.0,
+            "end": 2302.0,
+            "text": " It's ok  Could have been improved  Now  Button is not working  How to"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2302.0,
+            "end": 2312.0,
+            "text": " Work with button  Ok  We will come back  Close  I will give you"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2312.0,
+            "end": 2322.0,
+            "text": " One more iteration  So that your journey is settled  Now  Our next goal  Is to add one more data field"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2322.0,
+            "end": 2332.0,
+            "text": " It will be easier  Suppose  You have given a good type  But my tea has no description  Or no pricing"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2332.0,
+            "end": 2342.0,
+            "text": " I will add one  You add one  Description  Add pricing  And see the number field"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2342.0,
+            "end": 2352.0,
+            "text": " Research it  Now add models  And take a text field  You have many options  But"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2352.0,
+            "end": 2362.0,
+            "text": " If you add only text field  You will get a compulsory field  If you have data already  Clean all data  Add new data"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2362.0,
+            "end": 2372.0,
+            "text": " If you want  If you want  You have two options  Default  If no one has"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2372.0,
+            "end": 2382.0,
+            "text": " Add it in all fields  Ok  You have added models  It means  You have to perform"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2382.0,
+            "end": 2392.0,
+            "text": " How  It is very easy  First make migrations  Because model has changed  As soon as I enter"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2392.0,
+            "end": 2402.0,
+            "text": " Migrations are done  You can see  What else has been added  Dependency  Migration"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2402.0,
+            "end": 2412.0,
+            "text": " Add field  Migration is done  Now you have to  Migrate  You can see"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2412.0,
+            "end": 2422.0,
+            "text": " We are coming here  Refresh  Now I will refresh  How will it work  If server is not working"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2422.0,
+            "end": 2432.0,
+            "text": " Run server  Hopefully it is working  Are you also working  Now we go here  I have a description field"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2432.0,
+            "end": 2442.0,
+            "text": " Available here  Now  Description field is available  Now I want  Suppose"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2442.0,
+            "end": 2452.0,
+            "text": " If I click on this button  I go to a new view  And in that new view  I see the description  Now I want this much detail"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2452.0,
+            "end": 2462.0,
+            "text": " And obvious thing  Click on the details  Let's see  How it performs  If you go to details"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2462.0,
+            "end": 2472.0,
+            "text": " You need a new view  If there is no view  How will it get data  First go to view  All chai is there"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2472.0,
+            "end": 2482.0,
+            "text": " But if you want to go to new view  Go to view and add method  What is the name  Chai underscore detail  Here you go"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2482.0,
+            "end": 2492.0,
+            "text": " In detail  You know  You are getting a request  And whoever comes on this URL  Will bring a chai id"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2492.0,
+            "end": 2502.0,
+            "text": " How will it bring  But a chai id will come  There are many ways to give id  But in this case  You click"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2502.0,
+            "end": 2512.0,
+            "text": " You see a new id in the URL  And on the basis of id  The data is loaded  Now I need a new chai variable  Which goes from database"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2512.0,
+            "end": 2522.0,
+            "text": " And on the basis of id  Brings the full detail  The method you will use the most  Is through Django shortcuts  Let's bring it"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2522.0,
+            "end": 2536.0,
+            "text": " From Django shortcuts  You have to bring  Import  And this method is called  Get list or 404"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2536.0,
+            "end": 2546.0,
+            "text": " Depends on what you are using  If you don't get the full array  Then give 404  If we have the object  Then bring the object"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2546.0,
+            "end": 2556.0,
+            "text": " Otherwise bring 404  We will use get object or 404  You have to pass two things  You have a manager  And a query set"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2556.0,
+            "end": 2566.0,
+            "text": " Basically  I have to pass chai variety  From this model  And you have to give the primary key  What is the value of the primary key"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2566.0,
+            "end": 2576.0,
+            "text": " My value is chai id  Which I will get easily  You can put more filtering  You can put data check  Chai id type is exactly"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2576.0,
+            "end": 2586.0,
+            "text": " That is basic  After that  Return  You will render  But what will you render"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2586.0,
+            "end": 2596.0,
+            "text": " Request is ok  I will give you  But there is no template  So let's make a template  Right click new file"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2596.0,
+            "end": 2606.0,
+            "text": " And let's call it  Chai underscore detail  Details  Dot html  Now at least I have a data"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2606.0,
+            "end": 2616.0,
+            "text": " So let's give it to the data  So inside the chai folder  I have given a file  Chai underscore detail  Dot html"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2616.0,
+            "end": 2626.0,
+            "text": " Now  We have to pass the object  We have learned this above  We have done chai before  We will pass chai"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2626.0,
+            "end": 2636.0,
+            "text": " And we will do in quotes  Here is chai  What will be the value  We have done one thing  View will come like this"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2636.0,
+            "end": 2646.0,
+            "text": " It is a very good thing  But  View does not work alone  I will click here  You should know where to go"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2646.0,
+            "end": 2656.0,
+            "text": " What to load  You are absolutely right  You told me  Now we go to our url  And tell that url"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2656.0,
+            "end": 2666.0,
+            "text": " That something new has come  Handle this too  Ok  Let's duplicate this  First handle path"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2666.0,
+            "end": 2676.0,
+            "text": " You will get primary keys in path  By default database  You can configure it  But we have by default  In db"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2676.0,
+            "end": 2686.0,
+            "text": " Integer type keys  So in path  If we have an integer  What will I treat that integer  I will call it"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2686.0,
+            "end": 2696.0,
+            "text": " Chai underscore id  Exactly chai underscore id  You have to put slash  It is not a special option  It is called diamond bracket"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2696.0,
+            "end": 2706.0,
+            "text": " You have to keep it in it  Chai id is because  When views are coming here  You are calling it chai id  If you call it something else"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2706.0,
+            "end": 2716.0,
+            "text": " It will be a mess  You have to load views  We have brought all views  We do not have all chai  We have chai detail"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2716.0,
+            "end": 2726.0,
+            "text": " I will change the name  You will get the impact of this name  This name is very important  We do a lot of work through it  Ok"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2726.0,
+            "end": 2736.0,
+            "text": " Now we have done this work  I know views  How will it behave after going there  How will the url look  I know that too"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2736.0,
+            "end": 2746.0,
+            "text": " But  Now the chai html we have made  Chai detail  How will the values come in it  We handle it too"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2746.0,
+            "end": 2756.0,
+            "text": " It is very easy  There is no rocket science in it  First of all  Let's copy paste  Let's bring it all"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2756.0,
+            "end": 2766.0,
+            "text": " Or at least  Let's bring it all  Let's paste it  And the useless ones  Let's remove it"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2766.0,
+            "end": 2776.0,
+            "text": " End for div  Remove it all  Let's manipulate it  We have to extend the layout  You can write chai detail page"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2776.0,
+            "end": 2788.0,
+            "text": " We have content here  Let's call it chai detail page  Chai detail page  Technically  We should have"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2788.0,
+            "end": 2798.0,
+            "text": " Whenever I go after chai  And write 1  I get chai detail page  Now step 1  If I take 1 from here"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2798.0,
+            "end": 2808.0,
+            "text": " It should reach to next page  If I take 2 from here  How to do it  It will be done  Through our anchor"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2808.0,
+            "end": 2818.0,
+            "text": " We come to all chai template  If you remember  I used a tag here  But now  I don't need hash"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2818.0,
+            "end": 2828.0,
+            "text": " I need a dynamic url  Let's remove it  And inject templates  Not variables  These are templates"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2828.0,
+            "end": 2838.0,
+            "text": " We inject templates  Now what will be done  Next  I have to use url  There are ways to use url"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2838.0,
+            "end": 2848.0,
+            "text": " How to use url  Along with url  You have to give a name  We have to see documentation  First of all"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2848.0,
+            "end": 2858.0,
+            "text": " Where will url go  I don't know  So whenever url goes  We have given a name  All chai detail"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2858.0,
+            "end": 2868.0,
+            "text": " When you use url  Then  You can use url with name  Which we never used  Copy"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2868.0,
+            "end": 2878.0,
+            "text": " And bring this name  All chai  Go to this url  Otherwise it becomes difficult  But best way is"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2878.0,
+            "end": 2888.0,
+            "text": " Whenever you define url  Define name of url  So that you can reuse it  But along with that  You can send a string"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2888.0,
+            "end": 2898.0,
+            "text": " Put it in quotes  This is a string  Now what other parameters  You have to send  See"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2898.0,
+            "end": 2908.0,
+            "text": " We are in loop  You can also put a dot id  So that it's id reaches you  Now save it  Reload it"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2908.0,
+            "end": 2918.0,
+            "text": " Now see  You have chai slash 1  Here chai slash 2  Click here  So i have 1"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2918.0,
+            "end": 2928.0,
+            "text": " Now you know the relation  That from url this thing is coming here  We also enjoy reading like this  Ok  This is all about details"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2928.0,
+            "end": 2938.0,
+            "text": " Now the issue  Easy thing  On chai detail  You have to display values  How can you do it"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2938.0,
+            "end": 2948.0,
+            "text": " It's very easy  Because now i don't have to put a loop  You have a variable  And print the details  That's right"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2948.0,
+            "end": 2960.0,
+            "text": " Let's print a description  Suppose it's an h3  And i have to insert a variable  And in that variable  I know chai is available"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2960.0,
+            "end": 2970.0,
+            "text": " And i have  Description  I haven't written description yet  I haven't  So let's print the name"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2970.0,
+            "end": 2980.0,
+            "text": " Let's print the name  So here  Large masala tea  And here ginger tea  Now i go"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2980.0,
+            "end": 2992.0,
+            "text": " Here  And add description  This is description for  Large  Masala tea"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 2992.0,
+            "end": 3002.0,
+            "text": " Copy  Save  And for small ginger tea  Description for  Small"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 3004.0,
+            "end": 3014.0,
+            "text": " Ginger tea  Save  Now i can add description  So just below h3  We write a paragraph"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 3014.0,
+            "end": 3024.0,
+            "text": " And tell it to insert a variable  And because i know variable  Chai is available  So after this  Description"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 3024.0,
+            "end": 3034.0,
+            "text": " I think i have to reload  Editor  Refresh  Now we have description  So let's make a card"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 3034.0,
+            "end": 3044.0,
+            "text": " And display it  You can use  Bootstrap and other tools  But  This task is for you"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 3044.0,
+            "end": 3054.0,
+            "text": " Now you know  You can take all properties  And data for a particular url  We have made a url  This is a complete project"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 3054.0,
+            "end": 3064.0,
+            "text": " This is a database  You have options  How you can go  You can add data fields  You can manipulate"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 3064.0,
+            "end": 3074.0,
+            "text": " You can give values  When we come to home page  We have all cards  After card list  You can click on any card"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 3074.0,
+            "end": 3084.0,
+            "text": " Now for you  Assignment  Assignment is  I don't have pricing  You can add it in a string"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 3084.0,
+            "end": 3094.0,
+            "text": " Someone has a 50rs pricing  Someone has a 60rs pricing  I should see pricing in a pill  After that improve the card  After clicking"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 3094.0,
+            "end": 3104.0,
+            "text": " A big card should come  With a big image  Below that image  Description  Pricing"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 3104.0,
+            "end": 3114.0,
+            "text": " And a back button  I think you enjoyed  How it is detailed  It is a very interesting project  By the way"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 3114.0,
+            "end": 3124.0,
+            "text": " I will add the source code  In the website  ChaiCode.com  So that you can get  All the source code"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 3124.0,
+            "end": 3134.0,
+            "text": " And very soon  When the project will be over  It will be published on github  I hope you enjoyed  This video is very interesting"
+        },
+        {
+            "number": "6",
+            "title": "Handle model and urls in Django",
+            "start": 3134.0,
+            "end": 3144.0,
+            "text": " We have discussed a lot about models  About urls  And how fast we are becoming a full stack developer  That too in python  See you in the next video"
+        }
+    ],
+    "text": " Hello, how are you all? Welcome to Chai Aur Code and our unique YouTube channel where I am teaching you how to develop a full stack through Django Two important things One, we messed up a little in the sequence of series upload which is now fixed, playlist is arranged well and you are getting articles It happens sometimes Actually, what happened is the name of the same video was copied twice so I got confused All responsibility on me I messed it up, no team did it but now it is fixed Second important thing Our platform is now available on chaicode.com You will get all the articles, videos and code files and the platform is now available so the paid codes will also be available so it is almost ready So, what will we see in this video We have seen the basics of Django like templates, routes URLs, when to call them One more major aspect of Django is the models How it interacts with database How the database configuration is in Django We will see all of them from here We will see in this way that you will get 100% confidence that yes, I can also write models If you want to learn more about models then you can learn but I think the best way to learn Django models is through projects because how long you will go in documentation it is not possible So, as and when there is a requirement you can go and learn and if you make a few projects with someone it becomes very good In this model, we will see image upload how Django handles images I think one of the best way that Django handles images is that it keeps images in folders and saves the URL and not just puts the whole image in the DB It is also possible but it is not optimized Let's see Our comment target is 200 comments Not much, just 200 comments Do a little bit You are free now Push the series Let's share the screen and discuss it By the way, I will publish the entire article I have already written the article as a reference guide You will get it You are liking the article a lot Thank you so much for this So, where are we now? This is our VS Code I have activated our virtual environment and where are we now? Let me open it in a browser So, I have opened the browser and you know how to run the command It is very basic It is a simple Python manage.py run server This is our case where we run the server We have not seen much but we have the knowledge that we can keep the templates like this We can keep the templates inside the project like the tea project You can keep the template here We have all tea If you want to see the URL We have learned how to manage the URL We can go directly to the tea How will we know this? We will know it from the main project There are the URLs We are forwarding the redirection or the control of the URL after the tea to the tea.url We got to know about the tea because we have mentioned the tea in the settings.py So, the tea keyword came here and we said that there is a .url So, you can take the URL file So, we got to know it like this Now, we come here We have not worked on the UI We have told you how to use Tailwind I will try to do something more on Tailwind Components are just drag and drop We will see that later Now, we will come back to what else we have to do We have not done anything special yet I will tell you one more thing Now, you can go to the admin But, what happens is that you forget the login id and password Especially, if you are doing the development then it is a very obvious case For this, there is a Python script You can reset it I know that many of you must have got this problem So, we will go to Google And we will call it Reset Django admin password So, run manage.py You will get an option Python manage.py You can change the password of the user or the main db user I think the user was Hitesh Let's try this once Change password Let's run this with the user Let's kill it Python manage.py Change password I think Hitesh was the user's admin Change password Hitesh Password is too similar 8 characters Hitesh 123 Hitesh 123 Password is too similar and it is not giving the option to change it Chai1234 Chai1234 Chai1234 Now, I am happy that Chai1234 is the password Let's run this again and see if we can login to the admin Hitesh Password is Chai1234 Yes At least I am able to go to the admin and we can see that we have only one user Now, what we will do We want to use this admin but we don't have any Chai models So, for the first time, we will interact with the database to see how the database can help us Whenever you want to interact with the database the first step is Whenever you want to make anything data related you don't make it in the main project in the production If you don't make it in the production then why will you make it in the tutorial Here, you don't see the models.py file and it doesn't exist No one creates it The first app we created Remember, project and app are different Project is the whole project App is the small apps You can also call it micro services architecture It is not exactly, but you can call it No one will shout at you that why did you say We go to Chai, which is the new app Here, you have seen by default that you have models.py and admin.py file How are these files routed How are they associated with each other Let's discuss that First of all, for the database You can write models directly Why are you able to write directly? Why is it important to know? That's why you like tutorials Because everything has a detailed discussion It is fun to see Where is it coming from We know the framework like this We have seen it in front of our eyes First thing you see here is db.escolite This is an important file Because we have the whole sequel in it If you go to Chai and Django If you go to settings.py You will see many options here How do you handle the database The database we have is like this Our engine is Django.db.backends.escolite But these engines can be changed In fact, you have a complete URL of how to reset the database You can go and study it It is the best thing that we have been given the same We have escolite 3 But we have access to Postgres You have access to MySQL And MongoDB is also there But it takes a little extra configuration I have seen Django with SQL databases You get the option from here Now we know that we are using SQLite database But we can change the configuration here And put it in Postgres No need to change the code You do not interact directly with the database There is an ORM layer in between We interact with the database through the layer So in one setting you can go from SQLite to Postgres From Postgres to MySQL Now we reach Our main topic We have a lot of questions Now we reach Models.py How to write models in Django You can see that models are imported On the first line We will do all the work through this It is very easy to write models Suppose I write a simple class My model will be ChaiVariety I write the name of the class ChaiVariety My model is ChaiVariety I am making a table How to make this table You can take a dot from the top And take a model How to write a class It is very easy I can write all the fields I can write a name field You can write a name field How to write All are copy pasted We come to models As I have access to it As soon as you put a dot, you will get all the fields There is documentation You can take big integer, average, auto There are many Emails, enums I will tell you something You will get fast learning There are many fields Field depends on the suggestion Which database is active Like in Postgres There are some additional fields You will not get in the suggestion In case you use it, it will give an error Because in configuration, in settings, there is SQLite You are using the field of Postgres The most common field Char field, char field Character field You can pass some default options To know the options Or we will make some projects Then you will know the maximum There is documentation Max length, I need 100 characters In my name After that Image How to handle image For now, let's design the field Then I will tell you how to set For images But images are not supported You have to bring a third party plugin Which is pillow And then you have to do some additional settings To put my images in this folder For now, let's write We only need image field So we give it dot image field And after this image field You will also have to tell Where to upload Suppose I want to upload Now as soon as you save it You will see an error I open it It has said Get pillow at To run the command Python-mpip install pillow So we need pillow Let's go for now So images are handled When you upload your jango images It will put it in this folder You have to set the folder And save that url in the database And save that url in the database Not images Apart from this, suppose I have a field I have to take a date field I have to add date added here To add date, you have to take Timezone libraries But for that too we have jango available In jango, a class called utils Is available Through which you can import a lot of things Like here you see A lot of things are available Our use is simple timezone Let's take timezone Now what is the benefit of taking timezone Now what is the benefit of taking timezone Now I can add timezone in models So models. Now you can add date time field Remember date field is different Date time field is different Date field only gives you date option Date time field gives you date and time option Depends on which one you want to use We will use it according to that So this is our date time field Now I can add default values You can add date time field by default But because I have to add default That's why I needed timezone So here you add timezone And write dot now So now you will get The exact time of now When this model will be created one by one Now suppose I have to add tea types Tea types should also be there Masala tea, ginger tea, ice tea Whichever tea you want So here I want User type to be restricted If you are making for a restaurant Then you will not be giving 1000 types Like I always give example If you are booking seat for airplane Then aisle middle window is the only option You will not give pilot seat So for this common database practice Is to keep enums So suppose I declare a variable Chai type choice And I give it An enum Now in this We will design a tuple So suppose I have ml I give it a name Masala We will duplicate it By putting comma Now next Suppose I have Ginger What will we call ginger Gr Other than that Is there any other So We will name it kl But we will name it kl For kiwi tea We have to give more options If you want plain tea We forgot Here is plain tea And we will keep it simple pl We will take one more I don't like it much But we will keep el For cardamom tea cardamom cardamom cardamom Now I want to design a field Which is highly dependent On these choices Where will we get suggestions We will tell you So I will name it type For type We will give a field So we will take Simple models It will be our care field But we will mention choices We will keep max length 2 because we have kept Abbreviation of 2 And you can give choices Choices are defined above You can give choices A little here By writing indentation type Hmm Let's see There should not be much problem So this is our work Now you have all this available Now we will save This is step 1 How to design models As we move forward You will get to know Data types of models Chair field Images Date field And many more You can see in documentation I have given detailed article In documentation Now we handle our pillow To install pillow We can use command You can use uv Whatever you feel So we will type python M And use pillow PIP install pillow P capital of pillow Remember Now I run server Now there is no problem But now problem is Now you want to keep images To keep images Settings.py should know You will get images You have to set it once Then you can use it in any model You can use it in any app Let's go to settings.py Now here you have to give Media urls So here we give media urls They have to be written exactly the same There is no special option To give them any name You have to give media url Now I am going to take media So media slash It will be exactly the same Now next thing You have to give media root So here media underscore root These two options Settings No one remembers Everyone makes their own notes You can see in blogs The work done above is the same The work done above is static directories Now directories not only have to give path But settings will be same So you can copy from here Everyone does it the same No need to worry You know what you are doing So there is no problem in copying So with base directory Media will come instead of static That's it There is no other work But there is a small thing You have done settings But your urls should also know Because at the end of the day Let's see how to serve This setting Your main project It will be in urls.py Not in particular app It will be in root You can call it root python url It is very easy First you have to import static asset It is very easy We do it here We need from We have to take settings Let's take settings We take jango And load jango configuration From configuration I need static Import and take settings Now you have settings Let's tell you the usage We need one more From jango.conf And We need for urls And static And import static We need two settings There is no exception We have imported two settings How to use them This static method We have to tell From settings This media url Please load it How to write it From url patterns Add one more pattern Via static Static is a method This method will tell We have to load it We have loaded settings This is settings This is settings file We have loaded this settings And we have to take media url You have to write it Media underscore url You know Just now media url We are giving it Plus You have to tell document root Here document You will not get in suggestion Document underscore root Mistake happens I don't know why I have not got in my editor We will take settings And tell Media root But it is written so many times Or it is copied That there are no issues We have told media root And media url In case If your model throws url Please check it We have worked properly Models defined Changed settings Configured url Now how to use The real super power Now I run it Actually The model you have written Your python jango Don't know We have done some changes in database Those changes New tables New models For that We have a step Migration If you remember We have done jango In some settings Make migration When we perform migration We have seen admin Users came Similarly We have to migrate Last time we run one command Migrate Because it was already configured Now You have to create Migration Nothing much Come to python It does all the work Make migration It works with make migration But good practice Migration of your app Migration of your app Or Give command Migration of my app I am working in tea If your co-worker Working in another folder Migration of all should not be We said make migration As soon as you create migration You see a new folder In this new folder Init.py and initial migration Let's see We have seen It is writing sql It is writing sql Same care field Big auto integer Primary keys That's why When you use models You never interact with sql Same code file If you want to go to my sql Or postgres Command is same Make migration Django Or sql This is Django's superpower Now We have understood What is in migration Let's migrate Migrate Migrate Migrate Available As a table If you have sqlite viewer I don't have sql But you can see Plugin is there But how to use I have told you Now let's tell you About Django's superpower You will get a file Admin.py Here it is Through admin.py You can attach any model And see in admin Superpower Subscribe Comment Share Like Comment Share Like Comment Like Share Admin is there Let's import model .models .models .models Import You can import different classes We have only Chai variety Now Register this model To register in database One line code Take site from admin And register Register Chai variety Not a single line Now You can see As you go to admin And reload Manage.py Run server And you can see Chai varieties Chai varieties Spelling mistake It's ok Now you can add All fields You can see You can see All fields In enums Masala tea Name Small Ginger Ginger tea File File File Chai code PNG Date time Now You can Change Save Chai variety object Chai variety object Not good It would be better It would be better Let's do it In models.py At the end of class You can change Simple code Def Def Dunder Dunder Dunder Not much Not much Return Return Self Name Save Save Save This is also Configuration What are the options What are the fields You can see Completely manageable In short Let's add one more Suppose Large Masala tea Large masala tea Let's bring One more image Let's use this This is Masala tea Save Now we have Two chai available It's good We understood How to bring values How to add them How to register Almost everything You know This is done This is how database is managed You like big videos So I will not stop here Otherwise It's already big Let's go ahead I would have made more I have made so many videos Now Things are in database But it's not only in database We need This template All chai I want to show it It will be better Database is set But I want to bring values On front end How to do it We go to views.py We have a field Chais All chais We take a request And forward values How? It's easy Chais All chais We will see later What I do It's simple I want to bring chai variety And see it I do Chai variety I want chai variety suggestions I have But sometimes it's not Why not Forgot to import How to import From Dot models Import Chai variety Now We have Chai variety Because it's ORM You don't need to write sql It has documentation You have many options What you can do Clean field Primary keys Validate Many options You get many options For interaction You use objects And then you give operation Aggregation Accounts Many options I think no one knows But not many One option in db All Now It will query Chai models It will give All Arrays You should know What data type You are expecting To loop To extract values Or display You have to pass A third parameter Chai Variable Chai This is your work How to transfer values In frontend Now You have to handle values In frontend How to handle It's not difficult To handle Values I will tell you And Styling In templates I have all chai We made it in last video And If we Copy it We have Chai And we are loading All chai In urls We are loading all chai All chai All chai for you Now I will introduce One more block This is for block For Suggestion Loop block Block Unnamed How to use I am thinking It's better It's not working Ok We can take unnamed block It's gone What to do Enter Now we are using For loop End for This is our end for Mess up With suggestion And For loop How to write For keyword Variable Chais Chais Array Object.all For chai In chais Chais Object As it is Now In every chai You have access We are using Div And in this div You can use Class We don't have Class Chai dash item We will write Chai item class Now How to Take data Especially image data Chai dot How to take image Inject a variable Inject Which is your variable Chai We have image In database Or models We have image Whenever you store image You have to write url That's it Save Refresh We need to get Issues Ok I think We need to get Issues Oops What is the mistake It is simple We are loading content But We are not loading So i tried Nothing I think My block is not rendering If we see Template Layout We are loading Content No one knows It is easy Cut Add Inject Save Content Now We start tailwind We have installed Tailwind Cd Chai django Python Tailwind On the go Styling Not much But little Let's start First Inside or outside Div Inside div We can give tailwind classes Basic classes Grid Grid-col Columns Gap Gap-4 Div Div Div Grid Grid Margin Margin-allside Margin Now We can apply Styling Not much Little Rounded Looks good Still And Instead of chai item We can give background color Bg- Gray 500 And Little here Margin-5 No Sorry Padding-5 Margin-5 Not good Little Light 200 Looks bad Try other color Green Or blue Blue-500 Little dark Looks good Ok You can do it Little time But looks good And You can give other classes Simple Text-Excel To excel Font-Bold Font-Bold Ok Not bad And Here Rounded Rounded Ok Not bad And Shadows Shadows Shadows-LG Looking good Not bad Now You know How to show Data Now We will Show button First A tag Will show How to handle A tag Simple button Will show Two variables In this button ID Type And ID Because Database gives you ID Now Add some classes I have many classes Ok First Type equals Button Class Added all classes Now Button is available You can block Button Block Block Inline flex Width 100% Width dash 100% Ok Not bad It's ok Could have been improved Now Button is not working How to Work with button Ok We will come back Close I will give you One more iteration So that your journey is settled Now Our next goal Is to add one more data field It will be easier Suppose You have given a good type But my tea has no description Or no pricing I will add one You add one Description Add pricing And see the number field Research it Now add models And take a text field You have many options But If you add only text field You will get a compulsory field If you have data already Clean all data Add new data If you want If you want You have two options Default If no one has Add it in all fields Ok You have added models It means You have to perform How It is very easy First make migrations Because model has changed As soon as I enter Migrations are done You can see What else has been added Dependency Migration Add field Migration is done Now you have to Migrate You can see We are coming here Refresh Now I will refresh How will it work If server is not working Run server Hopefully it is working Are you also working Now we go here I have a description field Available here Now Description field is available Now I want Suppose If I click on this button I go to a new view And in that new view I see the description Now I want this much detail And obvious thing Click on the details Let's see How it performs If you go to details You need a new view If there is no view How will it get data First go to view All chai is there But if you want to go to new view Go to view and add method What is the name Chai underscore detail Here you go In detail You know You are getting a request And whoever comes on this URL Will bring a chai id How will it bring But a chai id will come There are many ways to give id But in this case You click You see a new id in the URL And on the basis of id The data is loaded Now I need a new chai variable Which goes from database And on the basis of id Brings the full detail The method you will use the most Is through Django shortcuts Let's bring it From Django shortcuts You have to bring Import And this method is called Get list or 404 Depends on what you are using If you don't get the full array Then give 404 If we have the object Then bring the object Otherwise bring 404 We will use get object or 404 You have to pass two things You have a manager And a query set Basically I have to pass chai variety From this model And you have to give the primary key What is the value of the primary key My value is chai id Which I will get easily You can put more filtering You can put data check Chai id type is exactly That is basic After that Return You will render But what will you render Request is ok I will give you But there is no template So let's make a template Right click new file And let's call it Chai underscore detail Details Dot html Now at least I have a data So let's give it to the data So inside the chai folder I have given a file Chai underscore detail Dot html Now We have to pass the object We have learned this above We have done chai before We will pass chai And we will do in quotes Here is chai What will be the value We have done one thing View will come like this It is a very good thing But View does not work alone I will click here You should know where to go What to load You are absolutely right You told me Now we go to our url And tell that url That something new has come Handle this too Ok Let's duplicate this First handle path You will get primary keys in path By default database You can configure it But we have by default In db Integer type keys So in path If we have an integer What will I treat that integer I will call it Chai underscore id Exactly chai underscore id You have to put slash It is not a special option It is called diamond bracket You have to keep it in it Chai id is because When views are coming here You are calling it chai id If you call it something else It will be a mess You have to load views We have brought all views We do not have all chai We have chai detail I will change the name You will get the impact of this name This name is very important We do a lot of work through it Ok Now we have done this work I know views How will it behave after going there How will the url look I know that too But Now the chai html we have made Chai detail How will the values come in it We handle it too It is very easy There is no rocket science in it First of all Let's copy paste Let's bring it all Or at least Let's bring it all Let's paste it And the useless ones Let's remove it End for div Remove it all Let's manipulate it We have to extend the layout You can write chai detail page We have content here Let's call it chai detail page Chai detail page Technically We should have Whenever I go after chai And write 1 I get chai detail page Now step 1 If I take 1 from here It should reach to next page If I take 2 from here How to do it It will be done Through our anchor We come to all chai template If you remember I used a tag here But now I don't need hash I need a dynamic url Let's remove it And inject templates Not variables These are templates We inject templates Now what will be done Next I have to use url There are ways to use url How to use url Along with url You have to give a name We have to see documentation First of all Where will url go I don't know So whenever url goes We have given a name All chai detail When you use url Then You can use url with name Which we never used Copy And bring this name All chai Go to this url Otherwise it becomes difficult But best way is Whenever you define url Define name of url So that you can reuse it But along with that You can send a string Put it in quotes This is a string Now what other parameters You have to send See We are in loop You can also put a dot id So that it's id reaches you Now save it Reload it Now see You have chai slash 1 Here chai slash 2 Click here So i have 1 Now you know the relation That from url this thing is coming here We also enjoy reading like this Ok This is all about details Now the issue Easy thing On chai detail You have to display values How can you do it It's very easy Because now i don't have to put a loop You have a variable And print the details That's right Let's print a description Suppose it's an h3 And i have to insert a variable And in that variable I know chai is available And i have Description I haven't written description yet I haven't So let's print the name Let's print the name So here Large masala tea And here ginger tea Now i go Here And add description This is description for Large Masala tea Copy Save And for small ginger tea Description for Small Ginger tea Save Now i can add description So just below h3 We write a paragraph And tell it to insert a variable And because i know variable Chai is available So after this Description I think i have to reload Editor Refresh Now we have description So let's make a card And display it You can use Bootstrap and other tools But This task is for you Now you know You can take all properties And data for a particular url We have made a url This is a complete project This is a database You have options How you can go You can add data fields You can manipulate You can give values When we come to home page We have all cards After card list You can click on any card Now for you Assignment Assignment is I don't have pricing You can add it in a string Someone has a 50rs pricing Someone has a 60rs pricing I should see pricing in a pill After that improve the card After clicking A big card should come With a big image Below that image Description Pricing And a back button I think you enjoyed How it is detailed It is a very interesting project By the way I will add the source code In the website ChaiCode.com So that you can get All the source code And very soon When the project will be over It will be published on github I hope you enjoyed This video is very interesting We have discussed a lot about models About urls And how fast we are becoming a full stack developer That too in python See you in the next video"
+}

@@ -1,0 +1,11 @@
+In the provided video chunks, forms are primarily discussed in the following videos:
+
+1. "First look at Django forms" (Video 8)
+The timestamp where forms are taught for the first time is around 0:30 minutes into this video. In this video, you'll learn about creating a simple form using Django's built-in forms and how to inject it into your templates.
+
+2. "Build a full stack project in Django for beginners" (Video 9)
+This video covers more advanced topics on how to create forms in Django. The timestamp where the topic of forms is discussed again is around 0:45 minutes into this video. You'll learn about creating a simple registration form, handling method, and other fields like email.
+
+To get a better understanding of how forms work in Django, I recommend starting with Video 8 ("First look at Django forms") first. This video provides a solid foundation for working with forms in Django.
+
+If you have any more questions or need further clarification on using forms in Django, feel free to ask!

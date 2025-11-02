@@ -1,0 +1,1636 @@
+{
+    "chunks": [
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 0.0,
+            "end": 10.0,
+            "text": " Hello, how are you all?  Welcome to Chai or Code  and we are continuing our  Django series. It's going well  and you all supported us a lot."
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 10.0,
+            "end": 20.0,
+            "text": " A lot of people are sharing  and being stingy  but what can we do about it?  But thank you so much for those who  shared and those who help us"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 20.0,
+            "end": 30.0,
+            "text": " achieve our target in the comments  Thank you for those who comment  and those who are not doing anything  then what can we say about them?  Let's talk to you"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 30.0,
+            "end": 40.0,
+            "text": " because you are the ones who promote this channel  on Twitter and LinkedIn  and we are growing with a lot of growth  So in this video  let's move ahead in our Django series"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 40.0,
+            "end": 50.0,
+            "text": " There were some people who were spreading rumors  that Sir has ended the Django series  What? Yes, we will end it when we come and tell you  Anyways, you all already know me  those who follow me regularly"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 50.0,
+            "end": 60.0,
+            "text": " So what will we do in this video?  In this video, we will take Django  one step ahead. If you remember  we had read about Django's models  and retrieved data from those models"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 60.0,
+            "end": 70.0,
+            "text": " and deployed it on the front end  Many of you have made  really good cards  and shared them on Twitter and LinkedIn  So those who do this"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 70.0,
+            "end": 80.0,
+            "text": " and are working and engaging  those people can work  and the rest are sitting on the sofa  so you should also work  In this video, we are talking about relational databases"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 80.0,
+            "end": 90.0,
+            "text": " Django is mostly  with SQL databases  Right now we are using SQLite  but the same interface is used  for MySQL, Postgres or any other SQL databases"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 90.0,
+            "end": 100.0,
+            "text": " Django gives you a wrapper  through which you can talk to the database  and not directly  and this is a good thing  that the database can be replaced under the hood"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 100.0,
+            "end": 110.0,
+            "text": " In this video, we will talk about relations  the one to many relations  of the database  and how all these relations can be used  in the work"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 110.0,
+            "end": 120.0,
+            "text": " We will see it in the code directly so that things are easy  After that, we will show you  the admin interface  and will also show you  the customization of the admin interface"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 120.0,
+            "end": 130.0,
+            "text": " and finally, we will introduce you to forms  which is a new topic  but you will enjoy  how Django handles forms  and how you get built-in forms"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 130.0,
+            "end": 140.0,
+            "text": " You just need to write their CSS  and your work is done  So let's start  Comment target? Yes, thank you so much for asking  It is not much, it is a target of 400 comments"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 140.0,
+            "end": 150.0,
+            "text": " As soon as the target of 400 comments  then only the new video will come  Let's see how much time it takes  If it takes a week, then the video will come after a week  If it takes 3 days, then the video will come after 3 days"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 150.0,
+            "end": 160.0,
+            "text": " So it depends on how fast you  get 400 comments completed  Because if there is no engagement  then make some other kind of videos  So you take care of that thing"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 160.0,
+            "end": 170.0,
+            "text": " So let's share the screen with you  So let's share the screen with you  Now let's see  how we can handle it  This is our application"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 170.0,
+            "end": 180.0,
+            "text": " Let's open it  We are running it in Python  So first of all  we activate the virtual environment  We should see the virtual environment"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 180.0,
+            "end": 192.0,
+            "text": " We should see the virtual environment  ls-la  ls-la  Is our virtual environment deleted?  Oh nice!"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 192.0,
+            "end": 202.0,
+            "text": " Our virtual environment is deleted  Let's see  What happened to us?  Ok, we are back  Actually I opened the wrong folder"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 202.0,
+            "end": 212.0,
+            "text": " So I fixed the folder  And now we can see that  we have our virtual environment  By the way, for those who don't know  that we have launched a new website"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 212.0,
+            "end": 222.0,
+            "text": " docs.chaicode.com  Some people had a problem with this  that what is the big deal in this new documentation  Ok, you don't have to see it  So now you can"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 222.0,
+            "end": 232.0,
+            "text": " get the attached documentation of this video  You can see the whole section of Django  When you are watching this video  you will see a new tab  Just click on it"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 232.0,
+            "end": 242.0,
+            "text": " And you will get all the documentation  along with the detailed guide and source code  So you don't have to worry  You will get all the documentation  Will you get a good habit of reading the documentation?"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 242.0,
+            "end": 252.0,
+            "text": " Tell me in the comments  Is it a good habit to read the documentation?  Or is it a bad habit to ask  who reads the documentation?  So what we do is"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 252.0,
+            "end": 262.0,
+            "text": " We enable the virtual environment  I have already discussed the source in windows  So we go to .venv  We go to .venv  We have the activate script"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 262.0,
+            "end": 272.0,
+            "text": " It is activated  And we come to python  Let's see where we are  ls cd chai django  And in this"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 272.0,
+            "end": 282.0,
+            "text": " python manage.py  run server  Hopefully, our server should be running  And it is looking good  Now we go to admin"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 282.0,
+            "end": 292.0,
+            "text": " Because we will work on admin  Hopefully, if I remember the password  chai1234  Yes, I remember the password  I didn't expect"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 292.0,
+            "end": 302.0,
+            "text": " So we took chai varieties  And we had 1-2 chai varieties  Large masala tea, small ginger tea  We had this kind of chai  Let's add one more chai"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 302.0,
+            "end": 312.0,
+            "text": " So that we can see what is happening  We don't have large, small, medium  So we  Medium  Medium"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 312.0,
+            "end": 322.0,
+            "text": " Masala  Tea  We also need an image  So let's add an image  And we add"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 322.0,
+            "end": 332.0,
+            "text": " Yes  Let's add the image of our new course  What is the type? Masala  Date is now  And"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 332.0,
+            "end": 342.0,
+            "text": " Medium size  Tea  DSA with javascript  New course  It is good"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 342.0,
+            "end": 352.0,
+            "text": " Let's save it  And small ginger medium  Now let's come to the source code  Now we have to follow a lot of strategies  It is not that we can"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 352.0,
+            "end": 362.0,
+            "text": " Innovate anything randomly  It is a framework  We have to follow guidelines  And there are guidelines to learn the framework  So first we will talk about relationships"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 362.0,
+            "end": 372.0,
+            "text": " We will not talk about form now  We will talk about it later  So first  We are talking about relationships  There are not many relationships in SQL"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 372.0,
+            "end": 382.0,
+            "text": " First is one to many  Second is many to many  And then one to one  Now you have two models  Or two entities"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 382.0,
+            "end": 392.0,
+            "text": " Like tea and review  Now what can be the relation  Between tea and review  One tea can have multiple reviews  One review can't have multiple teas"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 392.0,
+            "end": 402.0,
+            "text": " So we have to see  What can be the values  Suppose we have a tea  And a store  So one tea can be available in multiple stores"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 402.0,
+            "end": 412.0,
+            "text": " And in one store  Multiple teas can be available  So it is a many to many relationship  So instead of studying these relationships in theory  You might have studied it"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 412.0,
+            "end": 422.0,
+            "text": " When you have studied database  We study it in code  It is easier and you will learn to write code  And you will know the relations  So I will tell you one by one"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 422.0,
+            "end": 432.0,
+            "text": " On which relation we are working  So that it will be easy  So we come to our tea model  By the way we already had a tea model  We will copy it and show you"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 432.0,
+            "end": 442.0,
+            "text": " How it looks  Our model is not that good  But the one you made was very good  So this is tea  It is not that bad"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 442.0,
+            "end": 452.0,
+            "text": " But the one you made  Was no doubt one of the best  And the photos of tea were also good  So what we do  We open the tea folder"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 452.0,
+            "end": 462.0,
+            "text": " And go to models.py  Now you know that  We have already made a model with the name of tea  Now what we do  We try to make more models"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 462.0,
+            "end": 472.0,
+            "text": " How can we have more models  One thing if you have noticed  Already  I can directly create an account in Django  I can create an account and log in"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 472.0,
+            "end": 482.0,
+            "text": " So by default in Django  There is a table named user model  There is a user table  Which you can utilize  You can associate and modify"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 482.0,
+            "end": 492.0,
+            "text": " Where do you get it  This is the most important thing  To get it you have to take it from Django  I will turn it off  Our toggle"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 492.0,
+            "end": 502.0,
+            "text": " So we say Django  In Django you will get  Contrib  In this contrib also you will get auth  And from this you can extract"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 502.0,
+            "end": 512.0,
+            "text": " The models  No need to do this  No need to do this  Yes people say  What is the need of documentation"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 512.0,
+            "end": 522.0,
+            "text": " What is the innovation  So no problem  So I got this user  There was no need but for now it is fine  Now what we do"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 522.0,
+            "end": 532.0,
+            "text": " We talk about the models one by one  Which models are you talking about  And why is it right  Or it relates to us  So first we come to one to many"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 532.0,
+            "end": 542.0,
+            "text": " What is the meaning of one to many  There is one entity  And there is multiple  Entities in my left hand  There can be multiple entities"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 542.0,
+            "end": 552.0,
+            "text": " What can be the most basic  Tea reviews can be  So we come to tea review  Now in tea review  Same thing"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 552.0,
+            "end": 562.0,
+            "text": " This is basic  There is no rocket science innovation  In one models.py  You can define multiple classes  Now we come to tea reviews"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 562.0,
+            "end": 572.0,
+            "text": " How reviews  Modeling of reviews  Is almost same  The fields are same  We will not talk about two fields"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 572.0,
+            "end": 582.0,
+            "text": " The rest of the fields are same  Rating, integer, comment  String, text  Date also  So it does not matter"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 582.0,
+            "end": 592.0,
+            "text": " First thing is tea  Because every review should be on tea  And it is  So what we will do  We will bring a foreign key from models"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 592.0,
+            "end": 602.0,
+            "text": " So foreign key means  Which person I am talking to  Primary key means  My own key  My identity"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 602.0,
+            "end": 612.0,
+            "text": " My Aadhar card, my PAN card  But when I am talking to you  What is your roll number  What is your unique identity  So for foreign key"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 612.0,
+            "end": 622.0,
+            "text": " First you have to tell the model  Which model are you talking to  So I have given foreign key  So first thing is  Which model am I talking to"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 622.0,
+            "end": 632.0,
+            "text": " You are talking to tea variety  So I have written tea variety  If it is in any other file  Then import it  Now we come to"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 632.0,
+            "end": 642.0,
+            "text": " Tea variety  I will consider it foreign key  So good thing about Django  You don't have to tell  Which field you are attaching"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 642.0,
+            "end": 652.0,
+            "text": " You pass ID  So you can see in this way  And these are design decisions  One you will see many times  On delete"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 652.0,
+            "end": 662.0,
+            "text": " So what to do with tea review  Delete it with the above model  Keep it as it is  Because they are being associated  So mostly you will see"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 662.0,
+            "end": 672.0,
+            "text": " Cascade effect  Use this  On delete cascade  And you have to bring it  Cascade will not come like this"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 672.0,
+            "end": 682.0,
+            "text": " We need cascade  Now  This is your assignment  Cascade is a very basic thing  What happens"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 682.0,
+            "end": 692.0,
+            "text": " Now your assignment is  You have to find out what is cascade  In the database  And find out and tell me in the comment section  Tell on twitter"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 692.0,
+            "end": 702.0,
+            "text": " Write a small 5-7 line  You have to do assignment  We will not let you sit here for free  We will get you to do the work  Otherwise we are teachers"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 702.0,
+            "end": 712.0,
+            "text": " So you have to find out  What is cascade and tell me  If you want  You can give a related name  Related name"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 712.0,
+            "end": 722.0,
+            "text": " It has always been fruitful  In my experience  As I told you  When we were giving name in urls  It was easy in views"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 722.0,
+            "end": 732.0,
+            "text": " So in the same way  It will be easy  That's it  Now exactly  On the same work"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 732.0,
+            "end": 742.0,
+            "text": " You can see here  We take the user  We associate the user  Because when we learn so much  We have one more model"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 742.0,
+            "end": 752.0,
+            "text": " We inject foreign key  Who has to inject foreign key  We have to inject user  Where did the user come from  We have taken the user from the top"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 752.0,
+            "end": 762.0,
+            "text": " Now on delete  We have to give  Models.cascade  Something related to delete  You can see"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 762.0,
+            "end": 772.0,
+            "text": " If you can't tell  We will tell in the next video  Now in your model  You have to keep the regular fields  You have already read a lot about them"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 772.0,
+            "end": 782.0,
+            "text": " Keep the integer field  I keep the integer field directly  Your assignment is  As we read last time  You have to keep 1,2,3,4,5"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 782.0,
+            "end": 792.0,
+            "text": " If you want to keep rating strictly  You can do that  Now we come to comment  We give the comment  You can take the string field"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 792.0,
+            "end": 802.0,
+            "text": " We take the text field  You can give as much as you want  We give the text field  Now we keep the date added field  We keep the date"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 802.0,
+            "end": 812.0,
+            "text": " We will keep the date  We take the date time field  From the models  We keep the default value  We keep the default"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 812.0,
+            "end": 822.0,
+            "text": " We have already kept the default  We will remove now  See how much repetitive  That's why we say  Once you understand the code"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 822.0,
+            "end": 832.0,
+            "text": " Then it is repetitive  Now we saw  If we write this line  Then what happens  It looks good in the database"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 832.0,
+            "end": 842.0,
+            "text": " It doesn't look like an object  We bring a dunder string  Dunder string  And  We bring the self"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 842.0,
+            "end": 852.0,
+            "text": " And we return  We bring the return in formatted string  There are different variations  This is a classic python  You can bring it as you want"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 852.0,
+            "end": 862.0,
+            "text": " I inject  Here  Like this  And we say self.  And user."
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 862.0,
+            "end": 872.0,
+            "text": " User name  So that we know which user  We are giving  Next we write  For which tea"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 872.0,
+            "end": 882.0,
+            "text": " So self.tea  Which field  We take from the tea  We take the name  We are taking the field"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 882.0,
+            "end": 892.0,
+            "text": " So this is our work  How you get  One to many relations  I think now there is no problem  You have a very easy work"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 892.0,
+            "end": 902.0,
+            "text": " Now you have understood  Now let's read the next  Now we come to  Many  Many to many"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 902.0,
+            "end": 912.0,
+            "text": " Like i gave you an example  Store is one of the best example  One tea can be in many stores  And many types of tea can be in store  So when both can be many"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 912.0,
+            "end": 922.0,
+            "text": " So we keep it  Like this  So store  We made store  Here models.models"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 922.0,
+            "end": 932.0,
+            "text": " Here we have  Tea  Now what we do  You don't have to do much  When many to many"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 932.0,
+            "end": 942.0,
+            "text": " Then you want to use it in fields  So see  What sense it makes for us  First of all, there should be a name of the store  So let's handle it"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 942.0,
+            "end": 952.0,
+            "text": " Models.carefield  Let's take carefield  And let's say max length  Should be 100  So here is your max length"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 952.0,
+            "end": 962.0,
+            "text": " Let's take carefield  Which is the place  In which you have opened the store  So models.carefield  And let's make it 100"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 962.0,
+            "end": 972.0,
+            "text": " As such there is no requirement  To make it 100  Here is the max length  But we do  Oops, what happened"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 972.0,
+            "end": 982.0,
+            "text": " Let's close it  Now what we need is  Tea variety  Tea varieties  Now its admin interface"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 982.0,
+            "end": 992.0,
+            "text": " Is the best  So what we can do  We can tell Django directly  That there is a many to many relationship  As we told here"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 992.0,
+            "end": 1002.0,
+            "text": " That it is foreign  So it understood that it is foreign  So it was a very easy task  You decide whether it will be one to many or one to one  It depends on the logic"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1002.0,
+            "end": 1012.0,
+            "text": " But when you have such a relation  That it can be many to many  So it gives many facilities  And it gives you the option  To mark many to many fields"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1012.0,
+            "end": 1022.0,
+            "text": " Which field to mark many to many  With whom to mark  So I want to do with tea variety  So here is tea variety  And giving related names"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1022.0,
+            "end": 1032.0,
+            "text": " Is always good  So I give it stores  That I will give relation with stores  Related name  You will see here"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1032.0,
+            "end": 1042.0,
+            "text": " That we gave related name here  So you always give the name of the model  That I  In the other table  Which name I want to go"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1042.0,
+            "end": 1052.0,
+            "text": " So here also  In the other table  I want to go with stores  You will go directly with store name  But it is good to mention"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1052.0,
+            "end": 1062.0,
+            "text": " It will be very interesting  You will say that it is very good  So let's bring the dunder string  Here is our dunder string  And I have to see"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1062.0,
+            "end": 1072.0,
+            "text": " Because it is very big  So let's remove it  We will not do much  We will leave it by writing self.name  Now we have"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1072.0,
+            "end": 1082.0,
+            "text": " One to one field  Now what can be one to one field  Suppose  Every field will be associated with one  Only one relationship can be made"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1082.0,
+            "end": 1092.0,
+            "text": " So suppose  If you are giving certificate to tea  So one certificate can be associated with one tea  Student also has same  So every student has"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1092.0,
+            "end": 1102.0,
+            "text": " One unique certificate  So what we do  We make certificate for tea  We just want to understand  Now you can say anything"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1102.0,
+            "end": 1112.0,
+            "text": " So let's write here  That this is one to one method  We are reading here  Let's scroll a little  Class and let's say"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1112.0,
+            "end": 1122.0,
+            "text": " Tea certificate  Certificate  This is our model  This is our model  We have model"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1122.0,
+            "end": 1132.0,
+            "text": " It was very basic  So let's take tea  Now what we do in tea  We will say this is one to one field  These are two complex fields"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1132.0,
+            "end": 1142.0,
+            "text": " Many to many  And one to one field  You can give reference in jango  That this will be one to one field  All the restrictions to be injected"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1142.0,
+            "end": 1152.0,
+            "text": " All that work jango will do  You don't have to pay attention to more restrictions  We have to do one to one field with tea  We have to do with tea variety  That is our tea variety"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1152.0,
+            "end": 1162.0,
+            "text": " We have to give on delete  We will use same models.cascade  Because you will read about it  And also give related name  That what name should i go inside that table"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1162.0,
+            "end": 1172.0,
+            "text": " Or in reference of that table  So certificate is a very good name  And it will be repeated  Now we want that every certificate  Should get a number"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1172.0,
+            "end": 1182.0,
+            "text": " So certificate  Should get a number  We are not putting any restrictions  We put in business logic  That every certificate should get a unique number"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1182.0,
+            "end": 1192.0,
+            "text": " Now i will take care field  And max length 100  And this is our 100  You can see how you have to do  I will also write issue date"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1192.0,
+            "end": 1202.0,
+            "text": " Issue underscore date  Usually with certificates  Issue date  And same we have to take field  Date time field"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1202.0,
+            "end": 1212.0,
+            "text": " Date time field  Date field  And same default value  Will be from time zone  Now after writing model"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1212.0,
+            "end": 1222.0,
+            "text": " You will feel that i am writing  It is like this  Let's write valid date  Valid underscore until  It is on you"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1222.0,
+            "end": 1232.0,
+            "text": " Write it or not  There is no load  Models.date time field  And we don't give any default value  We keep it as it is"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1232.0,
+            "end": 1242.0,
+            "text": " Now with this  We bring dunder string  Copy it from above  Copy and paste  Now we change it a little"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1242.0,
+            "end": 1252.0,
+            "text": " Formatted string  And we call it  Certificate for  So that it is written easily in admin  For whom it is"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1252.0,
+            "end": 1262.0,
+            "text": " Self  Dot name  Name dot chai  For this field  So now our models are ready"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1262.0,
+            "end": 1272.0,
+            "text": " Hopefully if we have not done any typo  You must have got a lot of ideas  Let's give you a quick summary  We made models  We studied in detail"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1272.0,
+            "end": 1282.0,
+            "text": " In this video we started  Relationship study  One to many was very easy  You just give foreign key  Our reviews"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1282.0,
+            "end": 1292.0,
+            "text": " Will be associated with some chai  Many to many  We get the option  Many to many  Admin interface"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1292.0,
+            "end": 1302.0,
+            "text": " Any field  You can go  One to one field  You get the option  One certificate"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1302.0,
+            "end": 1312.0,
+            "text": " One chai  Restriction  Jango will keep it  Can we move forward  No"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1312.0,
+            "end": 1322.0,
+            "text": " Because here you have to  Stop  Because admin has to update  Before updating admin  Migrations have to be done"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1322.0,
+            "end": 1332.0,
+            "text": " Because it will not show in admin  It does not know what you have changed in models  Very easy  In python  Take manage.py script"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1332.0,
+            "end": 1342.0,
+            "text": " Make migrations  This script will be removed  Whenever you will make a bug in database  First make migrations  You will see"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1342.0,
+            "end": 1352.0,
+            "text": " Migrations  If you want to read sql  You can see  All sql  Models"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1352.0,
+            "end": 1362.0,
+            "text": " Store  Many to many  Very easy  Next  When migration is done"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1362.0,
+            "end": 1372.0,
+            "text": " Now we have to migrate  So that everything goes in database  You have just written sql  Migrate  All operations are done"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1372.0,
+            "end": 1382.0,
+            "text": " If not, debug errors  Migration is done  Now i can call python as run server  But now  If i go to admin panel"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1382.0,
+            "end": 1392.0,
+            "text": " And refresh  I do not have any option  What are you doing  You know  For this we have to"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1392.0,
+            "end": 1402.0,
+            "text": " Go to admin.py  Last time  When we were doing admin.py  We only brought model  We can do this"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1402.0,
+            "end": 1412.0,
+            "text": " But i think  If we take it to next level  You will enjoy  Let's modify it  First"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1412.0,
+            "end": 1422.0,
+            "text": " Import all models  From models  Bring tea review  Store  And tea certificate"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1422.0,
+            "end": 1432.0,
+            "text": " I want all this  In admin  First  Define a class  You can do it in admin panel"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1432.0,
+            "end": 1442.0,
+            "text": " Suppose  Tea review  Inline  In this class  In admin"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1442.0,
+            "end": 1452.0,
+            "text": " Imported  If you remember  You have many options  How you can  See this model"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1452.0,
+            "end": 1462.0,
+            "text": " Auto discover  Field list filter  On jango admin  You can  Make a mini series"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1462.0,
+            "end": 1472.0,
+            "text": " Or detailed crash course  We will try to cover as much as possible  But you will see an option  Tabular inline  This option"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1472.0,
+            "end": 1482.0,
+            "text": " Does not make it sensible  As you see in admin  You will know  We will keep two options  I want to inject this model"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1482.0,
+            "end": 1492.0,
+            "text": " In this class  Tea review  In reviews  I want to give a feature in admin  Where i see tea review"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1492.0,
+            "end": 1502.0,
+            "text": " I will get extra field  Maybe i want to put two reviews  In one place  Maybe you want to  Add one tea at a time"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1502.0,
+            "end": 1512.0,
+            "text": " You want to get one, two, three boxes  You want to add as many tea as you want  Just for fun  You can do this  But you will see two fields"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1512.0,
+            "end": 1522.0,
+            "text": " In one place  We have more tea reviews  We will add tea variety  In a particular class  It will be easy"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1522.0,
+            "end": 1532.0,
+            "text": " We have it now  We have tea  Tea  Tea variety  And tea variety admin"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1532.0,
+            "end": 1542.0,
+            "text": " We will keep  Same thing  Models  Admin  There are many things in admin"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1542.0,
+            "end": 1552.0,
+            "text": " Most common is model admin  Whenever classes are made  Tabular inline is one exception  Mostly you will see model admin  Whenever you want to"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1552.0,
+            "end": 1562.0,
+            "text": " Customize in jango admin  Or enable or disable  This is the syntax  Admin.model admin  How can you modify in this"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1562.0,
+            "end": 1572.0,
+            "text": " Most common thing  List display  Read docs  List display  When you see admin"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1572.0,
+            "end": 1582.0,
+            "text": " Which is clickable  Which is not  List display  List display  List display links"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1582.0,
+            "end": 1592.0,
+            "text": " Let's play with list display  This is a tuple  If you want to give single field  You remember this  If you are giving one field"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1592.0,
+            "end": 1602.0,
+            "text": " You have to add  We can display two three fields  Name  Type  Date"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1602.0,
+            "end": 1612.0,
+            "text": " Added  When you are adding date added  Remember that field should be there  If not  Error will come"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1612.0,
+            "end": 1622.0,
+            "text": " We have date added  We have added that field  That's all  You can add inlines  Inlines"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1622.0,
+            "end": 1632.0,
+            "text": " Again  We will do  Chai  Review  Chai review"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1632.0,
+            "end": 1642.0,
+            "text": " Inline  Sometimes it stops  Chai review inline  We will tell you how  Chai review inline"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1642.0,
+            "end": 1652.0,
+            "text": " Impact  I know it's new  But when i will make admin  It will be easy  Don't worry"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1652.0,
+            "end": 1662.0,
+            "text": " We will make store admin  Now it's repeat  Take same admin  Because we are doing customized class  You will take model admin"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1662.0,
+            "end": 1672.0,
+            "text": " Which field you want to add  List display  It's all repetition  Tuple  Name and location"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1672.0,
+            "end": 1682.0,
+            "text": " It's all same  Location  One more interesting thing  In admin  You can add"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1682.0,
+            "end": 1692.0,
+            "text": " Filter horizontal  You will get filters  I think  You can see  You can add filter in admin"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1692.0,
+            "end": 1702.0,
+            "text": " You don't have to do anything  You can add filter on your choice  Chai underscore  Varieties  You can add filter on your choice"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1702.0,
+            "end": 1712.0,
+            "text": " You can add filter on your choice  It depends  On database model  You can add filter on your choice  Add admin"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1712.0,
+            "end": 1722.0,
+            "text": " So that we can finish our work  And then  We can add  Let's show you  How it works"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1722.0,
+            "end": 1732.0,
+            "text": " Chai certificate admin  Chai certificate admin  Same thing  Admin  Admin"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1732.0,
+            "end": 1742.0,
+            "text": " And  All fields  List display  So that you can see  Difference"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1742.0,
+            "end": 1752.0,
+            "text": " Chai  List display  Chai  And  Certificate"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1752.0,
+            "end": 1762.0,
+            "text": " Underscore number  We don't have certificate number  It's important to see  Certificate  We have certificate underscore number"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1762.0,
+            "end": 1772.0,
+            "text": " We will see other fields later  We have saved this much  But it won't work  Because you have written customized classes  If you have written only model"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1772.0,
+            "end": 1782.0,
+            "text": " You can register it  Now you have to give  Which model you have written  And which class you have injected  We already had chai variety"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1782.0,
+            "end": 1792.0,
+            "text": " And we have injected chai variety admin  So  Chai variety admin  Similarly  You can see other fields"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1792.0,
+            "end": 1802.0,
+            "text": " What else  Let's remove  What else we want to store  Store  Store admin"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1802.0,
+            "end": 1812.0,
+            "text": " One more duplicate  And  Chai certificate  And  Chai certificate admin"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1812.0,
+            "end": 1822.0,
+            "text": " What is the name  Chai certificate admin  Chai certificate admin  Now you can see  One thing"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1822.0,
+            "end": 1832.0,
+            "text": " We have done chai review inline  Means  You can't give direct review  Because for review you need reference  Of which chai you are giving"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1832.0,
+            "end": 1842.0,
+            "text": " That's why we have used inline  That's why admin is tabular inline  Again, it's not making sense  It will make in a minute  Let's run it"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1842.0,
+            "end": 1852.0,
+            "text": " I think  Let's restart  In case there is any typo  Let's fix it  Must be a list or tuple"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1852.0,
+            "end": 1862.0,
+            "text": " Where is the list or tuple  We have erased it  Let's check it  Okay  You know all the tuples"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1862.0,
+            "end": 1872.0,
+            "text": " Here were two and here was only one  So we need one comma  Hopefully we still have it  Chai certificate  And where is it"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1872.0,
+            "end": 1882.0,
+            "text": " Chai varieties is not a field of chai store  Let's check it  Okay  Let's check it in one minute  Because chai varieties is not a table"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1882.0,
+            "end": 1892.0,
+            "text": " But let's check it in one minute  I think our server is working  Because it's important  Let's clear it  Let's reload"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1892.0,
+            "end": 1902.0,
+            "text": " Now we can see  Chai certificate is with you  Chai varieties is with you  Let's check it  First of all"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1902.0,
+            "end": 1912.0,
+            "text": " Let's see how chai review inline  This tabular inline  As soon as you go to chai variety  You will see  When you add a new chai"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1912.0,
+            "end": 1922.0,
+            "text": " Let's add variety  You can see reviews section  This is called inline  You have injected the model  In existing"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1922.0,
+            "end": 1932.0,
+            "text": " We have written chai review inline  Because I want to inject  Chai review inline  So we have injected it easily  As such there is no problem"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1932.0,
+            "end": 1942.0,
+            "text": " Chai review admin tabular inline  Okay  I think it's basics  And I think it's clear  And in case if you are getting confusion"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1942.0,
+            "end": 1952.0,
+            "text": " How did it know  That I have to go to chai review  We did this work in models  As soon as we made reviews  We said you have only one foreign"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1952.0,
+            "end": 1962.0,
+            "text": " You can go there  As soon as you said you have to go inline  So it reached here  Now let's add a new chai  You will see reviews in it"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1962.0,
+            "end": 1972.0,
+            "text": " And see here two fields are getting  Because we said that our admin  I want to give two extra fields  If you give three, you will get three  If you give one, you will get one"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1972.0,
+            "end": 1982.0,
+            "text": " You have got all the fields here  Date when added, time when added  From drop down your user is also coming  So all this work is the super power of admin  Type and all this was there"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1982.0,
+            "end": 1992.0,
+            "text": " You can give rating and comment  So this is our basic first step  Next we said  Chai variety  And we are adding chai variety admin"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 1992.0,
+            "end": 2002.0,
+            "text": " So this was just basic  There is nothing much to see  Chai variety  Okay let's go back  Chai variety was the same"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 2002.0,
+            "end": 2012.0,
+            "text": " We have not changed any display  Name type and date  Were added  So name type and date added  In case if you want to see its visual"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 2012.0,
+            "end": 2022.0,
+            "text": " So suppose if I remove this for a minute  So let's cut this  Save it  And we have only name and type  Let's bring it back"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 2022.0,
+            "end": 2032.0,
+            "text": " So here it is  You have also got date added  So this is how admin customization is done  Now you can see  Which one is clicking and which one is not"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 2032.0,
+            "end": 2042.0,
+            "text": " For that we have given list display  List display links  So that you can click on which all  And make which all clickable  Store admin"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 2042.0,
+            "end": 2052.0,
+            "text": " This is very interesting  Because it is many to many  As soon as you go to store  As soon as you add a new store  So what we can do in store"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 2052.0,
+            "end": 2062.0,
+            "text": " How to add values  So suppose we make a Jaipur tea store  Location  Let's keep it Jaipur  And say"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 2062.0,
+            "end": 2072.0,
+            "text": " Add me ginger tea  So we have  I think  Add tea variety  So we don't have tea variety"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 2074.0,
+            "end": 2084.0,
+            "text": " Let's fix this too  Yes, we are back  Welcome to real world development  Where such bugs come  And you have to fix it on the go"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 2084.0,
+            "end": 2094.0,
+            "text": " So it was a typo bug  But I would like to give you a walkthrough  So if you remember  A minute ago we commented this filter horizontal  Let me show you"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 2094.0,
+            "end": 2104.0,
+            "text": " Because tea varieties  It was not working here  I thought we will handle it later  But obviously as soon as we went to the store admin  There started to be a problem"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 2104.0,
+            "end": 2114.0,
+            "text": " Now as soon as I go to the store  So I add the store  This interface is not like I wanted to show you  And it is not working  Because the filter has to be horizontal"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 2114.0,
+            "end": 2124.0,
+            "text": " Otherwise how will the store admin work  So I told him  Now it's time to handle it  So I started debugging it  To debug it, first of all uncomment it"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 2124.0,
+            "end": 2134.0,
+            "text": " He said that now we have a lot of issues  Now for filter horizontal  The store admin model has to be seen  So if you look at the store model  You want to see"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 2134.0,
+            "end": 2144.0,
+            "text": " Related name is stores  But this many to many field  What is it called  It is called tea varieties  So we are bringing tea varieties from here"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 2144.0,
+            "end": 2154.0,
+            "text": " And injecting it here  So now I think you know the relation better  See, many people may not like it  But real world development is like this  You also need to know this process"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 2154.0,
+            "end": 2164.0,
+            "text": " It is not that easy  Whether you are making a tutorial or a project  You learn things like this  When you see that the other person is also struggling  He also has to do debugging"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 2164.0,
+            "end": 2174.0,
+            "text": " I remove everything from editing with magic  No, no, it is directly from day 1  But it does not happen  Real world development is like this  So let's go, we saved tea varieties"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 2174.0,
+            "end": 2184.0,
+            "text": " So as soon as we saved it, I thought  Yes, it was typo, it is fixed there  Now here you can see  How these two fields are working  And how they are coming"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 2184.0,
+            "end": 2194.0,
+            "text": " And I think this is the most  The superpower of many to many relationship  That you go inside the store  As soon as you add the store  Now you see inside the store"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 2194.0,
+            "end": 2204.0,
+            "text": " How easily tea varieties and this can be linked  So suppose we have a store  Our Jaipur store  Jaipur  Tea store"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 2204.0,
+            "end": 2214.0,
+            "text": " Location is obvious  Now here you can tell  In Jaipur tea store  We have small ginger tea  And we have large ginger tea"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 2214.0,
+            "end": 2224.0,
+            "text": " But not medium  So we said okay, you tell  Whatever variety of small ginger tea you have  So it told here  Now you can save it"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 2224.0,
+            "end": 2234.0,
+            "text": " So your store is ready  If you want, let's make another store  Let's make a Delhi tea store  Let's make it  Its location is Delhi"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 2234.0,
+            "end": 2244.0,
+            "text": " And it has only  Medium tea  And it is saved  Now you want more  Store, location, variety"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 2244.0,
+            "end": 2254.0,
+            "text": " You can see it easily  So this is our work  How admin works  And all the varieties of admin  It is quite complex"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 2254.0,
+            "end": 2264.0,
+            "text": " But in one video we got an overview  How admin is configured  How all relationships are configured  And most importantly  How admin can be configured"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 2264.0,
+            "end": 2274.0,
+            "text": " So we have added all these things in the tea app  So many things  Okay  So let's do one thing  So many things have been added"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 2274.0,
+            "end": 2284.0,
+            "text": " And a small assignment has come for you  So let's end this video here  I wanted to add more forms  But I think  Let's do this much for now"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 2284.0,
+            "end": 2294.0,
+            "text": " Because the video has become lengthy  It has been almost 40 minutes  Some bugs have come, fix them  So let's try  In the next video, let's talk about forms"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 2294.0,
+            "end": 2304.0,
+            "text": " Database, admin, relations  I think it's over  Now you just have to make a project  And your polishing will be done  So I think you must have found it very interesting"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 2304.0,
+            "end": 2314.0,
+            "text": " Especially the debugging part  Which I did not edit  So give me feedback on it  I will disappear all the magic from editing  And everything is fixed at once"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 2314.0,
+            "end": 2324.0,
+            "text": " Or you want this kind of experience  Show us your struggle  How did you debug  How did you trace the stack  Where can there be a problem"
+        },
+        {
+            "number": "7",
+            "title": "Django Relationship models",
+            "start": 2324.0,
+            "end": 2334.0,
+            "text": " We want to know that thought process and mind process  Tell me in the comment section  See you in the next video  In the next video, we will discuss forms  It will be more fun"
+        }
+    ],
+    "text": " Hello, how are you all? Welcome to Chai or Code and we are continuing our Django series. It's going well and you all supported us a lot. A lot of people are sharing and being stingy but what can we do about it? But thank you so much for those who shared and those who help us achieve our target in the comments Thank you for those who comment and those who are not doing anything then what can we say about them? Let's talk to you because you are the ones who promote this channel on Twitter and LinkedIn and we are growing with a lot of growth So in this video let's move ahead in our Django series There were some people who were spreading rumors that Sir has ended the Django series What? Yes, we will end it when we come and tell you Anyways, you all already know me those who follow me regularly So what will we do in this video? In this video, we will take Django one step ahead. If you remember we had read about Django's models and retrieved data from those models and deployed it on the front end Many of you have made really good cards and shared them on Twitter and LinkedIn So those who do this and are working and engaging those people can work and the rest are sitting on the sofa so you should also work In this video, we are talking about relational databases Django is mostly with SQL databases Right now we are using SQLite but the same interface is used for MySQL, Postgres or any other SQL databases Django gives you a wrapper through which you can talk to the database and not directly and this is a good thing that the database can be replaced under the hood In this video, we will talk about relations the one to many relations of the database and how all these relations can be used in the work We will see it in the code directly so that things are easy After that, we will show you the admin interface and will also show you the customization of the admin interface and finally, we will introduce you to forms which is a new topic but you will enjoy how Django handles forms and how you get built-in forms You just need to write their CSS and your work is done So let's start Comment target? Yes, thank you so much for asking It is not much, it is a target of 400 comments As soon as the target of 400 comments then only the new video will come Let's see how much time it takes If it takes a week, then the video will come after a week If it takes 3 days, then the video will come after 3 days So it depends on how fast you get 400 comments completed Because if there is no engagement then make some other kind of videos So you take care of that thing So let's share the screen with you So let's share the screen with you Now let's see how we can handle it This is our application Let's open it We are running it in Python So first of all we activate the virtual environment We should see the virtual environment We should see the virtual environment ls-la ls-la Is our virtual environment deleted? Oh nice! Our virtual environment is deleted Let's see What happened to us? Ok, we are back Actually I opened the wrong folder So I fixed the folder And now we can see that we have our virtual environment By the way, for those who don't know that we have launched a new website docs.chaicode.com Some people had a problem with this that what is the big deal in this new documentation Ok, you don't have to see it So now you can get the attached documentation of this video You can see the whole section of Django When you are watching this video you will see a new tab Just click on it And you will get all the documentation along with the detailed guide and source code So you don't have to worry You will get all the documentation Will you get a good habit of reading the documentation? Tell me in the comments Is it a good habit to read the documentation? Or is it a bad habit to ask who reads the documentation? So what we do is We enable the virtual environment I have already discussed the source in windows So we go to .venv We go to .venv We have the activate script It is activated And we come to python Let's see where we are ls cd chai django And in this python manage.py run server Hopefully, our server should be running And it is looking good Now we go to admin Because we will work on admin Hopefully, if I remember the password chai1234 Yes, I remember the password I didn't expect So we took chai varieties And we had 1-2 chai varieties Large masala tea, small ginger tea We had this kind of chai Let's add one more chai So that we can see what is happening We don't have large, small, medium So we Medium Medium Masala Tea We also need an image So let's add an image And we add Yes Let's add the image of our new course What is the type? Masala Date is now And Medium size Tea DSA with javascript New course It is good Let's save it And small ginger medium Now let's come to the source code Now we have to follow a lot of strategies It is not that we can Innovate anything randomly It is a framework We have to follow guidelines And there are guidelines to learn the framework So first we will talk about relationships We will not talk about form now We will talk about it later So first We are talking about relationships There are not many relationships in SQL First is one to many Second is many to many And then one to one Now you have two models Or two entities Like tea and review Now what can be the relation Between tea and review One tea can have multiple reviews One review can't have multiple teas So we have to see What can be the values Suppose we have a tea And a store So one tea can be available in multiple stores And in one store Multiple teas can be available So it is a many to many relationship So instead of studying these relationships in theory You might have studied it When you have studied database We study it in code It is easier and you will learn to write code And you will know the relations So I will tell you one by one On which relation we are working So that it will be easy So we come to our tea model By the way we already had a tea model We will copy it and show you How it looks Our model is not that good But the one you made was very good So this is tea It is not that bad But the one you made Was no doubt one of the best And the photos of tea were also good So what we do We open the tea folder And go to models.py Now you know that We have already made a model with the name of tea Now what we do We try to make more models How can we have more models One thing if you have noticed Already I can directly create an account in Django I can create an account and log in So by default in Django There is a table named user model There is a user table Which you can utilize You can associate and modify Where do you get it This is the most important thing To get it you have to take it from Django I will turn it off Our toggle So we say Django In Django you will get Contrib In this contrib also you will get auth And from this you can extract The models No need to do this No need to do this Yes people say What is the need of documentation What is the innovation So no problem So I got this user There was no need but for now it is fine Now what we do We talk about the models one by one Which models are you talking about And why is it right Or it relates to us So first we come to one to many What is the meaning of one to many There is one entity And there is multiple Entities in my left hand There can be multiple entities What can be the most basic Tea reviews can be So we come to tea review Now in tea review Same thing This is basic There is no rocket science innovation In one models.py You can define multiple classes Now we come to tea reviews How reviews Modeling of reviews Is almost same The fields are same We will not talk about two fields The rest of the fields are same Rating, integer, comment String, text Date also So it does not matter First thing is tea Because every review should be on tea And it is So what we will do We will bring a foreign key from models So foreign key means Which person I am talking to Primary key means My own key My identity My Aadhar card, my PAN card But when I am talking to you What is your roll number What is your unique identity So for foreign key First you have to tell the model Which model are you talking to So I have given foreign key So first thing is Which model am I talking to You are talking to tea variety So I have written tea variety If it is in any other file Then import it Now we come to Tea variety I will consider it foreign key So good thing about Django You don't have to tell Which field you are attaching You pass ID So you can see in this way And these are design decisions One you will see many times On delete So what to do with tea review Delete it with the above model Keep it as it is Because they are being associated So mostly you will see Cascade effect Use this On delete cascade And you have to bring it Cascade will not come like this We need cascade Now This is your assignment Cascade is a very basic thing What happens Now your assignment is You have to find out what is cascade In the database And find out and tell me in the comment section Tell on twitter Write a small 5-7 line You have to do assignment We will not let you sit here for free We will get you to do the work Otherwise we are teachers So you have to find out What is cascade and tell me If you want You can give a related name Related name It has always been fruitful In my experience As I told you When we were giving name in urls It was easy in views So in the same way It will be easy That's it Now exactly On the same work You can see here We take the user We associate the user Because when we learn so much We have one more model We inject foreign key Who has to inject foreign key We have to inject user Where did the user come from We have taken the user from the top Now on delete We have to give Models.cascade Something related to delete You can see If you can't tell We will tell in the next video Now in your model You have to keep the regular fields You have already read a lot about them Keep the integer field I keep the integer field directly Your assignment is As we read last time You have to keep 1,2,3,4,5 If you want to keep rating strictly You can do that Now we come to comment We give the comment You can take the string field We take the text field You can give as much as you want We give the text field Now we keep the date added field We keep the date We will keep the date We take the date time field From the models We keep the default value We keep the default We have already kept the default We will remove now See how much repetitive That's why we say Once you understand the code Then it is repetitive Now we saw If we write this line Then what happens It looks good in the database It doesn't look like an object We bring a dunder string Dunder string And We bring the self And we return We bring the return in formatted string There are different variations This is a classic python You can bring it as you want I inject Here Like this And we say self. And user. User name So that we know which user We are giving Next we write For which tea So self.tea Which field We take from the tea We take the name We are taking the field So this is our work How you get One to many relations I think now there is no problem You have a very easy work Now you have understood Now let's read the next Now we come to Many Many to many Like i gave you an example Store is one of the best example One tea can be in many stores And many types of tea can be in store So when both can be many So we keep it Like this So store We made store Here models.models Here we have Tea Now what we do You don't have to do much When many to many Then you want to use it in fields So see What sense it makes for us First of all, there should be a name of the store So let's handle it Models.carefield Let's take carefield And let's say max length Should be 100 So here is your max length Let's take carefield Which is the place In which you have opened the store So models.carefield And let's make it 100 As such there is no requirement To make it 100 Here is the max length But we do Oops, what happened Let's close it Now what we need is Tea variety Tea varieties Now its admin interface Is the best So what we can do We can tell Django directly That there is a many to many relationship As we told here That it is foreign So it understood that it is foreign So it was a very easy task You decide whether it will be one to many or one to one It depends on the logic But when you have such a relation That it can be many to many So it gives many facilities And it gives you the option To mark many to many fields Which field to mark many to many With whom to mark So I want to do with tea variety So here is tea variety And giving related names Is always good So I give it stores That I will give relation with stores Related name You will see here That we gave related name here So you always give the name of the model That I In the other table Which name I want to go So here also In the other table I want to go with stores You will go directly with store name But it is good to mention It will be very interesting You will say that it is very good So let's bring the dunder string Here is our dunder string And I have to see Because it is very big So let's remove it We will not do much We will leave it by writing self.name Now we have One to one field Now what can be one to one field Suppose Every field will be associated with one Only one relationship can be made So suppose If you are giving certificate to tea So one certificate can be associated with one tea Student also has same So every student has One unique certificate So what we do We make certificate for tea We just want to understand Now you can say anything So let's write here That this is one to one method We are reading here Let's scroll a little Class and let's say Tea certificate Certificate This is our model This is our model We have model It was very basic So let's take tea Now what we do in tea We will say this is one to one field These are two complex fields Many to many And one to one field You can give reference in jango That this will be one to one field All the restrictions to be injected All that work jango will do You don't have to pay attention to more restrictions We have to do one to one field with tea We have to do with tea variety That is our tea variety We have to give on delete We will use same models.cascade Because you will read about it And also give related name That what name should i go inside that table Or in reference of that table So certificate is a very good name And it will be repeated Now we want that every certificate Should get a number So certificate Should get a number We are not putting any restrictions We put in business logic That every certificate should get a unique number Now i will take care field And max length 100 And this is our 100 You can see how you have to do I will also write issue date Issue underscore date Usually with certificates Issue date And same we have to take field Date time field Date time field Date field And same default value Will be from time zone Now after writing model You will feel that i am writing It is like this Let's write valid date Valid underscore until It is on you Write it or not There is no load Models.date time field And we don't give any default value We keep it as it is Now with this We bring dunder string Copy it from above Copy and paste Now we change it a little Formatted string And we call it Certificate for So that it is written easily in admin For whom it is Self Dot name Name dot chai For this field So now our models are ready Hopefully if we have not done any typo You must have got a lot of ideas Let's give you a quick summary We made models We studied in detail In this video we started Relationship study One to many was very easy You just give foreign key Our reviews Will be associated with some chai Many to many We get the option Many to many Admin interface Any field You can go One to one field You get the option One certificate One chai Restriction Jango will keep it Can we move forward No Because here you have to Stop Because admin has to update Before updating admin Migrations have to be done Because it will not show in admin It does not know what you have changed in models Very easy In python Take manage.py script Make migrations This script will be removed Whenever you will make a bug in database First make migrations You will see Migrations If you want to read sql You can see All sql Models Store Many to many Very easy Next When migration is done Now we have to migrate So that everything goes in database You have just written sql Migrate All operations are done If not, debug errors Migration is done Now i can call python as run server But now If i go to admin panel And refresh I do not have any option What are you doing You know For this we have to Go to admin.py Last time When we were doing admin.py We only brought model We can do this But i think If we take it to next level You will enjoy Let's modify it First Import all models From models Bring tea review Store And tea certificate I want all this In admin First Define a class You can do it in admin panel Suppose Tea review Inline In this class In admin Imported If you remember You have many options How you can See this model Auto discover Field list filter On jango admin You can Make a mini series Or detailed crash course We will try to cover as much as possible But you will see an option Tabular inline This option Does not make it sensible As you see in admin You will know We will keep two options I want to inject this model In this class Tea review In reviews I want to give a feature in admin Where i see tea review I will get extra field Maybe i want to put two reviews In one place Maybe you want to Add one tea at a time You want to get one, two, three boxes You want to add as many tea as you want Just for fun You can do this But you will see two fields In one place We have more tea reviews We will add tea variety In a particular class It will be easy We have it now We have tea Tea Tea variety And tea variety admin We will keep Same thing Models Admin There are many things in admin Most common is model admin Whenever classes are made Tabular inline is one exception Mostly you will see model admin Whenever you want to Customize in jango admin Or enable or disable This is the syntax Admin.model admin How can you modify in this Most common thing List display Read docs List display When you see admin Which is clickable Which is not List display List display List display links Let's play with list display This is a tuple If you want to give single field You remember this If you are giving one field You have to add We can display two three fields Name Type Date Added When you are adding date added Remember that field should be there If not Error will come We have date added We have added that field That's all You can add inlines Inlines Again We will do Chai Review Chai review Inline Sometimes it stops Chai review inline We will tell you how Chai review inline Impact I know it's new But when i will make admin It will be easy Don't worry We will make store admin Now it's repeat Take same admin Because we are doing customized class You will take model admin Which field you want to add List display It's all repetition Tuple Name and location It's all same Location One more interesting thing In admin You can add Filter horizontal You will get filters I think You can see You can add filter in admin You don't have to do anything You can add filter on your choice Chai underscore Varieties You can add filter on your choice You can add filter on your choice It depends On database model You can add filter on your choice Add admin So that we can finish our work And then We can add Let's show you How it works Chai certificate admin Chai certificate admin Same thing Admin Admin And All fields List display So that you can see Difference Chai List display Chai And Certificate Underscore number We don't have certificate number It's important to see Certificate We have certificate underscore number We will see other fields later We have saved this much But it won't work Because you have written customized classes If you have written only model You can register it Now you have to give Which model you have written And which class you have injected We already had chai variety And we have injected chai variety admin So Chai variety admin Similarly You can see other fields What else Let's remove What else we want to store Store Store admin One more duplicate And Chai certificate And Chai certificate admin What is the name Chai certificate admin Chai certificate admin Now you can see One thing We have done chai review inline Means You can't give direct review Because for review you need reference Of which chai you are giving That's why we have used inline That's why admin is tabular inline Again, it's not making sense It will make in a minute Let's run it I think Let's restart In case there is any typo Let's fix it Must be a list or tuple Where is the list or tuple We have erased it Let's check it Okay You know all the tuples Here were two and here was only one So we need one comma Hopefully we still have it Chai certificate And where is it Chai varieties is not a field of chai store Let's check it Okay Let's check it in one minute Because chai varieties is not a table But let's check it in one minute I think our server is working Because it's important Let's clear it Let's reload Now we can see Chai certificate is with you Chai varieties is with you Let's check it First of all Let's see how chai review inline This tabular inline As soon as you go to chai variety You will see When you add a new chai Let's add variety You can see reviews section This is called inline You have injected the model In existing We have written chai review inline Because I want to inject Chai review inline So we have injected it easily As such there is no problem Chai review admin tabular inline Okay I think it's basics And I think it's clear And in case if you are getting confusion How did it know That I have to go to chai review We did this work in models As soon as we made reviews We said you have only one foreign You can go there As soon as you said you have to go inline So it reached here Now let's add a new chai You will see reviews in it And see here two fields are getting Because we said that our admin I want to give two extra fields If you give three, you will get three If you give one, you will get one You have got all the fields here Date when added, time when added From drop down your user is also coming So all this work is the super power of admin Type and all this was there You can give rating and comment So this is our basic first step Next we said Chai variety And we are adding chai variety admin So this was just basic There is nothing much to see Chai variety Okay let's go back Chai variety was the same We have not changed any display Name type and date Were added So name type and date added In case if you want to see its visual So suppose if I remove this for a minute So let's cut this Save it And we have only name and type Let's bring it back So here it is You have also got date added So this is how admin customization is done Now you can see Which one is clicking and which one is not For that we have given list display List display links So that you can click on which all And make which all clickable Store admin This is very interesting Because it is many to many As soon as you go to store As soon as you add a new store So what we can do in store How to add values So suppose we make a Jaipur tea store Location Let's keep it Jaipur And say Add me ginger tea So we have I think Add tea variety So we don't have tea variety Let's fix this too Yes, we are back Welcome to real world development Where such bugs come And you have to fix it on the go So it was a typo bug But I would like to give you a walkthrough So if you remember A minute ago we commented this filter horizontal Let me show you Because tea varieties It was not working here I thought we will handle it later But obviously as soon as we went to the store admin There started to be a problem Now as soon as I go to the store So I add the store This interface is not like I wanted to show you And it is not working Because the filter has to be horizontal Otherwise how will the store admin work So I told him Now it's time to handle it So I started debugging it To debug it, first of all uncomment it He said that now we have a lot of issues Now for filter horizontal The store admin model has to be seen So if you look at the store model You want to see Related name is stores But this many to many field What is it called It is called tea varieties So we are bringing tea varieties from here And injecting it here So now I think you know the relation better See, many people may not like it But real world development is like this You also need to know this process It is not that easy Whether you are making a tutorial or a project You learn things like this When you see that the other person is also struggling He also has to do debugging I remove everything from editing with magic No, no, it is directly from day 1 But it does not happen Real world development is like this So let's go, we saved tea varieties So as soon as we saved it, I thought Yes, it was typo, it is fixed there Now here you can see How these two fields are working And how they are coming And I think this is the most The superpower of many to many relationship That you go inside the store As soon as you add the store Now you see inside the store How easily tea varieties and this can be linked So suppose we have a store Our Jaipur store Jaipur Tea store Location is obvious Now here you can tell In Jaipur tea store We have small ginger tea And we have large ginger tea But not medium So we said okay, you tell Whatever variety of small ginger tea you have So it told here Now you can save it So your store is ready If you want, let's make another store Let's make a Delhi tea store Let's make it Its location is Delhi And it has only Medium tea And it is saved Now you want more Store, location, variety You can see it easily So this is our work How admin works And all the varieties of admin It is quite complex But in one video we got an overview How admin is configured How all relationships are configured And most importantly How admin can be configured So we have added all these things in the tea app So many things Okay So let's do one thing So many things have been added And a small assignment has come for you So let's end this video here I wanted to add more forms But I think Let's do this much for now Because the video has become lengthy It has been almost 40 minutes Some bugs have come, fix them So let's try In the next video, let's talk about forms Database, admin, relations I think it's over Now you just have to make a project And your polishing will be done So I think you must have found it very interesting Especially the debugging part Which I did not edit So give me feedback on it I will disappear all the magic from editing And everything is fixed at once Or you want this kind of experience Show us your struggle How did you debug How did you trace the stack Where can there be a problem We want to know that thought process and mind process Tell me in the comment section See you in the next video In the next video, we will discuss forms It will be more fun"
+}
