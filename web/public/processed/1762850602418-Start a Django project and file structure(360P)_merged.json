@@ -1,0 +1,964 @@
+{
+    "chunks": [
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 0.0,
+            "end": 15.0,
+            "text": " Hello, how are you all?  Welcome to Chai Aur Code  and welcome to our official launch of our playlist  Chai Aur Django  You have shown a lot of support on Twitter, LinkedIn and everywhere"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 15.0,
+            "end": 26.0,
+            "text": " and thank you so much for that  and this reminds me of our...  let's discuss our comment target first  initially everyone starts  but the problem is who goes till the end in the series"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 26.0,
+            "end": 37.0,
+            "text": " that is the one who comes out in the end  everyone else comes to explore  but no worries, even if you come to explore  you are ahead of a lot of people  so let's keep this video's target of 600 comments"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 37.0,
+            "end": 48.0,
+            "text": " comment quickly  I will feel good if you show support  so let's start our Django series  and as you know  I like to write code directly"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 48.0,
+            "end": 58.0,
+            "text": " so we will start with code editor  but before that let me tell you a small thing  that sit comfortably with tea  I will try to explain things more  and slow down"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 58.0,
+            "end": 70.0,
+            "text": " but actually in Python Django  you will see that things develop so easily and fast  that I will not be able to slow them down even if I want to  it's not that you won't understand  you will understand and you will be able to do it on your system"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 70.0,
+            "end": 80.0,
+            "text": " but it is so fast  and it goes so easily  that I won't be able to contribute much  it will run at speed  that's why Django is called"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 80.0,
+            "end": 90.0,
+            "text": " an expert framework of rapid development  and it is a very mature framework  don't compare this framework  with any other framework  especially if you are coming from a JavaScript background"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 90.0,
+            "end": 100.0,
+            "text": " the things you have seen in JavaScript  Nest or NextJS  or Gatsby  or whatever you have seen  don't compare them here"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 100.0,
+            "end": 110.0,
+            "text": " it is a completely different framework  yes, if you are coming from a Laravel background  or Ruby on Rails  then you can compare a little but not much  so let's start"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 110.0,
+            "end": 120.0,
+            "text": " first we will set up the environment  and then I will tell you how to do it  don't forget to comment  let's go  we will come to our screen sharing"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 120.0,
+            "end": 130.0,
+            "text": " we will come to Django later  first we will come to our VS Code  there is not much in VS Code  we keep the theme as Chai  we always go with the same theme"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 130.0,
+            "end": 140.0,
+            "text": " and in this I will drag and drop a folder  which is called ChaiDjango  it is just an empty folder  with this I will show you the entire environment setup  we will also open a small terminal"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 140.0,
+            "end": 150.0,
+            "text": " today my keyboard is troubling me  I don't know why  it has been doing this since morning  ok  we need a terminal and a folder"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 150.0,
+            "end": 160.0,
+            "text": " that's it  now whenever you are in Python  first of all we will do a little bit of Django  what is it, where is it, how is it  what will be the benefit of us"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 160.0,
+            "end": 170.0,
+            "text": " will anything happen or not  so see what is Django  it makes it easier to build better web application more quickly  and less code  you have comparatively less code"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 170.0,
+            "end": 180.0,
+            "text": " in the quantity  it is easy, there is already shrinked code in Python  so it is very less  and it is scalable, very fast  it is useful for rapid development"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 180.0,
+            "end": 190.0,
+            "text": " about Django, what you will see  while talking  it will be ridiculously fast  yes, no word can be compared to this  it is ridiculously fast"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 190.0,
+            "end": 200.0,
+            "text": " apart from that reassuring the security  I will show you many security features  in Django  like SRF protection  many protections are there by default"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 200.0,
+            "end": 210.0,
+            "text": " you have to write code according to those protections  Django by default protects it  which is a good thing  apart from that exceedingly scalable  ok by the way I will tell you a small story about Django"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 210.0,
+            "end": 220.0,
+            "text": " in Django  you get a very good scale  on minimum systems  in the system of JavaScript  or the applications"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 220.0,
+            "end": 230.0,
+            "text": " comparatively you need a little more RAM or a good system  but these applications  like Django and other  old frameworks  it scales very well on bare minimum"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 230.0,
+            "end": 240.0,
+            "text": " so if you have  a $5 machine or $10 machine  it still has the power  to handle many users at the same time  so yes"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 240.0,
+            "end": 250.0,
+            "text": " it earns less bill, that's why corporates  like Django a lot  in fact you may not know that Django is used in such places  it is also used in Paytm  we will not discuss so many things"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 250.0,
+            "end": 260.0,
+            "text": " so this is our basic  about Django  now when you come for Django  you will think that I should go to download  and install it on Mac or Linux"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 260.0,
+            "end": 270.0,
+            "text": " python-m pip install django  it is ok if they give this version  or not  I should go to windows and do it like this  but the development of python"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 270.0,
+            "end": 280.0,
+            "text": " is done in this way  professionally especially  because no one expects that you  keep a specific version of python  everyone wants"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 280.0,
+            "end": 290.0,
+            "text": " to do the development in a separate environment  or in a separate box  for that in python  virtual environment is used  where there is a separate instance"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 290.0,
+            "end": 300.0,
+            "text": " or a separate sandbox  where all our code will go  what is installed on our main system  does not make a big difference to the virtual environment  so that's why you will see everyone"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 300.0,
+            "end": 310.0,
+            "text": " making a virtual environment in python  now I will tell you the commands of virtual environment  and I will also tell you how we will do it  don't run it now  listen to the whole thing"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 310.0,
+            "end": 320.0,
+            "text": " so if you are on windows  you can start here  with the py command  I am on mac or you are on linux  so we already have python 2"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 320.0,
+            "end": 330.0,
+            "text": " so we write all the commands with python 3  so this is very basic  I told you in the python series  that whenever I write python 3, you write py  now you will often see"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 330.0,
+            "end": 340.0,
+            "text": " what to do to make a virtual environment  dash m  today the keyboard is bothering a lot  ok  so we put dash m here"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 340.0,
+            "end": 350.0,
+            "text": " and then you write that I want a virtual environment  so venv  we have this  venv  so this is the command that virtual environment gives"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 350.0,
+            "end": 360.0,
+            "text": " and the virtual environment  will be in the install folder  so people often do it in the .venv folder  this dot is because  the way our git is a dot folder"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 360.0,
+            "end": 370.0,
+            "text": " in the same way all the settings of the virtual environment  files in a dot or hidden folder  people often like to keep it in a hidden folder  this is the only thing to do  nothing else"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 370.0,
+            "end": 380.0,
+            "text": " how to activate it is the same  but  what I will use here  is a little different  what I am going to use is called uv"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 380.0,
+            "end": 390.0,
+            "text": " there are many ways to install uv  you can also install pip install uv  or if you are on any other system  then you can install it from pip  pipx, brew"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 390.0,
+            "end": 400.0,
+            "text": " and many more  you can also run this command on the windows power shell  and the thing is  why?  why do we want to use uv?"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 400.0,
+            "end": 410.0,
+            "text": " if you compare it with the javascript environment  then like npm, all the work is done from it  and pip also  but there we have bun which is very fast  in the same way uv is my new favorite"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 410.0,
+            "end": 420.0,
+            "text": " because it is an extremely fast  package manager written in rust  so not only in rust  it has actually worked on a lot of parsers  and it is very fast"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 420.0,
+            "end": 430.0,
+            "text": " you can see the speed difference  0.06 vs  there are many graphs like this  but in the right sense  you will see that there is a lot of speed difference"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 430.0,
+            "end": 440.0,
+            "text": " so like you installed python  run any of these commands  run pip or if you are on mac  then run pip3 or  then install brew"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 440.0,
+            "end": 450.0,
+            "text": " you will have one of these commands  search just pip and you will get it  now after that if you ever want to make a virtual environment  then pip  vnv"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 450.0,
+            "end": 460.0,
+            "text": " just this much work we have to do  you don't have to give anything else  it automatically does all the work  so now what i will do  because uv is already installed"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 460.0,
+            "end": 470.0,
+            "text": " so i will use that uv  please uv  and after that i will write here  that i want a virtual environment  so we will write the same venv"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 470.0,
+            "end": 480.0,
+            "text": " so it will give us the virtual environment  venv  so as you wrote, your virtual environment  is created  now the file we got here"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 480.0,
+            "end": 490.0,
+            "text": " has the same exact thing  that you normally get from the first command  so we have bin, python  3.11 is installed  bin is also there, all the activation libraries"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 490.0,
+            "end": 500.0,
+            "text": " that you get, all of them are with you  there is no problem  now what we have to do  is run this activate script  whether you are in windows or mac"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 500.0,
+            "end": 510.0,
+            "text": " you have to run this script  then your virtual environment will activate  now you just installed it  so we have the activation command here  by the way, you will get a full blog in the description"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 510.0,
+            "end": 520.0,
+            "text": " you don't have to read all of this  i have written everything in detail  check the description  so if you are on mac  you have to use the source"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 520.0,
+            "end": 530.0,
+            "text": " so you can activate in the bin  in this environment  if you are on windows, you can directly  activate the scripts in the dot  if you are on activate, it will be in the script"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 530.0,
+            "end": 540.0,
+            "text": " or in the bin, wherever it is, we have to go there  and activate it  so let's do this  so we have the source  and after that we have to go to dot vnv"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 540.0,
+            "end": 550.0,
+            "text": " and we have bin and activate  this is the command  as soon as you install this command  or activate your script  so we have"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 550.0,
+            "end": 560.0,
+            "text": " here, source  ok, typo  small typo  here, source  so now what i can see here"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 560.0,
+            "end": 570.0,
+            "text": " dot vnv is on my command line  this means that  you are in the virtual environment  and nothing else, whenever you want to deactivate  you can type"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 570.0,
+            "end": 580.0,
+            "text": " deactivate  and your virtual environment  will be deactivated  ok, so this is done  let's reload"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 580.0,
+            "end": 590.0,
+            "text": " it is  getting hang  ok  so let's do this, i think my machine needs a restart  because"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 590.0,
+            "end": 600.0,
+            "text": " it has not restarted for a long time  ok  we will talk about it after the video  so this is done  all the installation is done"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 600.0,
+            "end": 610.0,
+            "text": " now one more thing you have to remember  if you want to install anything, you have to do it like this  uv, then pip install  whatever you want to install, if we want to install django  we will see how to do that"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 610.0,
+            "end": 620.0,
+            "text": " but wherever it is mentioned  pip or pip3  now you are in the virtual environment  because we have made a virtual environment from uv  and uv pip"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 620.0,
+            "end": 630.0,
+            "text": " then install whatever you want to install  ok, so you have understood  that we have to install uv pip  ok, so let's go to the second one  how to do it"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 630.0,
+            "end": 640.0,
+            "text": " so here it is mentioned that you can install django like this  if it is a specific version, then do that  otherwise you can do django  let's see how to install it  so we have been told that you can type pip"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 640.0,
+            "end": 650.0,
+            "text": " sorry, you have to type uv first  uv, then pip, not pip3  even if you are on mac, you have to type pip  because you are in a virtual environment  so the problem of 3 has been solved"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 650.0,
+            "end": 660.0,
+            "text": " and after this you have to type directly  that you have to install  the keyboard is troubling me a lot  I have to restart the system  install and you have to type django"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 660.0,
+            "end": 670.0,
+            "text": " d is the capital of django  so as soon as you enter  django will be installed  it installs ridiculously fast  and all the dependencies"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 670.0,
+            "end": 682.0,
+            "text": " have come to you  ok, django is installed  now what to do next  now nothing special  we will use django to make a project"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 682.0,
+            "end": 692.0,
+            "text": " before that  let's read here  that django has more ways  by the way, the documentation  you will get in this"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 692.0,
+            "end": 702.0,
+            "text": " is next level  I will say that  in comparison to anyone  not only javascript, in comparison to anyone  the documentation of javascript community"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 702.0,
+            "end": 712.0,
+            "text": " whether it is fastapi or django  is on a ridiculous level  they write documentation on the next level  they don't leave any space  whether there is a problem or not"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 712.0,
+            "end": 722.0,
+            "text": " and documentation is really next level  they write more markdown files than python  why? because I personally know  the founder of fastapi  and many times I have done a podcast with him"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 722.0,
+            "end": 732.0,
+            "text": " he also says this  whenever it is said that we write more markdown files than python  so whenever you want to see something  you can see in the overview  they write the documentation"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 732.0,
+            "end": 742.0,
+            "text": " the code, format, files  they write it very well  now we come to  make a simple python project  so now we go to python"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 742.0,
+            "end": 752.0,
+            "text": " and say  let's make a django project  in this virtual environment  now when you make a django project  there are chances of some confusion"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 752.0,
+            "end": 762.0,
+            "text": " but it won't happen  why? because you have come on code  so what we do  now because you have django installed  so you can use"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 762.0,
+            "end": 772.0,
+            "text": " django  dash admin  so this django admin  is a command  which is installed"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 772.0,
+            "end": 782.0,
+            "text": " after installing django  now here are 2-3 sub commands  one is the main command  after that the first command we learn  is start project"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 782.0,
+            "end": 792.0,
+            "text": " there are two commands  first time you use the project command  after that you don't use it  after that in django  multiple small apps are made"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 792.0,
+            "end": 802.0,
+            "text": " for now we just have to start the project  so what we do is  chai and django  ok  chai and django I wrote"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 802.0,
+            "end": 812.0,
+            "text": " now I entered and I got  chai and django project  now the most confusing thing  is that when you open it  there will be another folder"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 812.0,
+            "end": 822.0,
+            "text": " so you will think that if you write dot here  then we will get this folder  no no you don't want to do this  whenever django project is made in python  then a sub folder should be made in it"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 822.0,
+            "end": 832.0,
+            "text": " our main project should be like this  this is standard practice  that in virtual environment and at this level  we should have django project  whatever name you have given"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 832.0,
+            "end": 842.0,
+            "text": " so we have chai and django  now in this you will see  a manage.py file  so first of all go to this folder  and go to chai and django"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 842.0,
+            "end": 852.0,
+            "text": " now as soon as I am lessing  I am seeing a file named manage.py  so let's run it  so the simple way to run it is  run this file through python"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 852.0,
+            "end": 862.0,
+            "text": " so we have python manage.py  and we will give a sub command to it  which is run server  as soon as you give run server command  you will see some errors"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 862.0,
+            "end": 872.0,
+            "text": " we will not worry about them now  in the coming videos we will discuss in detail  what is admin auth content type sessions  we will ignore it for now  we will not see it in this video"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 872.0,
+            "end": 882.0,
+            "text": " now what is here  you have watching file  servers, challenges, system checked  identified, no issues  you have everything here"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 882.0,
+            "end": 892.0,
+            "text": " and you can see a db escolite  is also being created here  so db escolite is created  oh I have a small error  that port is already using it"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 892.0,
+            "end": 902.0,
+            "text": " so maybe somewhere  because it is a very common port  it is running somewhere  yes, it was running in my second application  I stopped it"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 902.0,
+            "end": 912.0,
+            "text": " let's run this command again  because mostly when I make backends of javascript  I run it on 8000  and python is also run by default  on this port"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 912.0,
+            "end": 922.0,
+            "text": " by the way, in case you also face  a situation that our server  or default port is blocked  so we can also solve this  it is very easy"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 922.0,
+            "end": 932.0,
+            "text": " you can give port number after this  suppose this is 8001  so you can give 8001  good, one more error  so now what we do"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 932.0,
+            "end": 942.0,
+            "text": " we run this  ok  we know that localhost  is run by default  on 8000"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 942.0,
+            "end": 952.0,
+            "text": " so we come here  and open it in a new tab  so  please copy it  ok"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 952.0,
+            "end": 962.0,
+            "text": " copy copy copy  it should have been done directly  but today because our keyboard  is facing some issues  this is your"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 962.0,
+            "end": 972.0,
+            "text": " first django  it's dark mode is not yet available  so this is your django  application  you are seeing this page because"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 972.0,
+            "end": 982.0,
+            "text": " your debugging is true  if debugging is false then you will not see this page  now we come to the point  that we have turned on  all the functions"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 982.0,
+            "end": 992.0,
+            "text": " but now we come to the point  where all this came from  so we will do a little file exploration  how django works  and that's it"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 992.0,
+            "end": 1002.0,
+            "text": " in next video we will go in more detail  but for now only file exploration is important  first file is your manage.py  this is your starting point file  and this is the file that will set"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 1002.0,
+            "end": 1012.0,
+            "text": " many things from your environment variables  in fact after going to production  this is the file that invokes your system  and this is the file that runs  in this file you have many options"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 1012.0,
+            "end": 1022.0,
+            "text": " which we see on the server  so manage.py  one more thing to keep in mind in python  now we will make many folders  and you should know exactly where is the indentation of that folder"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 1022.0,
+            "end": 1032.0,
+            "text": " that where is the level of that folder  manage.py is the level  in python it is talked about in production  or inside folder is its level  this is called our project level"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 1032.0,
+            "end": 1042.0,
+            "text": " after this comes the app level  one is your root level  and in manage.py the level where is the file  there only some files or folders are made  this is the framework, rules are there"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 1042.0,
+            "end": 1052.0,
+            "text": " we can't keep the name of files and folders  nor we can dump files and folders  anywhere we want  there are specific rules  if you create files and folders there"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 1052.0,
+            "end": 1062.0,
+            "text": " then expected behavior is there  then we have esquilite 3  why esquilite 3  because this is the default database  which is used in django"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 1062.0,
+            "end": 1072.0,
+            "text": " now the best thing is that whatever code you write here  it has nothing to do with  esquilite, mysql, postgres  you can write any code  just a few lines"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 1072.0,
+            "end": 1082.0,
+            "text": " and not even code  you can set the configuration  and move from esquilite to postgres  from postgres to mysql  in fact"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 1082.0,
+            "end": 1092.0,
+            "text": " in django  no sql databases also works very well  but the common practice is  that we mostly stay in sql databases  but you don't have to interact with sql databases"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 1092.0,
+            "end": 1102.0,
+            "text": " you don't have to write sql  now let's go to this folder  this is our project folder  in this folder we do a lot of basics  mostly we make a separate app"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 1102.0,
+            "end": 1112.0,
+            "text": " which we will make in the next video  and work through it  now you know if you have seen python series  then you have cache folder  whenever there are multiple modules of python"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 1112.0,
+            "end": 1122.0,
+            "text": " then you have cache folder  which gives optimization  we had discussed this a lot earlier  after that the main file  which is very important is settings.py"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 1122.0,
+            "end": 1132.0,
+            "text": " here  all the configuration of django  is written here  who should I consider in base directory  what are your secret keys"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 1132.0,
+            "end": 1142.0,
+            "text": " this is used in production  debugging true  what all host is allowed  after installing  this will be very useful"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 1142.0,
+            "end": 1152.0,
+            "text": " as i said django has a small app  like suppose  you are making ecommerce  then django will make a small app  although it can interact"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 1152.0,
+            "end": 1162.0,
+            "text": " but coupons are made into a separate app  products categories  are made into a separate app  checkout is made into a separate app  so that multiple people can work"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 1162.0,
+            "end": 1172.0,
+            "text": " and logic is separate  so we add additional  middleware is also very powerful  you get so many middleware by default  in which you have authentication"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 1172.0,
+            "end": 1182.0,
+            "text": " and protection from clickjacking  all this is out of the box  and by the way  we will see how big admin panel  you get in django"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 1182.0,
+            "end": 1192.0,
+            "text": " without doing anything  and it is a very good admin panel  we will also come to templates  how to do templating  this is our database section"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 1192.0,
+            "end": 1202.0,
+            "text": " we are dealing with escolite 3  but eventually we will also deal with postgres  after that your password authentication  validation is by default  timezone"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 1202.0,
+            "end": 1212.0,
+            "text": " language code  we will come to this later  so you understood the settings file  if you want to do any setting on project level  then you can come to settings.py file"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 1212.0,
+            "end": 1222.0,
+            "text": " there are not many settings  you just configure them  after this, you will go to a common file  which is urls.py  this is your"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 1222.0,
+            "end": 1232.0,
+            "text": " routing file, where you can go  now you can see here admin is already a route  but it is not configured  if you go here, you will not get anything special  for that you have to run a few more commands"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 1232.0,
+            "end": 1242.0,
+            "text": " which we will run in the next video  but admin is by default  yes, admin dashboard  here we do routing of all the files  routing means"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 1242.0,
+            "end": 1252.0,
+            "text": " which url you will go  what will happen after going to the url  we will discuss that in a separate file  that file is not here  we have to make that file first time"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 1252.0,
+            "end": 1262.0,
+            "text": " if it is here, views.py  views.py defines all our views  views means controller  all the functionality, business logic  all that is dealt here"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 1262.0,
+            "end": 1272.0,
+            "text": " similarly, model is also made  which we will make eventually  where we keep all the database models  so this is how jango application works  first of all, you hit this url file"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 1272.0,
+            "end": 1282.0,
+            "text": " means you hit a url  so this url file governs  which route will handle it  so once the route is handled  then the control of our file"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 1282.0,
+            "end": 1292.0,
+            "text": " goes on views  in views, you write business logic  and you can return from there  you can return html file  or just hello world"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 1292.0,
+            "end": 1302.0,
+            "text": " or whatever you want to return  apart from that, how things will be structured in database  how it will be, all that work  we do in models.py file  those files are not there yet, eventually"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 1302.0,
+            "end": 1312.0,
+            "text": " but now i don't want to burden you  from day 1  that you feel it is overwhelming  because once you see it, you will feel  that it is a very rapid development"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 1312.0,
+            "end": 1322.0,
+            "text": " so for now, we have explored  a file structure  and for now, i am keeping it a little light  so that you feel  that we have made at least a project"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 1322.0,
+            "end": 1332.0,
+            "text": " understood the file structure  that it is not that big  there were 3-4 files  we understood them  we saw 1-2 commands"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 1332.0,
+            "end": 1342.0,
+            "text": " our jango application is running  we saw where the debugging true came from  that's it  for now, we will do this much  because we will keep it a little light"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 1342.0,
+            "end": 1352.0,
+            "text": " and in the coming videos, we will see  how we can work more  in these applications  how we can do custom templating  static files, database, a lot more"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 1352.0,
+            "end": 1362.0,
+            "text": " as you know, we take things to production level  we go full in depth  we explore  we learn good practices  we learn production grade things"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 1362.0,
+            "end": 1372.0,
+            "text": " so don't forget to comment and target  and share the series  and we will meet you in the next video  we will write a little more code  in the next video"
+        },
+        {
+            "number": "0",
+            "title": "1762850602418-Start a Django project and file structure(360P).mp3",
+            "start": 1372.0,
+            "end": 1378.0,
+            "text": " so keep watching  and we will meet you in the next video  till then subscribe"
+        }
+    ],
+    "text": " Hello, how are you all? Welcome to Chai Aur Code and welcome to our official launch of our playlist Chai Aur Django You have shown a lot of support on Twitter, LinkedIn and everywhere and thank you so much for that and this reminds me of our... let's discuss our comment target first initially everyone starts but the problem is who goes till the end in the series that is the one who comes out in the end everyone else comes to explore but no worries, even if you come to explore you are ahead of a lot of people so let's keep this video's target of 600 comments comment quickly I will feel good if you show support so let's start our Django series and as you know I like to write code directly so we will start with code editor but before that let me tell you a small thing that sit comfortably with tea I will try to explain things more and slow down but actually in Python Django you will see that things develop so easily and fast that I will not be able to slow them down even if I want to it's not that you won't understand you will understand and you will be able to do it on your system but it is so fast and it goes so easily that I won't be able to contribute much it will run at speed that's why Django is called an expert framework of rapid development and it is a very mature framework don't compare this framework with any other framework especially if you are coming from a JavaScript background the things you have seen in JavaScript Nest or NextJS or Gatsby or whatever you have seen don't compare them here it is a completely different framework yes, if you are coming from a Laravel background or Ruby on Rails then you can compare a little but not much so let's start first we will set up the environment and then I will tell you how to do it don't forget to comment let's go we will come to our screen sharing we will come to Django later first we will come to our VS Code there is not much in VS Code we keep the theme as Chai we always go with the same theme and in this I will drag and drop a folder which is called ChaiDjango it is just an empty folder with this I will show you the entire environment setup we will also open a small terminal today my keyboard is troubling me I don't know why it has been doing this since morning ok we need a terminal and a folder that's it now whenever you are in Python first of all we will do a little bit of Django what is it, where is it, how is it what will be the benefit of us will anything happen or not so see what is Django it makes it easier to build better web application more quickly and less code you have comparatively less code in the quantity it is easy, there is already shrinked code in Python so it is very less and it is scalable, very fast it is useful for rapid development about Django, what you will see while talking it will be ridiculously fast yes, no word can be compared to this it is ridiculously fast apart from that reassuring the security I will show you many security features in Django like SRF protection many protections are there by default you have to write code according to those protections Django by default protects it which is a good thing apart from that exceedingly scalable ok by the way I will tell you a small story about Django in Django you get a very good scale on minimum systems in the system of JavaScript or the applications comparatively you need a little more RAM or a good system but these applications like Django and other old frameworks it scales very well on bare minimum so if you have a $5 machine or $10 machine it still has the power to handle many users at the same time so yes it earns less bill, that's why corporates like Django a lot in fact you may not know that Django is used in such places it is also used in Paytm we will not discuss so many things so this is our basic about Django now when you come for Django you will think that I should go to download and install it on Mac or Linux python-m pip install django it is ok if they give this version or not I should go to windows and do it like this but the development of python is done in this way professionally especially because no one expects that you keep a specific version of python everyone wants to do the development in a separate environment or in a separate box for that in python virtual environment is used where there is a separate instance or a separate sandbox where all our code will go what is installed on our main system does not make a big difference to the virtual environment so that's why you will see everyone making a virtual environment in python now I will tell you the commands of virtual environment and I will also tell you how we will do it don't run it now listen to the whole thing so if you are on windows you can start here with the py command I am on mac or you are on linux so we already have python 2 so we write all the commands with python 3 so this is very basic I told you in the python series that whenever I write python 3, you write py now you will often see what to do to make a virtual environment dash m today the keyboard is bothering a lot ok so we put dash m here and then you write that I want a virtual environment so venv we have this venv so this is the command that virtual environment gives and the virtual environment will be in the install folder so people often do it in the .venv folder this dot is because the way our git is a dot folder in the same way all the settings of the virtual environment files in a dot or hidden folder people often like to keep it in a hidden folder this is the only thing to do nothing else how to activate it is the same but what I will use here is a little different what I am going to use is called uv there are many ways to install uv you can also install pip install uv or if you are on any other system then you can install it from pip pipx, brew and many more you can also run this command on the windows power shell and the thing is why? why do we want to use uv? if you compare it with the javascript environment then like npm, all the work is done from it and pip also but there we have bun which is very fast in the same way uv is my new favorite because it is an extremely fast package manager written in rust so not only in rust it has actually worked on a lot of parsers and it is very fast you can see the speed difference 0.06 vs there are many graphs like this but in the right sense you will see that there is a lot of speed difference so like you installed python run any of these commands run pip or if you are on mac then run pip3 or then install brew you will have one of these commands search just pip and you will get it now after that if you ever want to make a virtual environment then pip vnv just this much work we have to do you don't have to give anything else it automatically does all the work so now what i will do because uv is already installed so i will use that uv please uv and after that i will write here that i want a virtual environment so we will write the same venv so it will give us the virtual environment venv so as you wrote, your virtual environment is created now the file we got here has the same exact thing that you normally get from the first command so we have bin, python 3.11 is installed bin is also there, all the activation libraries that you get, all of them are with you there is no problem now what we have to do is run this activate script whether you are in windows or mac you have to run this script then your virtual environment will activate now you just installed it so we have the activation command here by the way, you will get a full blog in the description you don't have to read all of this i have written everything in detail check the description so if you are on mac you have to use the source so you can activate in the bin in this environment if you are on windows, you can directly activate the scripts in the dot if you are on activate, it will be in the script or in the bin, wherever it is, we have to go there and activate it so let's do this so we have the source and after that we have to go to dot vnv and we have bin and activate this is the command as soon as you install this command or activate your script so we have here, source ok, typo small typo here, source so now what i can see here dot vnv is on my command line this means that you are in the virtual environment and nothing else, whenever you want to deactivate you can type deactivate and your virtual environment will be deactivated ok, so this is done let's reload it is getting hang ok so let's do this, i think my machine needs a restart because it has not restarted for a long time ok we will talk about it after the video so this is done all the installation is done now one more thing you have to remember if you want to install anything, you have to do it like this uv, then pip install whatever you want to install, if we want to install django we will see how to do that but wherever it is mentioned pip or pip3 now you are in the virtual environment because we have made a virtual environment from uv and uv pip then install whatever you want to install ok, so you have understood that we have to install uv pip ok, so let's go to the second one how to do it so here it is mentioned that you can install django like this if it is a specific version, then do that otherwise you can do django let's see how to install it so we have been told that you can type pip sorry, you have to type uv first uv, then pip, not pip3 even if you are on mac, you have to type pip because you are in a virtual environment so the problem of 3 has been solved and after this you have to type directly that you have to install the keyboard is troubling me a lot I have to restart the system install and you have to type django d is the capital of django so as soon as you enter django will be installed it installs ridiculously fast and all the dependencies have come to you ok, django is installed now what to do next now nothing special we will use django to make a project before that let's read here that django has more ways by the way, the documentation you will get in this is next level I will say that in comparison to anyone not only javascript, in comparison to anyone the documentation of javascript community whether it is fastapi or django is on a ridiculous level they write documentation on the next level they don't leave any space whether there is a problem or not and documentation is really next level they write more markdown files than python why? because I personally know the founder of fastapi and many times I have done a podcast with him he also says this whenever it is said that we write more markdown files than python so whenever you want to see something you can see in the overview they write the documentation the code, format, files they write it very well now we come to make a simple python project so now we go to python and say let's make a django project in this virtual environment now when you make a django project there are chances of some confusion but it won't happen why? because you have come on code so what we do now because you have django installed so you can use django dash admin so this django admin is a command which is installed after installing django now here are 2-3 sub commands one is the main command after that the first command we learn is start project there are two commands first time you use the project command after that you don't use it after that in django multiple small apps are made for now we just have to start the project so what we do is chai and django ok chai and django I wrote now I entered and I got chai and django project now the most confusing thing is that when you open it there will be another folder so you will think that if you write dot here then we will get this folder no no you don't want to do this whenever django project is made in python then a sub folder should be made in it our main project should be like this this is standard practice that in virtual environment and at this level we should have django project whatever name you have given so we have chai and django now in this you will see a manage.py file so first of all go to this folder and go to chai and django now as soon as I am lessing I am seeing a file named manage.py so let's run it so the simple way to run it is run this file through python so we have python manage.py and we will give a sub command to it which is run server as soon as you give run server command you will see some errors we will not worry about them now in the coming videos we will discuss in detail what is admin auth content type sessions we will ignore it for now we will not see it in this video now what is here you have watching file servers, challenges, system checked identified, no issues you have everything here and you can see a db escolite is also being created here so db escolite is created oh I have a small error that port is already using it so maybe somewhere because it is a very common port it is running somewhere yes, it was running in my second application I stopped it let's run this command again because mostly when I make backends of javascript I run it on 8000 and python is also run by default on this port by the way, in case you also face a situation that our server or default port is blocked so we can also solve this it is very easy you can give port number after this suppose this is 8001 so you can give 8001 good, one more error so now what we do we run this ok we know that localhost is run by default on 8000 so we come here and open it in a new tab so please copy it ok copy copy copy it should have been done directly but today because our keyboard is facing some issues this is your first django it's dark mode is not yet available so this is your django application you are seeing this page because your debugging is true if debugging is false then you will not see this page now we come to the point that we have turned on all the functions but now we come to the point where all this came from so we will do a little file exploration how django works and that's it in next video we will go in more detail but for now only file exploration is important first file is your manage.py this is your starting point file and this is the file that will set many things from your environment variables in fact after going to production this is the file that invokes your system and this is the file that runs in this file you have many options which we see on the server so manage.py one more thing to keep in mind in python now we will make many folders and you should know exactly where is the indentation of that folder that where is the level of that folder manage.py is the level in python it is talked about in production or inside folder is its level this is called our project level after this comes the app level one is your root level and in manage.py the level where is the file there only some files or folders are made this is the framework, rules are there we can't keep the name of files and folders nor we can dump files and folders anywhere we want there are specific rules if you create files and folders there then expected behavior is there then we have esquilite 3 why esquilite 3 because this is the default database which is used in django now the best thing is that whatever code you write here it has nothing to do with esquilite, mysql, postgres you can write any code just a few lines and not even code you can set the configuration and move from esquilite to postgres from postgres to mysql in fact in django no sql databases also works very well but the common practice is that we mostly stay in sql databases but you don't have to interact with sql databases you don't have to write sql now let's go to this folder this is our project folder in this folder we do a lot of basics mostly we make a separate app which we will make in the next video and work through it now you know if you have seen python series then you have cache folder whenever there are multiple modules of python then you have cache folder which gives optimization we had discussed this a lot earlier after that the main file which is very important is settings.py here all the configuration of django is written here who should I consider in base directory what are your secret keys this is used in production debugging true what all host is allowed after installing this will be very useful as i said django has a small app like suppose you are making ecommerce then django will make a small app although it can interact but coupons are made into a separate app products categories are made into a separate app checkout is made into a separate app so that multiple people can work and logic is separate so we add additional middleware is also very powerful you get so many middleware by default in which you have authentication and protection from clickjacking all this is out of the box and by the way we will see how big admin panel you get in django without doing anything and it is a very good admin panel we will also come to templates how to do templating this is our database section we are dealing with escolite 3 but eventually we will also deal with postgres after that your password authentication validation is by default timezone language code we will come to this later so you understood the settings file if you want to do any setting on project level then you can come to settings.py file there are not many settings you just configure them after this, you will go to a common file which is urls.py this is your routing file, where you can go now you can see here admin is already a route but it is not configured if you go here, you will not get anything special for that you have to run a few more commands which we will run in the next video but admin is by default yes, admin dashboard here we do routing of all the files routing means which url you will go what will happen after going to the url we will discuss that in a separate file that file is not here we have to make that file first time if it is here, views.py views.py defines all our views views means controller all the functionality, business logic all that is dealt here similarly, model is also made which we will make eventually where we keep all the database models so this is how jango application works first of all, you hit this url file means you hit a url so this url file governs which route will handle it so once the route is handled then the control of our file goes on views in views, you write business logic and you can return from there you can return html file or just hello world or whatever you want to return apart from that, how things will be structured in database how it will be, all that work we do in models.py file those files are not there yet, eventually but now i don't want to burden you from day 1 that you feel it is overwhelming because once you see it, you will feel that it is a very rapid development so for now, we have explored a file structure and for now, i am keeping it a little light so that you feel that we have made at least a project understood the file structure that it is not that big there were 3-4 files we understood them we saw 1-2 commands our jango application is running we saw where the debugging true came from that's it for now, we will do this much because we will keep it a little light and in the coming videos, we will see how we can work more in these applications how we can do custom templating static files, database, a lot more as you know, we take things to production level we go full in depth we explore we learn good practices we learn production grade things so don't forget to comment and target and share the series and we will meet you in the next video we will write a little more code in the next video so keep watching and we will meet you in the next video till then subscribe"
+}
